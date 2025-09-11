@@ -217,8 +217,6 @@
     ],
     "env": "ateliers, armureries, châteaux"
   }
-]
-[
   {
     "id": "adult_black_dragon",
     "n": "Dragon noir (Adulte)",
@@ -516,8 +514,6 @@
     ],
     "env": "montagnes, cités élevées"
   }
-]
-[
   {
     "id": "blink_dog",
     "n": "Chien-clignotant",
@@ -776,8 +772,6 @@
     ],
     "env": "clairières enchantées, bosquets, collines"
   }
-]
-[
   {
     "id": "imp",
     "n": "Diablotin (Imp)",
@@ -1516,8 +1510,6 @@
     ],
     "env": "seductive lairs, cities"
   }
-]
-[
   {
     "id": "hill_giant",
     "n": "Géant des collines",
@@ -1759,8 +1751,6 @@
     ],
     "env": "mers profondes, falaises océaniques"
   }
-]
-[
   {
     "id": "bulette",
     "n": "Bulette",
@@ -2384,8 +2374,6 @@
     ],
     "env": "régions mythiques, dévastations"
   }
-]
-[
   {
     "id": "skeleton",
     "n": "Squelette",
@@ -2911,8 +2899,6 @@
     ],
     "env": "ruines, catacombes"
   }
-]
-[
   {
     "id": "base_aberration",
     "n": "Aberration (base)",
@@ -3020,8 +3006,6 @@
     ],
     "env": "antres,ruines anciennes"
   }
-]
-[
   {
     "id": "ape",
     "n": "Singe",
@@ -3515,8 +3499,6 @@
     ],
     "env": "montagnes, plateaux"
   }
-]
-[
   {
     "id": "couatl",
     "n": "Couatl",
