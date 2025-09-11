@@ -1,0 +1,3706 @@
+[
+  {
+    "id": "animated_armor",
+    "n": "Armure animée",
+    "s": "SRD 5.1",
+    "ty": "construct",
+    "sz": "M",
+    "al": "N",
+    "cr": 1,
+    "ac": 18,
+    "hp": "33 (6d8 + 6)",
+    "sp": "25w",
+    "ab": "14/11/13/1/3/1",
+    "st": {
+      "STR": 14,
+      "DEX": 11,
+      "CON": 13,
+      "INT": 1,
+      "WIS": 3,
+      "CHA": 1
+    },
+    "sk": "",
+    "sn": "blindsight:60,pp:6",
+    "lg": "—",
+    "di": "poison, psychic",
+    "dr": "",
+    "dv": "",
+    "ci": "blinded,charmed,deafened,exhaustion,frightened,paralyzed,petrified,poisoned",
+    "tr": [
+      "antimagic_susceptibility|Susceptibilité à l'antimagie|Incapacité en champ d'antimagie; échec de Dissipation (CON) l'endort 1 min.",
+      "false_appearance|Fausse apparence|Tant qu'elle reste immobile, elle ressemble à une armure ordinaire."
+    ],
+    "ma": "Multiattack (2x Slam)",
+    "at": [
+      "Slam|+4|M|5|1d6+2|bludgeoning"
+    ],
+    "env": "châteaux, donjons, antres"
+  },
+  {
+    "id": "giant_animated_armor",
+    "n": "Armure animée géante",
+    "s": "SRD 5.1",
+    "ty": "construct",
+    "sz": "L",
+    "al": "N",
+    "cr": 5,
+    "ac": 17,
+    "hp": "76 (8d10 + 32)",
+    "sp": "30w",
+    "ab": "19/8/18/1/3/1",
+    "st": {
+      "STR": 19,
+      "DEX": 8,
+      "CON": 18,
+      "INT": 1,
+      "WIS": 3,
+      "CHA": 1
+    },
+    "sk": "",
+    "sn": "blindsight:60,pp:6",
+    "lg": "—",
+    "di": "poison, psychic",
+    "dr": "",
+    "dv": "",
+    "ci": "blinded,charmed,deafened,exhaustion,frightened,paralyzed,petrified,poisoned",
+    "tr": [
+      "antimagic_susceptibility|Susceptibilité à l'antimagie|Incapacité en champ d'antimagie; échec de Dissipation (CON) l'endort 1 min.",
+      "false_appearance|Fausse apparence|Tant qu'elle reste immobile, elle ressemble à une armure ordinaire."
+    ],
+    "ma": "Multiattack (2x Slam)",
+    "at": [
+      "Slam|+7|M|5|2d6+4|bludgeoning",
+      "Imprison|special|—|—|—|Emprisonne une créature agrippée dans le torse (voir SRD)"
+    ],
+    "env": "vestiges, châteaux, antres"
+  },
+  {
+    "id": "flying_sword",
+    "n": "Épée volante",
+    "s": "SRD 5.1",
+    "ty": "construct",
+    "sz": "S",
+    "al": "N",
+    "cr": 0.25,
+    "ac": 17,
+    "hp": "17 (5d6)",
+    "sp": "0w,50f (hover)",
+    "ab": "12/15/11/1/5/1",
+    "st": {
+      "STR": 12,
+      "DEX": 15,
+      "CON": 11,
+      "INT": 1,
+      "WIS": 5,
+      "CHA": 1
+    },
+    "sk": "",
+    "sn": "blindsight:60,pp:7",
+    "lg": "—",
+    "di": "poison, psychic",
+    "dr": "",
+    "dv": "",
+    "ci": "blinded,charmed,deafened,frightened,paralyzed,petrified,poisoned",
+    "tr": [
+      "antimagic_susceptibility|Susceptibilité à l'antimagie|Incapacité en champ d'antimagie; échec de Dissipation (CON) l'endort 1 min.",
+      "false_appearance|Fausse apparence|Tant qu'elle reste immobile et ne vole pas, elle ressemble à une épée ordinaire."
+    ],
+    "ma": "—",
+    "at": [
+      "Longsword (dance)|+3|M|5|1d8+1|slashing"
+    ],
+    "env": "salles, armureries, donjons"
+  },
+  {
+    "id": "shield_guardian",
+    "n": "Garde-bouclier",
+    "s": "SRD 5.1",
+    "ty": "construct",
+    "sz": "L",
+    "al": "N",
+    "cr": 7,
+    "ac": 17,
+    "hp": "142 (15d10 + 60)",
+    "sp": "30w",
+    "ab": "18/10/20/3/11/1",
+    "st": {
+      "STR": 18,
+      "DEX": 10,
+      "CON": 20,
+      "INT": 3,
+      "WIS": 11,
+      "CHA": 1
+    },
+    "sk": "Perception:+5",
+    "sn": "blindsight:60,pp:13",
+    "lg": "—",
+    "di": "poison, psychic",
+    "dr": "",
+    "dv": "",
+    "ci": "blinded,charmed,deafened,exhaustion,frightened,paralyzed,petrified,poisoned",
+    "tr": [
+      "bound_amulet|Lié à un amulette|Lie ses pouvoirs à l'amulette portée par le maître (voir SRD).",
+      "regeneration|Régénération|Récupère 10 PV au début de son tour si ≥1 PV."
+    ],
+    "ma": "Multiattack (2x Poing)",
+    "at": [
+      "Poing|+7|M|5|2d6+4|bludgeoning"
+    ],
+    "la": [
+      "Bouclier|reaction|Si le porteur de l'amulette est attaqué, le gardien donne +2 CA s'il est à ≤5 ft."
+    ],
+    "env": "temples, quartiers du maître, forteresses"
+  },
+  {
+    "id": "homunculus",
+    "n": "Homoncule",
+    "s": "SRD 5.1",
+    "ty": "construct",
+    "sz": "T",
+    "al": "N",
+    "cr": 0,
+    "ac": 13,
+    "hp": "5 (2d4)",
+    "sp": "20w,40f",
+    "ab": "4/14/10/3/12/7",
+    "st": {
+      "STR": 4,
+      "DEX": 14,
+      "CON": 10,
+      "INT": 10,
+      "WIS": 10,
+      "CHA": 7
+    },
+    "sk": "Perception:+2",
+    "sn": "pp:12",
+    "lg": "—, télépathie avec son maître 1,500 ft",
+    "di": "poison",
+    "dr": "",
+    "dv": "",
+    "ci": "blinded,charmed,deafened,frightened,paralyzed,petrified,poisoned",
+    "tr": [
+      "telepathic_bond|Lien télépathique|Transmet ce qu'il voit et entend au créateur dans un rayon de 1 500 ft."
+    ],
+    "ma": "—",
+    "at": [
+      "Morsure|+4|M|5|1|piercing|DC10 CON poison:1 min (voir SRD)"
+    ],
+    "env": "laboratoires, ateliers, tours"
+  },
+  {
+    "id": "animated_object",
+    "n": "Objet animé (générique)",
+    "s": "SRD 5.1",
+    "ty": "construct",
+    "sz": "Varie (T→G)",
+    "al": "N",
+    "cr": 0,
+    "ac": "Varie",
+    "hp": "Varie",
+    "sp": "Varie",
+    "ab": "Varie",
+    "st": {},
+    "sk": "",
+    "sn": "",
+    "lg": "—",
+    "di": "poison, psychic",
+    "dr": "",
+    "dv": "",
+    "ci": "blinded,charmed,deafened,exhaustion,frightened,paralyzed,petrified,poisoned",
+    "tr": [
+      "antimagic_susceptibility|Susceptibilité à l'antimagie|Incapacité en champ d'antimagie; échec de Dissipation (CON) l'endort 1 min.",
+      "false_appearance|Fausse apparence|Tant qu'il reste immobile, il ressemble à l'objet inanimé."
+    ],
+    "ma": "—",
+    "at": [
+      "Dépend de l'objet (slam/attack)"
+    ],
+    "env": "ateliers, armureries, châteaux"
+  }
+]
+[
+  {
+    "id": "adult_black_dragon",
+    "n": "Dragon noir (Adulte)",
+    "s": "SRD 5.1",
+    "ty": "dragon",
+    "sz": "H",
+    "al": "CE",
+    "cr": 14,
+    "ac": 19,
+    "hp": "195 (17d12+85)",
+    "sp": "40w,40c,40s",
+    "ab": "23/10/21/12/15/17",
+    "st": {},
+    "sk": "Perception:+11,Stealth:+5",
+    "sn": "blindsight:60,darkvision:120,pp:21",
+    "lg": "Common,Draconic",
+    "di": "acid",
+    "dr": "",
+    "dv": "",
+    "ci": "—",
+    "tr": [
+      "amphibious|Amphibie|Peut respirer l'air et l'eau.",
+      "legendary_resistance|Résistance légendaire|3/jour (si applicable dans SRD)."
+    ],
+    "ma": "Multiattack (Bite + 2 Claws)",
+    "at": [
+      "Bite|+11|M|10|2d10+6|piercing + 1d8 acid",
+      "Claw|+11|M|5|2d6+6|slashing",
+      "Tail|+11|M|15|2d8+6|bludgeoning",
+      "Acid Breath|save|DEX:17|cone:60|12d6|acid"
+    ],
+    "env": "marais, marécages, ruines cotières"
+  },
+  {
+    "id": "adult_blue_dragon",
+    "n": "Dragon bleu (Adulte)",
+    "s": "SRD 5.1",
+    "ty": "dragon",
+    "sz": "H",
+    "al": "LE",
+    "cr": 16,
+    "ac": 19,
+    "hp": "225 (18d12+90)",
+    "sp": "40w,40c,40s",
+    "ab": "25/10/23/16/13/21",
+    "st": {},
+    "sk": "Perception:+12,Stealth:+5",
+    "sn": "blindsight:60,darkvision:120,pp:23",
+    "lg": "Common,Draconic",
+    "di": "lightning",
+    "tr": [
+      "legendary_resistance|Résistance légendaire|3/jour."
+    ],
+    "ma": "Multiattack (Bite + 2 Claws)",
+    "at": [
+      "Bite|+12|M|10|2d10+7|piercing",
+      "Claw|+12|M|5|2d6+7|slashing",
+      "Tail|+12|M|15|2d8+7|bludgeoning",
+      "Lightning Breath|save|DEX:18|line:90x5|12d10|lightning"
+    ],
+    "env": "déserts, canyons, plaines arides"
+  },
+  {
+    "id": "adult_green_dragon",
+    "n": "Dragon vert (Adulte)",
+    "s": "SRD 5.1",
+    "ty": "dragon",
+    "sz": "H",
+    "al": "LE",
+    "cr": 15,
+    "ac": 19,
+    "hp": "207 (18d12+72)",
+    "sp": "40w,40c,40s",
+    "ab": "23/12/21/16/15/19",
+    "st": {},
+    "sk": "Perception:+11,Stealth:+5",
+    "sn": "blindsight:60,darkvision:120,pp:21",
+    "lg": "Common,Draconic",
+    "di": "poison",
+    "tr": [
+      "legendary_resistance|Résistance légendaire|3/jour."
+    ],
+    "ma": "Multiattack (Bite + 2 Claws)",
+    "at": [
+      "Bite|+11|M|10|2d10+6|piercing",
+      "Claw|+11|M|5|2d6+6|slashing",
+      "Tail|+11|M|15|2d8+6|bludgeoning",
+      "Poison Breath|save|CON:17|cone:60|12d6|poison"
+    ],
+    "env": "forêts primaires, vallées humides"
+  },
+  {
+    "id": "adult_red_dragon",
+    "n": "Dragon rouge (Adulte)",
+    "s": "SRD 5.1",
+    "ty": "dragon",
+    "sz": "H",
+    "al": "CE",
+    "cr": 17,
+    "ac": 19,
+    "hp": "256 (19d12+133)",
+    "sp": "40w,40c,40s",
+    "ab": "27/10/25/16/13/21",
+    "st": {},
+    "sk": "Perception:+12,Intimidation:+11",
+    "sn": "blindsight:60,darkvision:120,pp:22",
+    "lg": "Common,Draconic",
+    "di": "fire",
+    "tr": [
+      "legendary_resistance|Résistance légendaire|3/jour.",
+      "hoard_mind|Avidité|Comportement possessif vis-à-vis du trésor."
+    ],
+    "ma": "Multiattack (Bite + 2 Claws)",
+    "at": [
+      "Bite|+14|M|10|2d10+8|piercing + 3d6 fire",
+      "Claw|+14|M|5|2d6+8|slashing",
+      "Tail|+14|M|15|2d8+8|bludgeoning",
+      "Fire Breath|save|DEX:21|cone:60|18d6|fire"
+    ],
+    "env": "montagnes, volcans, cavernes profondes"
+  },
+  {
+    "id": "adult_white_dragon",
+    "n": "Dragon blanc (Adulte)",
+    "s": "SRD 5.1",
+    "ty": "dragon",
+    "sz": "H",
+    "al": "CE",
+    "cr": 13,
+    "ac": 18,
+    "hp": "200 (16d12+96)",
+    "sp": "40w,30b,40s",
+    "ab": "22/10/22/8/12/12",
+    "st": {},
+    "sk": "Perception:+11,Stealth:+5",
+    "sn": "blindsight:60,darkvision:120,pp:20",
+    "lg": "Common,Draconic",
+    "di": "cold",
+    "tr": [
+      "ice_walk|Marche sur glace|Se déplace aisément sur surface gelée."
+    ],
+    "ma": "Multiattack (Bite + 2 Claws)",
+    "at": [
+      "Bite|+11|M|10|2d10+6|piercing + 2d6 cold",
+      "Claw|+11|M|5|2d6+6|slashing",
+      "Tail|+11|M|15|2d8+6|bludgeoning",
+      "Cold Breath|save|CON:18|cone:60|12d8|cold"
+    ],
+    "env": "tundra, grottes boréales, montagnes glacées"
+  },
+  {
+    "id": "adult_brass_dragon",
+    "n": "Dragon de laiton (Adulte)",
+    "s": "SRD 5.1",
+    "ty": "dragon",
+    "sz": "H",
+    "al": "CG",
+    "cr": 12,
+    "ac": 18,
+    "hp": "172 (15d12+75)",
+    "sp": "40w,40c,40s",
+    "ab": "23/10/21/14/13/21",
+    "st": {},
+    "sk": "Perception:+10,Persuasion:+8",
+    "sn": "blindsight:60,darkvision:120,pp:19",
+    "lg": "Common,Draconic",
+    "di": "fire",
+    "tr": [
+      "innate_spellcasting|Sorts innés|Peut utiliser certains sorts sociaux et utilitaires."
+    ],
+    "ma": "Multiattack (Bite + 2 Claws)",
+    "at": [
+      "Bite|+11|M|10|2d10+6|piercing",
+      "Claw|+11|M|5|2d6+6|slashing",
+      "Tail|+11|M|15|2d8+6|bludgeoning",
+      "Breath (Fire)|save|DEX:17|line:60x5|12d6|fire"
+    ],
+    "env": "déserts, canyons, plateaux arides"
+  },
+  {
+    "id": "adult_bronze_dragon",
+    "n": "Dragon de bronze (Adulte)",
+    "s": "SRD 5.1",
+    "ty": "dragon",
+    "sz": "H",
+    "al": "LG",
+    "cr": 15,
+    "ac": 19,
+    "hp": "212 (17d12+102)",
+    "sp": "40w,40c,40s",
+    "ab": "25/10/23/18/13/21",
+    "st": {},
+    "sk": "Perception:+12,History:+8",
+    "sn": "blindsight:60,darkvision:120,pp:22",
+    "lg": "Common,Draconic",
+    "di": "lightning",
+    "tr": [
+      "amphibious|Amphibie|Peut respirer l'air et l'eau."
+    ],
+    "ma": "Multiattack (Bite + 2 Claws)",
+    "at": [
+      "Bite|+12|M|10|2d10+7|piercing",
+      "Claw|+12|M|5|2d6+7|slashing",
+      "Tail|+12|M|15|2d8+7|bludgeoning",
+      "Lightning Breath|save|DEX:18|line:90x5|12d10|lightning"
+    ],
+    "env": "côtes, ruines côtières, rivières"
+  },
+  {
+    "id": "adult_copper_dragon",
+    "n": "Dragon de cuivre (Adulte)",
+    "s": "SRD 5.1",
+    "ty": "dragon",
+    "sz": "H",
+    "al": "CG",
+    "cr": 14,
+    "ac": 18,
+    "hp": "184 (16d12+80)",
+    "sp": "40w,40c,40s",
+    "ab": "23/14/21/14/13/19",
+    "st": {},
+    "sk": "Perception:+10,Deception:+8",
+    "sn": "blindsight:60,darkvision:120,pp:20",
+    "lg": "Common,Draconic",
+    "di": "acid",
+    "tr": [
+      "cunning|Esprit rusé|Utilise ruses et jets sociaux."
+    ],
+    "ma": "Multiattack (Bite + 2 Claws)",
+    "at": [
+      "Bite|+11|M|10|2d10+6|piercing",
+      "Claw|+11|M|5|2d6+6|slashing",
+      "Tail|+11|M|15|2d8+6|bludgeoning",
+      "Acid Breath|save|DEX:17|cone:60|12d6|acid"
+    ],
+    "env": "canyons, gorges, grottes"
+  },
+  {
+    "id": "adult_gold_dragon",
+    "n": "Dragon d'or (Adulte)",
+    "s": "SRD 5.1",
+    "ty": "dragon",
+    "sz": "H",
+    "al": "LG",
+    "cr": 17,
+    "ac": 19,
+    "hp": "256 (19d12+133)",
+    "sp": "40w,40c,40s",
+    "ab": "27/10/25/22/17/23",
+    "st": {},
+    "sk": "Perception:+13,Persuasion:+12",
+    "sn": "truesight:120,darkvision:120,pp:24",
+    "lg": "Common,Draconic",
+    "di": "fire",
+    "tr": [
+      "innate_spellcasting|Sorts innés|Peut lancer sorts puissants (voir SRD).",
+      "legendary_resistance|Résistance légendaire|3/jour."
+    ],
+    "ma": "Multiattack (Bite + 2 Claws)",
+    "at": [
+      "Bite|+14|M|10|2d10+8|piercing",
+      "Claw|+14|M|5|2d6+8|slashing",
+      "Tail|+14|M|15|2d8+8|bludgeoning",
+      "Fire Breath|save|DEX:21|cone:60|18d6|fire"
+    ],
+    "env": "montagnes hautes, royaumes métalliques"
+  },
+  {
+    "id": "adult_silver_dragon",
+    "n": "Dragon d'argent (Adulte)",
+    "s": "SRD 5.1",
+    "ty": "dragon",
+    "sz": "H",
+    "al": "LG",
+    "cr": 16,
+    "ac": 19,
+    "hp": "243 (18d12+144)",
+    "sp": "40w,40c,40s",
+    "ab": "27/10/25/16/13/21",
+    "st": {},
+    "sk": "Perception:+11,History:+8",
+    "sn": "truesight:120,darkvision:120,pp:23",
+    "lg": "Common,Draconic",
+    "di": "cold",
+    "tr": [
+      "shapechanger|Métamorphe partiel|Peut prendre forme humaine (SRD details).",
+      "legendary_resistance|Résistance légendaire|3/jour."
+    ],
+    "ma": "Multiattack (Bite + 2 Claws)",
+    "at": [
+      "Bite|+12|M|10|2d10+7|piercing",
+      "Claw|+12|M|5|2d6+7|slashing",
+      "Tail|+12|M|15|2d8+7|bludgeoning",
+      "Cold Breath|save|CON:18|cone:60|12d8|cold"
+    ],
+    "env": "montagnes, cités élevées"
+  }
+]
+[
+  {
+    "id": "blink_dog",
+    "n": "Chien-clignotant",
+    "s": "SRD 5.1",
+    "ty": "fey",
+    "sz": "M",
+    "al": "LG",
+    "cr": 0.25,
+    "ac": 13,
+    "hp": "22 (4d8 + 4)",
+    "sp": "40w",
+    "ab": "12/17/12/10/13/11",
+    "st": {
+      "STR": 12,
+      "DEX": 17,
+      "CON": 12,
+      "INT": 10,
+      "WIS": 13,
+      "CHA": 11
+    },
+    "sk": "Perception:+3,Discrétion:+5",
+    "sn": "pp:13",
+    "lg": "Blink Dog (langage propre), comprend Sylvan mais ne parle pas",
+    "tr": [
+      "teleport_recharge|Téléportation (Recharge 4–6)|Peut se téléporter jusqu'à 40 ft vers un espace inoccupé qu'il voit; peut attaquer avant ou après.",
+      "teleport_recharge|Téléportation (Recharge 4–6)|Peut se téléporter jusqu'à 40 ft vers un espace inoccupé qu'il voit."
+    ],
+    "ma": "—",
+    "at": [
+      "Morsure|+3|M|5|1d6+1|piercing"
+    ],
+    "env": "plaines, forêts, royaumes féeriques"
+  },
+  {
+    "id": "dryad",
+    "n": "Dryade",
+    "s": "SRD 5.1",
+    "ty": "fey",
+    "sz": "M",
+    "al": "NG",
+    "cr": 1,
+    "ac": "11 (16 with Barkskin)",
+    "hp": "22 (5d8)",
+    "sp": "30w",
+    "ab": "10/12/11/14/15/18",
+    "st": {
+      "STR": 10,
+      "DEX": 12,
+      "CON": 11,
+      "INT": 14,
+      "WIS": 15,
+      "CHA": 18
+    },
+    "sk": "Perception:+4,Discrétion:+5",
+    "sn": "darkvision:60,pp:14",
+    "lg": "Elfe, Sylvan, Commun",
+    "tr": [
+      "innate_spellcasting|Incantations innées|Charisma-based (DC14): druidcraft at will; 3/day entangle, goodberry; 1/day barkskin, pass without trace.",
+      "tree_stride|Pas d'arbre|Peut entrer dans un arbre et en ressortir d'un autre dans 60 ft.",
+      "innate_spellcasting|Incantations innées|Charisma-based (DC14) : druidcraft at will; 3/day entangle, goodberry; 1/day barkskin, pass without trace.",
+      "magic_resistance|Résistance magique|Avantage aux jets de sauvegarde contre les sorts.",
+      "tree_stride|Pas d'arbre|Peut entrer/sortir d'arbres dans 60 ft.",
+      "innate_spellcasting|Incantations innées|Charisma is spellcasting ability (DC14). At will: druidcraft. 3/day each: entangle, goodberry. 1/day each: barkskin, pass without trace, shillelagh.",
+      "magic_resistance|Résistance magique|Avantage aux jets de sauvegarde contre les sorts et autres effets magiques.",
+      "tree_stride|Pas d'arbre|Peut utiliser 10 ft de mouvement pour entrer dans un arbre et ressortir d'un autre dans 60 ft."
+    ],
+    "ma": "—",
+    "at": [
+      "Dague|+3|M|5|1d4+1|piercing"
+    ],
+    "env": "forêts anciennes, bosquets sacrés"
+  },
+  {
+    "id": "green_hag",
+    "n": "Sorcière verte",
+    "s": "SRD 5.1",
+    "ty": "fey",
+    "sz": "M",
+    "al": "CE",
+    "cr": 3,
+    "ac": 17,
+    "hp": "82 (11d8 + 33)",
+    "sp": "30w",
+    "ab": "16/14/16/12/12/16",
+    "st": {
+      "STR": 16,
+      "DEX": 14,
+      "CON": 16,
+      "INT": 12,
+      "WIS": 12,
+      "CHA": 16
+    },
+    "sk": "Arcana:+3,Deception:+4,Perception:+4,Discrétion:+3",
+    "sn": "darkvision:60,pp:14",
+    "lg": "Common,Sylvan",
+    "tr": [
+      "amphibious|Amphibie|Peut respirer l'air et l'eau.",
+      "innate_spellcasting|Sorts innés|Charisma-based (DC12): at will dancing lights, minor illusion, vicious mockery.",
+      "mimicry|Mimétisme|Peut imiter sons et voix (DC14 Insight to detect).",
+      "innate_spellcasting|Sorts innés|DC12 Charisma-based : at will dancing lights, minor illusion, vicious mockery."
+    ],
+    "ma": "—",
+    "at": [
+      "Griffes|+6|M|5|2d8+4|slashing",
+      "Claws|+6|M|5|2d8+4|slashing",
+      "Illusory Appearance|special|—|—|—|Se couvre d'illusion (voir SRD)",
+      "Invisible Passage|special|—|—|—|Devient invisible jusqu'à attaquer ou lancer un sort."
+    ],
+    "env": "marais, ruisseaux, forêts humides"
+  },
+  {
+    "id": "satyr",
+    "n": "Satyre",
+    "s": "SRD 5.1",
+    "ty": "fey",
+    "sz": "M",
+    "al": "CN",
+    "cr": 0.5,
+    "ac": 14,
+    "hp": "31 (7d8)",
+    "sp": "40w",
+    "ab": "12/16/11/12/10/14",
+    "st": {
+      "STR": 12,
+      "DEX": 16,
+      "CON": 11,
+      "INT": 12,
+      "WIS": 10,
+      "CHA": 14
+    },
+    "sk": "Perception:+2,Performance:+6,Discrétion:+5",
+    "sn": "pp:12",
+    "lg": "Common,Sylvan,Elvish",
+    "tr": [
+      "magic_resistance|Résistance magique|Avantage aux jets de sauvegarde contre sorts et effets magiques.",
+      "magic_resistance|Résistance magique|Avantage aux jets de sauvegarde contre sorts."
+    ],
+    "ma": "—",
+    "at": [
+      "Ram|+3|M|5|2d4+1|bludgeoning",
+      "Shortsword|+5|M|5|1d6+3|piercing",
+      "Shortbow|+5|R|80/320|1d6+3|piercing"
+    ],
+    "env": "bosquets, collines boisées"
+  },
+  {
+    "id": "sea_hag",
+    "n": "Sorcière des mers",
+    "s": "SRD 5.1",
+    "ty": "fey",
+    "sz": "M",
+    "al": "CE",
+    "cr": 2,
+    "ac": 14,
+    "hp": "52 (7d8 + 21)",
+    "sp": "30w,40s",
+    "ab": "16/13/16/7/12/8",
+    "st": {
+      "STR": 16,
+      "DEX": 13,
+      "CON": 16,
+      "INT": 12,
+      "WIS": 12,
+      "CHA": 7
+    },
+    "sk": "Perception:+3,Discrétion:+2",
+    "sn": "darkvision:60,pp:13",
+    "lg": "Common,Sylvan",
+    "tr": [
+      "amphibious|Amphibie|Peut respirer l'air et l'eau.",
+      "horrific_appearance|Apparence horrifique|Forces les créatures qui voient sa vraie forme à faire un jet de SAG DC11 (frightened).",
+      "illusory_appearance|Apparence illusoire|Peut se couvrir d'une illusion.",
+      "illusory_appearance|Apparence illusoire|Se couvre d'une illusion pour paraître différente.",
+      "invisible_passage|Passage invisible|Peut devenir invisible jusqu'à attaquer ou lancer un sort."
+    ],
+    "ma": "—",
+    "at": [
+      "Griffes|+5|M|5|2d6+3|slashing",
+      "Death Glare|save|WIS:11|single target 30 ft|instant drop to 0 HP on fail",
+      "Create Whirlpool|special|water only|area:40 radius|DC15 STR save or be pulled towards center",
+      "Claws|+5|M|5|2d6+3|slashing",
+      "Death Glare|save|WIS:15|single target 30 ft|instant drop to 0 HP on fail|frightened prerequisite",
+      "Create Whirlpool|special|water only|area:40 radius|DC15 STR save or be pulled towards center/moved"
+    ],
+    "env": "côtes, récifs, eaux sombres"
+  },
+  {
+    "id": "sprite",
+    "n": "Sprite",
+    "s": "SRD 5.1",
+    "ty": "fey",
+    "sz": "T",
+    "al": "NG",
+    "cr": 0.25,
+    "ac": 15,
+    "hp": "2 (1d4)",
+    "sp": "10w,40f",
+    "ab": "3/18/10/14/13/11",
+    "st": {
+      "STR": 3,
+      "DEX": 18,
+      "CON": 10,
+      "INT": 14,
+      "WIS": 13,
+      "CHA": 11
+    },
+    "sk": "Perception:+3,Discrétion:+8",
+    "sn": "pp:13",
+    "lg": "Sylvan",
+    "tr": [
+      "heart_sight|Vue du cœur|Connaît l'état émotionnel d'une créature touchée.",
+      "invisibility|Invisibilité|Peut devenir invisible jusqu'à attaquer.",
+      "heart_sight|Vue du cœur|Connaît l'état émotionnel d'une créature touchée; échec SAG 10 révèle aussi l'alignement.",
+      "invisibility|Invisibilité|Peut devenir invisible jusqu'à ce qu'elle attaque ou concentre un sort."
+    ],
+    "ma": "—",
+    "at": [
+      "Shortsword|+2|M|5|1|piercing",
+      "Shortbow|+6|R|40/160|1|piercing|save CON:10 poison (sleep effect)",
+      "Shortbow|+6|R|40/160|1|piercing|save CON:10 poison (may cause unconsciousness)",
+      "Longsword|+2|M|5|1|slashing",
+      "Shortbow|+6|R|40/160|1|piercing|save CON:10 poison (target may fall unconscious on low roll)"
+    ],
+    "env": "forêts anciennes, bosquets, villages féeriques"
+  },
+  {
+    "id": "pixie",
+    "n": "Pixie",
+    "s": "SRD 5.1",
+    "ty": "fey",
+    "sz": "T",
+    "al": "NG",
+    "cr": 0.25,
+    "ac": 15,
+    "hp": "1 (1d4 - 1)",
+    "sp": "10w,30f",
+    "ab": "2/20/8/10/14/15",
+    "st": {
+      "STR": 2,
+      "DEX": 20,
+      "CON": 8,
+      "INT": 10,
+      "WIS": 14,
+      "CHA": 15
+    },
+    "sk": "Perception:+4,Discrétion:+7",
+    "sn": "pp:14",
+    "lg": "Sylvan",
+    "tr": [
+      "magic_resistance|Résistance magique|Avantage aux jets de sauvegarde contre sorts et effets magiques.",
+      "innate_spellcasting|Sorts innés|Charisma-based (DC12). At will: druidcraft, dancing lights. 1/day each: confusion, detect evil and good, detect thoughts, dispel magic, entangle, fly, phantasmal force, polymorph, sleep; superior invisibility (self) at will."
+    ],
+    "ma": "—",
+    "at": [
+      "Toucher magique|special|—|—|—|Effets de sorts (voir SRD)"
+    ],
+    "env": "clairières enchantées, bosquets, collines"
+  }
+]
+[
+  {
+    "id": "imp",
+    "n": "Diablotin (Imp)",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "sz": "T",
+    "al": "LE",
+    "cr": 1,
+    "ac": 13,
+    "hp": "10 (3d4 + 3)",
+    "sp": "20w,40f",
+    "ab": "6/17/13/11/12/14",
+    "st": {
+      "STR": 6,
+      "DEX": 17,
+      "CON": 13,
+      "INT": 11,
+      "WIS": 12,
+      "CHA": 14
+    },
+    "sk": "Stealth:+5",
+    "sn": "darkvision:120,pp:10",
+    "lg": "Infernal, Common, Telepathy 60 ft.",
+    "di": "",
+    "dr": "",
+    "dv": "",
+    "ci": "poisoned? (see SRD)",
+    "tr": [
+      "shapechanger|Métaforme|Peut se transformer en rat/raven/spider (même statline).",
+      "devils_sight|Vision infernale|La magie de l'obscurité ne bloque pas sa vision."
+    ],
+    "ma": "—",
+    "at": [
+      "Sting|+5|M|5|1d4+3 + 3d6 poison|piercing+poison|CON DC11 or poisoned 1h (voir SRD)"
+    ],
+    "la": [
+      "—"
+    ],
+    "env": "plans infernaux, manoirs"
+  },
+  {
+    "id": "quasit",
+    "n": "Quasit",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "sz": "T",
+    "al": "CE",
+    "cr": 1,
+    "ac": 13,
+    "hp": "7 (2d4 + 2)",
+    "sp": "40ft,climb 40ft",
+    "ab": "5/17/10/7/10/7",
+    "st": {
+      "STR": 5,
+      "DEX": 17,
+      "CON": 10,
+      "INT": 7,
+      "WIS": 10,
+      "CHA": 7
+    },
+    "sk": "Stealth:+5",
+    "sn": "darkvision:120,pp:10",
+    "lg": "Infernal, Common, telepathy 60ft",
+    "tr": [
+      "shapechanger|Métaforme|Peut se transformer en bat, centipede, toad."
+    ],
+    "at": [
+      "Claws|+5|M|5|1d4+3|slashing",
+      "Scare (special)"
+    ],
+    "env": "cavernes, enfers"
+  },
+  {
+    "id": "dretch",
+    "n": "Dretch",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "demon",
+    "sz": "M",
+    "al": "CE",
+    "cr": 1,
+    "ac": 11,
+    "hp": "18 (4d8)",
+    "sp": "30 ft.",
+    "ab": "14/8/16/3/10/6",
+    "st": {
+      "STR": 14,
+      "DEX": 8,
+      "CON": 16,
+      "INT": 3,
+      "WIS": 10,
+      "CHA": 6
+    },
+    "sk": "",
+    "sn": "darkvision:60,pp:10",
+    "lg": "—",
+    "tr": [],
+    "at": [
+      "Bite|+2|M|5|1d6|piercing",
+      "Claws|+2|M|5|2d4|slashing"
+    ],
+    "env": "Abysses, repaires démoniaques"
+  },
+  {
+    "id": "vrock",
+    "n": "Vrock",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "demon",
+    "sz": "M",
+    "al": "CE",
+    "cr": 6,
+    "ac": 15,
+    "hp": "104 (11d8 + 55)",
+    "sp": "30 ft., fly 60 ft.",
+    "ab": "18/15/20/6/12/8",
+    "st": {
+      "STR": 18,
+      "DEX": 15,
+      "CON": 20,
+      "INT": 6,
+      "WIS": 12,
+      "CHA": 8
+    },
+    "sk": "Perception:+6",
+    "sn": "darkvision:120,pp:16",
+    "lg": "Abyssal",
+    "tr": [
+      "Spores (Unholy) etc."
+    ],
+    "at": [
+      "Beak|+8|M|5|2d8+4|piercing",
+      "Talons|+8|M|5|2d6+4|slashing",
+      "Stunning Screech|save|CON:15|cone:15|stun effect"
+    ],
+    "env": "plaines désolées, abîmes"
+  },
+  {
+    "id": "glabrezu",
+    "n": "Glabrezu",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "demon",
+    "sz": "H",
+    "al": "CE",
+    "cr": 9,
+    "ac": 17,
+    "hp": "157 (15d12 + 60)",
+    "sp": "40 ft.",
+    "ab": "21/14/18/6/12/14",
+    "st": {
+      "STR": 21,
+      "DEX": 14,
+      "CON": 18,
+      "INT": 6,
+      "WIS": 12,
+      "CHA": 14
+    },
+    "sk": "Perception:+7",
+    "sn": "darkvision:120,pp:16",
+    "lg": "Abyssal",
+    "tr": [
+      "Innate spellcasting, resistances"
+    ],
+    "at": [
+      "Claw|+10|M|10|2d8+5|slashing",
+      "Dreadful Glare|save|WIS:16|single target|fear"
+    ],
+    "env": "abîmes, repaires démoniaques"
+  },
+  {
+    "id": "hezrou",
+    "n": "Hezrou",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "demon",
+    "sz": "H",
+    "al": "CE",
+    "cr": 8,
+    "ac": 16,
+    "hp": "136 (13d12 + 52)",
+    "sp": "30 ft.",
+    "ab": "21/11/19/6/12/9",
+    "st": {
+      "STR": 21,
+      "DEX": 11,
+      "CON": 19,
+      "INT": 6,
+      "WIS": 12,
+      "CHA": 9
+    },
+    "sk": "Perception:+6",
+    "sn": "darkvision:120,pp:15",
+    "lg": "Abyssal",
+    "tr": [
+      "Poison aura? (see SRD)"
+    ],
+    "at": [
+      "Bite|+9|M|10|2d8+5|piercing",
+      "Claw|+9|M|5|2d6+5|slashing"
+    ],
+    "env": "marais infernaux, abîmes"
+  },
+  {
+    "id": "marilith",
+    "n": "Marilith",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "demon",
+    "sz": "H",
+    "al": "CE",
+    "cr": 16,
+    "ac": 18,
+    "hp": "189 (18d12 + 72)",
+    "sp": "40 ft.",
+    "ab": "22/16/20/12/14/20",
+    "st": {
+      "STR": 22,
+      "DEX": 16,
+      "CON": 20,
+      "INT": 12,
+      "WIS": 14,
+      "CHA": 20
+    },
+    "sk": "Athletics:+12,Perception:+8",
+    "sn": "darkvision:120,pp:18",
+    "lg": "Abyssal",
+    "tr": [
+      "Multiweapon master etc."
+    ],
+    "ma": "Multiattack (7 attacks)",
+    "at": [
+      "Longsword|+11|M|10|2d6+6|slashing (x6)",
+      "Tail|+11|M|15|2d8+6|bludgeoning"
+    ],
+    "env": "abîmes, armées démoniaques"
+  },
+  {
+    "id": "nalfeshnee",
+    "n": "Nalfeshnee",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "demon",
+    "sz": "H",
+    "al": "CE",
+    "cr": 13,
+    "ac": 17,
+    "hp": "184 (16d12 + 64)",
+    "sp": "30 ft.",
+    "ab": "21/10/20/7/12/19",
+    "st": {
+      "STR": 21,
+      "DEX": 10,
+      "CON": 20,
+      "INT": 7,
+      "WIS": 12,
+      "CHA": 19
+    },
+    "sk": "Perception:+8",
+    "sn": "darkvision:120,pp:17",
+    "lg": "Abyssal",
+    "tr": [
+      "Innate spellcasting, Lair actions noted"
+    ],
+    "at": [
+      "Bite|+10|M|10|2d10+6|piercing",
+      "Claw|+10|M|5|2d6+6|slashing",
+      "Horrific Visage|save|WIS:16|fear"
+    ],
+    "env": "abîmes, hauts lieux démoniaques"
+  },
+  {
+    "id": "balor",
+    "n": "Balor",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "demon",
+    "sz": "H",
+    "al": "CE",
+    "cr": 19,
+    "ac": 19,
+    "hp": "262 (21d12 + 126)",
+    "sp": "40 ft., fly 80 ft.",
+    "ab": "26/15/22/20/16/22",
+    "st": {
+      "STR": 26,
+      "DEX": 15,
+      "CON": 22,
+      "INT": 20,
+      "WIS": 16,
+      "CHA": 22
+    },
+    "sk": "Perception:+12,Intimidation:+12",
+    "sn": "truesight:120,pp:13",
+    "lg": "Abyssal, telepathy 120 ft.",
+    "tr": [
+      "fire_immunity|Immunité feu",
+      "resistances|cold, lightning; nonmagical B/P/S"
+    ],
+    "ma": "Multiattack (3 Slam or 2 Rock)",
+    "at": [
+      "Slam|+14|M|10|3d8+8|bludgeoning",
+      "Whip|+14|M|10|3d8+8 lightning?",
+      "Fire Aura|special|—|—|—|damage to nearby creatures"
+    ],
+    "la": [
+      "Legendary Actions available — see SRD (descriptions in extended version)"
+    ],
+    "env": "abîmes, royaumes démoniaques"
+  },
+  {
+    "id": "rakshasa",
+    "n": "Rakshasa",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "sz": "M",
+    "al": "LE",
+    "cr": 13,
+    "ac": 16,
+    "hp": "110 (13d8 + 52)",
+    "sp": "40 ft.",
+    "ab": "17/11/18/16/15/20",
+    "st": {
+      "STR": 17,
+      "DEX": 11,
+      "CON": 18,
+      "INT": 16,
+      "WIS": 15,
+      "CHA": 20
+    },
+    "sk": "Deception:+11,Insight:+9,Perception:+9",
+    "sn": "darkvision:60,pp:14",
+    "lg": "Common,Infernal,Telepathy 60 ft.",
+    "tr": [
+      "Limited Magic Immunity (see SRD)"
+    ],
+    "at": [
+      "Claw|+8|M|5|2d6+3|slashing",
+      "Spell-like attacks|innate spellcasting"
+    ],
+    "env": "manoirs, portails planar"
+  },
+  {
+    "id": "night_hag",
+    "n": "Sorcière nocturne",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "sz": "M",
+    "al": "CE",
+    "cr": 5,
+    "ac": 17,
+    "hp": "112 (15d8 + 45)",
+    "sp": "30 ft.",
+    "ab": "18/15/16/16/14/16",
+    "st": {
+      "STR": 18,
+      "DEX": 15,
+      "CON": 16,
+      "INT": 16,
+      "WIS": 14,
+      "CHA": 16
+    },
+    "sk": "Arcana:+7,Deception:+6,Perception:+6,Stealth:+6",
+    "sn": "darkvision:120,pp:13",
+    "lg": "Infernal,Common",
+    "tr": [
+      "Nightmare Haunting (see SRD)",
+      "Etherealness",
+      "Innate Spellcasting"
+    ],
+    "at": [
+      "Claws|+6|M|5|2d8+4|slashing",
+      "Hag's Touch special"
+    ],
+    "la": [
+      "Lair Actions (see SRD)"
+    ],
+    "env": "marais, tours maudites"
+  },
+  {
+    "id": "nightmare",
+    "n": "Cauchemar",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "sz": "L",
+    "al": "CE",
+    "cr": 3,
+    "ac": 13,
+    "hp": "68 (8d10 + 24)",
+    "sp": "60 ft., fly 90 ft.",
+    "ab": "18/15/16/10/13/15",
+    "st": {
+      "STR": 18,
+      "DEX": 15,
+      "CON": 16,
+      "INT": 10,
+      "WIS": 13,
+      "CHA": 15
+    },
+    "sk": "",
+    "sn": "darkvision:60,pp:11",
+    "lg": "Infernal",
+    "tr": [
+      "Fire Immunity",
+      "Nightmare Mount features"
+    ],
+    "at": [
+      "Hooves|+6|M|5|2d8+4 + 2d6 fire|bludgeoning+fire"
+    ],
+    "env": "plans infernaux"
+  },
+  {
+    "id": "barbed_devil",
+    "n": "Diable barbelé",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "devil",
+    "sz": "M",
+    "al": "LE",
+    "cr": 5,
+    "ac": 15,
+    "hp": "110 (13d8 + 52)",
+    "sp": "30 ft.",
+    "ab": "18/14/18/8/12/12",
+    "st": {
+      "STR": 18,
+      "DEX": 14,
+      "CON": 18,
+      "INT": 8,
+      "WIS": 12,
+      "CHA": 12
+    },
+    "sk": "Perception:+4",
+    "sn": "darkvision:120,pp:11",
+    "lg": "Infernal",
+    "tr": [
+      "Barbed retort (spiky)",
+      "Magic Resistance"
+    ],
+    "at": [
+      "Spear|+7|M|10|1d8+4|piercing + barbs (damage on pull)"
+    ],
+    "env": "forteresses infernales"
+  },
+  {
+    "id": "bearded_devil",
+    "n": "Diable barbu",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "devil",
+    "sz": "M",
+    "al": "LE",
+    "cr": 3,
+    "ac": 13,
+    "hp": "52 (8d8 + 16)",
+    "sp": "30 ft.",
+    "ab": "17/12/14/8/11/12",
+    "st": {
+      "STR": 17,
+      "DEX": 12,
+      "CON": 14,
+      "INT": 8,
+      "WIS": 11,
+      "CHA": 12
+    },
+    "sk": "—",
+    "sn": "darkvision:120,pp:10",
+    "lg": "Infernal",
+    "tr": [],
+    "at": [
+      "Polearm|+5|M|10|1d10+3|piercing",
+      "Smoke cloud (special)"
+    ],
+    "env": "plaines infernales"
+  },
+  {
+    "id": "bone_devil",
+    "n": "Osyluth (Diable osseux)",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "devil",
+    "sz": "M",
+    "al": "LE",
+    "cr": 9,
+    "ac": 19,
+    "hp": "142 (15d8 + 75)",
+    "sp": "30 ft.",
+    "ab": "18/14/20/8/16/14",
+    "st": {
+      "STR": 18,
+      "DEX": 14,
+      "CON": 20,
+      "INT": 8,
+      "WIS": 16,
+      "CHA": 14
+    },
+    "sk": "Perception:+7",
+    "sn": "darkvision:120,pp:11",
+    "lg": "Infernal",
+    "tr": [
+      "Magic Resistance",
+      "Spellcasting"
+    ],
+    "at": [
+      "Claw|+8|M|5|2d6+4|slashing",
+      "Tail|+8|M|10|2d8+4|bludgeoning"
+    ],
+    "env": "forteresses, champs de bataille infernaux"
+  },
+  {
+    "id": "chain_devil",
+    "n": "Diable enchaîné (Kyton)",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "devil",
+    "sz": "M",
+    "al": "LE",
+    "cr": 8,
+    "ac": 16,
+    "hp": "110 (13d8 + 52)",
+    "sp": "30 ft.",
+    "ab": "18/16/18/8/12/16",
+    "st": {
+      "STR": 18,
+      "DEX": 16,
+      "CON": 18,
+      "INT": 8,
+      "WIS": 12,
+      "CHA": 16
+    },
+    "sk": "Athletics:+8",
+    "sn": "darkvision:120,pp:11",
+    "lg": "Infernal",
+    "tr": [
+      "Chains master (restrain)"
+    ],
+    "at": [
+      "Chains|+8|M|10|2d6+5|bludgeoning|restrain effects"
+    ],
+    "env": "prisons infernales"
+  },
+  {
+    "id": "erinyes",
+    "n": "Erinyes",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "devil",
+    "sz": "M",
+    "al": "LE",
+    "cr": 6,
+    "ac": 18,
+    "hp": "153 (18d8 + 72)",
+    "sp": "30 ft., fly 60 ft.",
+    "ab": "20/14/18/10/16/20",
+    "st": {
+      "STR": 20,
+      "DEX": 14,
+      "CON": 18,
+      "INT": 10,
+      "WIS": 16,
+      "CHA": 20
+    },
+    "sk": "Perception:+8",
+    "sn": "darkvision:120,pp:12",
+    "lg": "Infernal",
+    "tr": [
+      "Magic Resistance",
+      "Spellcasting"
+    ],
+    "at": [
+      "Longsword|+9|M|5|1d8+5|slashing + dagger thrown"
+    ],
+    "env": "battlegrounds, palaces"
+  },
+  {
+    "id": "horned_devil",
+    "n": "Cornugon (Horned Devil)",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "devil",
+    "sz": "H",
+    "al": "LE",
+    "cr": 11,
+    "ac": 18,
+    "hp": "178 (17d12 + 68)",
+    "sp": "30 ft., fly 60 ft.",
+    "ab": "25/10/23/12/15/19",
+    "st": {
+      "STR": 25,
+      "DEX": 10,
+      "CON": 23,
+      "INT": 12,
+      "WIS": 15,
+      "CHA": 19
+    },
+    "sk": "Perception:+9",
+    "sn": "darkvision:120,pp:14",
+    "lg": "Infernal",
+    "tr": [
+      "Fire resistance, magic resistance"
+    ],
+    "at": [
+      "Glaive|+13|M|10|2d6+7|slashing plus fire or necrotic"
+    ],
+    "env": "forteresses, champs de bataille"
+  },
+  {
+    "id": "ice_devil",
+    "n": "Diable de glace (Gelugon)",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "devil",
+    "sz": "H",
+    "al": "LE",
+    "cr": 14,
+    "ac": 19,
+    "hp": "189 (18d12 + 72)",
+    "sp": "40 ft., fly 60 ft.",
+    "ab": "25/10/23/12/15/21",
+    "st": {
+      "STR": 25,
+      "DEX": 10,
+      "CON": 23,
+      "INT": 12,
+      "WIS": 15,
+      "CHA": 21
+    },
+    "sk": "Perception:+9,Intimidation:+10",
+    "sn": "truesight:120,pp:15",
+    "lg": "Infernal",
+    "tr": [
+      "Cold immunity, magic resistance"
+    ],
+    "at": [
+      "Greatspear|+13|M|10|3d6+8|piercing + cold effects"
+    ],
+    "env": "frozen wastelands, infernal fortresses"
+  },
+  {
+    "id": "lemure",
+    "n": "Lémure",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "devil",
+    "sz": "T",
+    "al": "LE",
+    "cr": 0,
+    "ac": 7,
+    "hp": "13 (3d4 + 3)",
+    "sp": "20 ft.",
+    "ab": "3/6/12/1/3/1",
+    "st": {
+      "STR": 3,
+      "DEX": 6,
+      "CON": 12,
+      "INT": 1,
+      "WIS": 3,
+      "CHA": 1
+    },
+    "tr": [],
+    "at": [
+      "Touch|+0|M|5|1d4|bludgeoning"
+    ],
+    "env": "soulscapes, hells"
+  },
+  {
+    "id": "pit_fiend",
+    "n": "Démon de la fosse (Pit Fiend)",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "subty": "devil",
+    "sz": "L",
+    "al": "LE",
+    "cr": 20,
+    "ac": 19,
+    "hp": "300 (24d10 + 168)",
+    "sp": "30 ft., fly 60 ft.",
+    "ab": "26/14/24/22/18/24",
+    "st": {
+      "STR": 26,
+      "DEX": 14,
+      "CON": 24,
+      "INT": 22,
+      "WIS": 18,
+      "CHA": 24
+    },
+    "sk": "Perception:+12",
+    "sn": "truesight:120,pp:18",
+    "lg": "Infernal",
+    "tr": [
+      "Legendary actions, Hellfire Spellcasting (Recharge 4-6)"
+    ],
+    "ma": "Multiattack (Bite + 2 Claws + Fiery Mace)",
+    "at": [
+      "Bite|+14|M|10|3d6+8|piercing (CON DC21 poison)",
+      "Devilish Claw|+14|M|10|4d8+8|necrotic",
+      "Fiery Mace|+14|M|10|4d6+8 + 6d6 fire",
+      "Hellfire (Recharge 4-6)|special|spellcasting (see SRD)"
+    ],
+    "la": [
+      "Legendary Actions (see SRD)",
+      "Lair Actions (see SRD)"
+    ],
+    "env": "Inferno fortresses, battlefields"
+  },
+  {
+    "id": "succubus_incubus",
+    "n": "Succube / Incube",
+    "s": "SRD 5.1",
+    "ty": "fiend",
+    "sz": "M",
+    "al": "CE",
+    "cr": 4,
+    "ac": 15,
+    "hp": "66 (12d8 + 12)",
+    "sp": "30 ft., fly 60 ft.",
+    "ab": "8/15/14/17/12/20",
+    "st": {
+      "STR": 8,
+      "DEX": 15,
+      "CON": 14,
+      "INT": 17,
+      "WIS": 12,
+      "CHA": 20
+    },
+    "sk": "Deception:+8,Persuasion:+9",
+    "sn": "darkvision:60,pp:14",
+    "lg": "Infernal,Common",
+    "tr": [
+      "Charm, Draining Kiss (special)",
+      "Shapechanger (charm forms)"
+    ],
+    "at": [
+      "Claw|+6|M|5|1d4+3|slashing",
+      "Draining Kiss|special|touch: 4d6 necrotic and reduce target maximum HP (see SRD)"
+    ],
+    "env": "seductive lairs, cities"
+  }
+]
+[
+  {
+    "id": "hill_giant",
+    "n": "Géant des collines",
+    "s": "SRD 5.1",
+    "ty": "giant",
+    "sz": "H",
+    "al": "CE",
+    "cr": 5,
+    "ac": 13,
+    "hp": "105 (10d12 + 40)",
+    "sp": "40 ft.",
+    "ab": "21/8/19/5/9/6",
+    "st": {
+      "STR": 21,
+      "DEX": 8,
+      "CON": 19,
+      "INT": 5,
+      "WIS": 9,
+      "CHA": 6
+    },
+    "sk": "Perception:+2",
+    "sn": "pp:12",
+    "lg": "Géant",
+    "di": "",
+    "dr": "",
+    "dv": "",
+    "ci": "",
+    "tr": [
+      "—"
+    ],
+    "ma": "Multiattack (2x Massue)",
+    "at": [
+      "Massue|+8|M|10|3d8+5|bludgeoning",
+      "Rocher|+8|R|60/240|3d10+5|bludgeoning"
+    ],
+    "la": [
+      "—"
+    ],
+    "env": "collines, terres sauvages"
+  },
+  {
+    "id": "stone_giant",
+    "n": "Géant des pierres",
+    "s": "SRD 5.1",
+    "ty": "giant",
+    "sz": "H",
+    "al": "N",
+    "cr": 7,
+    "ac": 17,
+    "hp": "126 (11d12 + 55)",
+    "sp": "40 ft.",
+    "ab": "23/15/20/10/12/9",
+    "st": {
+      "STR": 23,
+      "DEX": 15,
+      "CON": 20,
+      "INT": 10,
+      "WIS": 12,
+      "CHA": 9
+    },
+    "sk": "Athletics:+12, Perception:+4",
+    "sn": "darkvision:60,pp:14",
+    "lg": "Géant",
+    "di": "",
+    "dr": "",
+    "dv": "",
+    "ci": "",
+    "tr": [
+      "stone_camouflage|Camouflage pierre|Avantage aux jets de DEX (Discrétion) pour se cacher dans terrain rocheux."
+    ],
+    "ma": "Multiattack (2x Massue)",
+    "at": [
+      "Massue|+9|M|15|3d8+6|bludgeoning",
+      "Rocher|+9|R|60/240|4d10+6|bludgeoning|DC17 STR to avoid prone"
+    ],
+    "la": [
+      "Rock Catching (see SRD)"
+    ],
+    "env": "montagnes, falaises, gorges"
+  },
+  {
+    "id": "frost_giant",
+    "n": "Géant des gelées",
+    "s": "SRD 5.1",
+    "ty": "giant",
+    "sz": "H",
+    "al": "NE",
+    "cr": 8,
+    "ac": 15,
+    "hp": "138 (12d12 + 60)",
+    "sp": "40 ft.",
+    "ab": "23/9/21/9/10/12",
+    "st": {
+      "STR": 23,
+      "DEX": 9,
+      "CON": 21,
+      "INT": 9,
+      "WIS": 10,
+      "CHA": 12
+    },
+    "sk": "Athletics:+9, Perception:+3",
+    "sn": "pp:13",
+    "lg": "Géant",
+    "di": "cold (resistances noted)",
+    "dr": "",
+    "dv": "",
+    "ci": "",
+    "tr": [
+      "amphibious? (see SRD for specific traits)"
+    ],
+    "ma": "Multiattack (2x Hache lourde)",
+    "at": [
+      "Hache lourde|+9|M|10|3d12+6|slashing",
+      "Rocher|+9|R|60/240|4d10+6|bludgeoning"
+    ],
+    "la": [
+      "—"
+    ],
+    "env": "toundra, montagnes gelées"
+  },
+  {
+    "id": "fire_giant",
+    "n": "Géant du feu",
+    "s": "SRD 5.1",
+    "ty": "giant",
+    "sz": "H",
+    "al": "LE",
+    "cr": 9,
+    "ac": 18,
+    "hp": "162 (13d12 + 78)",
+    "sp": "30 ft.",
+    "ab": "25/9/23/10/14/13",
+    "st": {
+      "STR": 25,
+      "DEX": 9,
+      "CON": 23,
+      "INT": 10,
+      "WIS": 14,
+      "CHA": 13
+    },
+    "sk": "Athletics:+11, Perception:+6",
+    "sn": "pp:16",
+    "lg": "Géant",
+    "di": "fire (immunity noted on some SRD versions)",
+    "dr": "",
+    "dv": "",
+    "ci": "",
+    "tr": [
+      "master_craftsman|Maître forgeron|Expert en armures/armes (fluff SRD)."
+    ],
+    "ma": "Multiattack (2x Épée lourde)",
+    "at": [
+      "Épée lourde|+11|M|10|6d6+7|slashing",
+      "Rocher|+11|R|60/240|4d10+7|bludgeoning"
+    ],
+    "la": [
+      "—"
+    ],
+    "env": "volcans, forges, montagnes de feu"
+  },
+  {
+    "id": "cloud_giant",
+    "n": "Géant des nuages",
+    "s": "SRD 5.1",
+    "ty": "giant",
+    "sz": "H",
+    "al": "N",
+    "cr": 9,
+    "ac": 14,
+    "hp": "200 (16d12 + 96)",
+    "sp": "40 ft.",
+    "ab": "27/10/22/12/16/16",
+    "st": {
+      "STR": 27,
+      "DEX": 10,
+      "CON": 22,
+      "INT": 12,
+      "WIS": 16,
+      "CHA": 16
+    },
+    "sk": "Insight:+7, Perception:+7",
+    "sn": "pp:17",
+    "lg": "Common, Giant",
+    "di": "",
+    "dr": "",
+    "dv": "",
+    "ci": "",
+    "tr": [
+      "innate_spellcasting|Sorts innés|Detect magic, fog cloud at will; feather fall, fly, misty step 3/day; control weather 1/day."
+    ],
+    "ma": "Multiattack (2x Masse d'arme / Morningstar)",
+    "at": [
+      "Massue (morningstar)|+12|M|10|3d8+8|piercing",
+      "Rocher|+12|R|60/240|4d10+8|bludgeoning"
+    ],
+    "la": [
+      "—"
+    ],
+    "env": "îles célestes, sommets nuageux"
+  },
+  {
+    "id": "storm_giant",
+    "n": "Géant de la tempête",
+    "s": "SRD 5.1",
+    "ty": "giant",
+    "sz": "H",
+    "al": "CG",
+    "cr": 13,
+    "ac": 16,
+    "hp": "230 (20d12 + 100)",
+    "sp": "50 ft., swim 50 ft.",
+    "ab": "29/14/20/16/18/18",
+    "st": {
+      "STR": 29,
+      "DEX": 14,
+      "CON": 20,
+      "INT": 16,
+      "WIS": 18,
+      "CHA": 18
+    },
+    "sk": "Arcana:+8, Athletics:+14, Perception:+9",
+    "sn": "truesight:120,pp:19",
+    "lg": "Common, Giant",
+    "di": "lightning, thunder (immunities noted)",
+    "dr": "cold (resistance)",
+    "dv": "",
+    "ci": "",
+    "tr": [
+      "amphibious|Amphibie|Peut respirer air et eau.",
+      "innate_spellcasting|Sorts innés|Voir SRD pour la liste et DC."
+    ],
+    "ma": "Multiattack (2x Épée lourde)",
+    "at": [
+      "Épée lourde|+14|M|10|6d6+9|slashing",
+      "Rocher|+14|R|60/240|4d12+9|bludgeoning"
+    ],
+    "la": [
+      "—"
+    ],
+    "env": "mers profondes, falaises océaniques"
+  }
+]
+[
+  {
+    "id": "bulette",
+    "n": "Bulette",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "L",
+    "al": "U",
+    "cr": 5,
+    "ac": 17,
+    "hp": "94 (9d10 + 45)",
+    "sp": "40 ft., burrow 40 ft.",
+    "ab": "19/11/21/2/10/5",
+    "st": {
+      "STR": 19,
+      "DEX": 11,
+      "CON": 21,
+      "INT": 2,
+      "WIS": 10,
+      "CHA": 5
+    },
+    "sk": "Perception:+6",
+    "sn": "darkvision:60,tremorsense:60,pp:16",
+    "lg": "--",
+    "tr": [
+      "standing_leap|Bond debout|Long jump jusqu'à 30 ft, high jump 15 ft."
+    ],
+    "ma": "—",
+    "at": [
+      "Morsure|+7|M|5|30 (4d12 + 4)|piercing",
+      "Deadly Leap|special"
+    ],
+    "env": "plaines, collines"
+  },
+  {
+    "id": "chimera",
+    "n": "Chimère",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "H",
+    "al": "CE",
+    "cr": 6,
+    "ac": 14,
+    "hp": "114 (12d12 + 24)",
+    "sp": "30 ft., fly 60 ft.",
+    "ab": "19/11/17/8/12/11",
+    "st": {
+      "STR": 19,
+      "DEX": 11,
+      "CON": 15,
+      "INT": 3,
+      "WIS": 14,
+      "CHA": 10
+    },
+    "sk": "Perception:+4",
+    "sn": "darkvision:60,pp:10",
+    "lg": "--",
+    "tr": [
+      "multihead|Trois têtes|Peut attaquer avec plusieurs têtes; fire breath remplace une attaque."
+    ],
+    "ma": "Multiattack (Bite, Horns, Claws)",
+    "at": [
+      "Morsure|+7|M|5|11 (2d6 + 4)|piercing",
+      "Corne|+7|M|5|10 (1d12 + 4)|bludgeoning",
+      "Griffes|+7|M|5|8 (1d8 + 4)|slashing",
+      "Souffle de feu|save|DEX:15|30-ft cone|6d8|fire"
+    ],
+    "env": "montagnes, cavernes"
+  },
+  {
+    "id": "manticore",
+    "n": "Manticore",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "L",
+    "al": "LE",
+    "cr": 3,
+    "ac": 14,
+    "hp": "68 (8d10 + 24)",
+    "sp": "30 ft., fly 50 ft.",
+    "ab": "17/16/17/7/12/8",
+    "st": {
+      "STR": 17,
+      "DEX": 16,
+      "CON": 17,
+      "INT": 7,
+      "WIS": 12,
+      "CHA": 8
+    },
+    "sk": "",
+    "sn": "darkvision:60,pp:11",
+    "lg": "--",
+    "tr": [
+      "tail_spike_regrowth|Répoussement d'épines|Possède 24 épines de queue; elles repoussent après un repos long."
+    ],
+    "ma": "Multiattack (Bite + 2 Claws or 3 Tail Spikes)",
+    "at": [
+      "Morsure|+5|M|5|7 (1d8 + 3)|piercing",
+      "Griffe|+5|M|5|6 (1d6 + 3)|slashing",
+      "Epines de queue|+5|R|100/200|7 (1d8 + 3)|piercing"
+    ],
+    "env": "plaines, collines"
+  },
+  {
+    "id": "owlbear",
+    "n": "Owlbear",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "L",
+    "al": "U",
+    "cr": 3,
+    "ac": 13,
+    "hp": "59 (7d10 + 21)",
+    "sp": "40 ft.",
+    "ab": "20/11/17/10/12/7",
+    "st": {
+      "STR": 20,
+      "DEX": 11,
+      "CON": 17,
+      "INT": 3,
+      "WIS": 12,
+      "CHA": 7
+    },
+    "sk": "Perception:+3",
+    "sn": "darkvision:60,pp:13",
+    "lg": "--",
+    "tr": [],
+    "ma": "Multiattack (Beak + Claws)",
+    "at": [
+      "Bec|+7|M|5|10 (1d10 + 5)|piercing",
+      "Griffes|+7|M|5|14 (2d8 + 5)|slashing"
+    ],
+    "env": "forêts, ruines"
+  },
+  {
+    "id": "ankheg",
+    "n": "Ankheg",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "L",
+    "al": "U",
+    "cr": 2,
+    "ac": 14,
+    "hp": "39 (6d10 + 6)",
+    "sp": "30 ft., burrow 10 ft.",
+    "ab": "17/13/13/2/10/6",
+    "st": {
+      "STR": 17,
+      "DEX": 13,
+      "CON": 13,
+      "INT": 2,
+      "WIS": 13,
+      "CHA": 6
+    },
+    "sk": "Perception:+3",
+    "sn": "tremorsense:60,pp:11",
+    "lg": "--",
+    "tr": [
+      "acid_spray|Jet d'acide|Peut cracher de l'acide (voir SRD).",
+      "burrow_launch|Propulsion souterraine|Peut creuser et surgir pour surprendre."
+    ],
+    "ma": "—",
+    "at": [
+      "Morsure|+5|M|5|10 (1d10 + 5)|piercing + 3d6 acid"
+    ],
+    "env": "champs, tunnels"
+  },
+  {
+    "id": "basilisk",
+    "n": "Basilic",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "M",
+    "al": "U",
+    "cr": 3,
+    "ac": 15,
+    "hp": "52 (8d8 + 16)",
+    "sp": "30 ft.",
+    "ab": "16/12/15/2/10/7",
+    "st": {
+      "STR": 16,
+      "DEX": 12,
+      "CON": 15,
+      "INT": 2,
+      "WIS": 8,
+      "CHA": 7
+    },
+    "sk": "",
+    "sn": "darkvision:60,pp:9",
+    "lg": "--",
+    "tr": [
+      "petrifying_gaze|Regard pétrifiant|Peut transformer en pierre (voir SRD)."
+    ],
+    "ma": "—",
+    "at": [
+      "Morsure|+5|M|5|6 (1d6 + 3)|piercing + petrify on fail"
+    ],
+    "env": "ruines, cavernes"
+  },
+  {
+    "id": "behir",
+    "n": "Behir",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "H",
+    "al": "CE",
+    "cr": 11,
+    "ac": 17,
+    "hp": "168 (16d12 + 64)",
+    "sp": "50 ft., climb 40 ft.",
+    "ab": "21/14/19/7/12/12",
+    "st": {
+      "STR": 21,
+      "DEX": 14,
+      "CON": 19,
+      "INT": 5,
+      "WIS": 12,
+      "CHA": 12
+    },
+    "sk": "Perception:+7",
+    "sn": "darkvision:60,pp:13",
+    "lg": "--",
+    "tr": [
+      "lightning_breath|Souffle électrique|Ligne de foudre (voir SRD)."
+    ],
+    "ma": "Multiattack (Bite + 2 Constrict)",
+    "at": [
+      "Morsure|+10|M|10|2d10+5|piercing",
+      "Constrict|+10|M|5|2d8+5|bludgeoning and grapple",
+      "Souffle de foudre|save|DEX:16|line:60x5|12d10|lightning"
+    ],
+    "env": "montagnes, cavernes"
+  },
+  {
+    "id": "remorhaz",
+    "n": "Remorhaz",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "G",
+    "al": "U",
+    "cr": 11,
+    "ac": 17,
+    "hp": "195 (17d12 + 85)",
+    "sp": "30 ft.",
+    "ab": "23/8/21/2/12/9",
+    "st": {
+      "STR": 23,
+      "DEX": 8,
+      "CON": 21,
+      "INT": 1,
+      "WIS": 12,
+      "CHA": 9
+    },
+    "sk": "",
+    "sn": "--",
+    "lg": "--",
+    "tr": [
+      "heat_aura|Aura de chaleur|Inflige des dégâts de feu aux créatures en contact (voir SRD)."
+    ],
+    "ma": "—",
+    "at": [
+      "Morsure|+11|M|10|3d10+6|piercing"
+    ],
+    "env": "régions arctiques, sols gelés"
+  },
+  {
+    "id": "hydra",
+    "n": "Hydre",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "H",
+    "al": "U",
+    "cr": 8,
+    "ac": 15,
+    "hp": "172 (15d12 + 75)",
+    "sp": "30 ft., swim 30 ft.",
+    "ab": "20/12/21/2/12/9",
+    "st": {
+      "STR": 20,
+      "DEX": 12,
+      "CON": 21,
+      "INT": 2,
+      "WIS": 10,
+      "CHA": 7
+    },
+    "sk": "Perception:+4",
+    "sn": "darkvision:60,pp:11",
+    "lg": "--",
+    "tr": [
+      "multiple_heads|Têtes multiples|Peut attaquer plusieurs fois; têtes repoussent (voir SRD)."
+    ],
+    "ma": "Multiattack (Bite per head)",
+    "at": [
+      "Morsure|+8|M|10|10 (1d10 + 5)|piercing per head"
+    ],
+    "env": "marais, lacs"
+  },
+  {
+    "id": "roc",
+    "n": "Roc",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "G",
+    "al": "U",
+    "cr": 11,
+    "ac": 15,
+    "hp": "248 (16d20 + 96)",
+    "sp": "20 ft., fly 120 ft.",
+    "ab": "28/10/26/7/12/9",
+    "st": {
+      "STR": 28,
+      "DEX": 10,
+      "CON": 26,
+      "INT": 3,
+      "WIS": 10,
+      "CHA": 7
+    },
+    "sk": "",
+    "sn": "--",
+    "lg": "--",
+    "tr": [
+      "colossal_flight|Vol colossal|Peut saisir et emporter des créatures (voir SRD)."
+    ],
+    "ma": "—",
+    "at": [
+      "Slam|+14|M|10|10d6+8|bludgeoning"
+    ],
+    "env": "montagnes, falaises"
+  },
+  {
+    "id": "minotaur",
+    "n": "Minotaure",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "M",
+    "al": "CE",
+    "cr": 3,
+    "ac": 14,
+    "hp": "76 (9d10 + 27)",
+    "sp": "40 ft.",
+    "ab": "20/11/17/7/13/9",
+    "st": {
+      "STR": 20,
+      "DEX": 11,
+      "CON": 17,
+      "INT": 7,
+      "WIS": 16,
+      "CHA": 9
+    },
+    "sk": "Perception:+3,Survival:+3",
+    "sn": "darkvision:60,pp:11",
+    "lg": "--",
+    "tr": [
+      "labyrinthine_recall|Mémoire labyrinthique|Peut retrouver son chemin."
+    ],
+    "ma": "—",
+    "at": [
+      "Grande hache|+6|M|5|3d12+4|slashing",
+      "Cornes|+6|M|5|1d8+4|piercing"
+    ],
+    "env": "ruines, labyrinthes"
+  },
+  {
+    "id": "medusa",
+    "n": "Méduse",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "M",
+    "al": "LE",
+    "cr": 6,
+    "ac": 15,
+    "hp": "127 (15d8 + 60)",
+    "sp": "30 ft.",
+    "ab": "18/12/20/8/14/14",
+    "st": {
+      "STR": 18,
+      "DEX": 12,
+      "CON": 20,
+      "INT": 12,
+      "WIS": 15,
+      "CHA": 14
+    },
+    "sk": "Perception:+5",
+    "sn": "darkvision:60,pp:14",
+    "lg": "--",
+    "tr": [
+      "petrifying_gaze|Regard pétrifiant|Peut pétrifier (voir SRD)."
+    ],
+    "ma": "—",
+    "at": [
+      "Snake Hair bites and Petrify gaze|special"
+    ],
+    "env": "ruines anciennes, temples"
+  },
+  {
+    "id": "griffon",
+    "n": "Griffon",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "L",
+    "al": "U",
+    "cr": 2,
+    "ac": 12,
+    "hp": "59 (7d10 + 21)",
+    "sp": "30 ft., fly 80 ft.",
+    "ab": "17/13/15/6/12/8",
+    "st": {
+      "STR": 17,
+      "DEX": 13,
+      "CON": 15,
+      "INT": 2,
+      "WIS": 12,
+      "CHA": 8
+    },
+    "sk": "",
+    "sn": "--",
+    "lg": "--",
+    "tr": [],
+    "ma": "Multiattack (Beak + Claws)",
+    "at": [
+      "Bec|+5|M|5|10 (1d10 + 5)|piercing",
+      "Griffes|+5|M|5|11 (2d6 + 4)|slashing"
+    ],
+    "env": "montagnes, plaines"
+  },
+  {
+    "id": "harpy",
+    "n": "Harpy",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "M",
+    "al": "CE",
+    "cr": 1,
+    "ac": 11,
+    "hp": "38 (7d8)",
+    "sp": "20 ft., fly 40 ft.",
+    "ab": "12/13/11/7/10/9",
+    "st": {
+      "STR": 12,
+      "DEX": 13,
+      "CON": 11,
+      "INT": 7,
+      "WIS": 10,
+      "CHA": 9
+    },
+    "sk": "",
+    "sn": "--",
+    "lg": "--",
+    "tr": [
+      "luring_song|Chant attirant|Peut charmer par chant."
+    ],
+    "ma": "—",
+    "at": [
+      "Club|+2|M|5|1d4+1|bludgeoning"
+    ],
+    "env": "côtes, falaises"
+  },
+  {
+    "id": "hippogriff",
+    "n": "Hippogriffe",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "L",
+    "al": "U",
+    "cr": 1,
+    "ac": 11,
+    "hp": "19 (3d10 + 3)",
+    "sp": "40 ft., fly 60 ft.",
+    "ab": "17/13/12/6/12/8",
+    "st": {
+      "STR": 17,
+      "DEX": 13,
+      "CON": 12,
+      "INT": 6,
+      "WIS": 12,
+      "CHA": 8
+    },
+    "sk": "",
+    "sn": "--",
+    "lg": "--",
+    "tr": [],
+    "ma": "Multiattack (Beak + Claws)",
+    "at": [
+      "Bec|+5|M|5|1d10+3|piercing",
+      "Griffes|+5|M|5|2d6+3|slashing"
+    ],
+    "env": "plaines, falaises"
+  },
+  {
+    "id": "roper",
+    "n": "Enlaceur (Roper)",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "L",
+    "al": "NE",
+    "cr": 5,
+    "ac": 20,
+    "hp": "93 (11d10 + 33)",
+    "sp": "10 ft., climb 10 ft.",
+    "ab": "18/8/16/5/12/9",
+    "st": {
+      "STR": 18,
+      "DEX": 8,
+      "CON": 16,
+      "INT": 7,
+      "WIS": 13,
+      "CHA": 9
+    },
+    "sk": "",
+    "sn": "darkvision:60,pp:11",
+    "lg": "--",
+    "tr": [
+      "grappling_tendrils|Tentacules enchevêtrants|Peut immobiliser via tentacules."
+    ],
+    "ma": "Multiattack (4 Tendrils)",
+    "at": [
+      "Tendril|+6|M|15|2d6+4|piercing plus grapple",
+      "Boulder|+6|R|60/240|2d10+4|bludgeoning"
+    ],
+    "env": "souterrain, ruines"
+  },
+  {
+    "id": "rust_monster",
+    "n": "Monstre de rouille",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "M",
+    "al": "U",
+    "cr": 1,
+    "ac": 14,
+    "hp": "27 (6d8)",
+    "sp": "30 ft.",
+    "ab": "10/15/11/2/12/6",
+    "st": {
+      "STR": 10,
+      "DEX": 15,
+      "CON": 11,
+      "INT": 2,
+      "WIS": 12,
+      "CHA": 6
+    },
+    "sk": "",
+    "sn": "--",
+    "lg": "--",
+    "tr": [
+      "rusting_touch|Toucher corrosif|Détruit armures et armes métalliques au contact."
+    ],
+    "ma": "—",
+    "at": [
+      "Antenna|+3|M|5|1d4|piercing plus rust effect"
+    ],
+    "env": "ruines, donjons"
+  },
+  {
+    "id": "purple_worm",
+    "n": "Ver pourpre",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "G",
+    "al": "U",
+    "cr": 15,
+    "ac": 18,
+    "hp": "247 (15d20 + 90)",
+    "sp": "50w,30burrow",
+    "ab": "28/7/26/1/8/4",
+    "st": { "STR": 28, "DEX": 7, "CON": 26, "INT": 1, "WIS": 8, "CHA": 4 },
+    "sk": "—",
+    "sn": "blindsight:30,tremorsense:60,pp:9",
+    "lg": "—",
+    "di": "",
+    "dr": "—",
+    "dv": "",
+    "ci": "",
+    "tr": [
+      "tunneler|Tunnelier|Peut creuser à travers la terre et la pierre et laisse derrière lui un tunnel."
+    ],
+    "ma": "Multiattack (Bite + Tail Stinger)",
+    "at": [
+      "Bite|+14|M|10|22 (3d8+9)|piercing|Large ou moins : DEX 19 sinon avalé; avalé: 21 (6d6) acid/round",
+      "Tail Stinger|+14|M|10|19 (3d6+9)|piercing|CON 19 → 42 (12d6) poison, moitié si réussite"
+    ],
+    "env": "souterrain, cavernes profondes"
+  },
+  {
+    "id": "tarrasque",
+    "n": "Tarrasque",
+    "s": "SRD 5.1",
+    "ty": "monstrosity",
+    "sz": "G",
+    "al": "U",
+    "cr": 30,
+    "ac": 25,
+    "hp": "676 (33d20 + 330)",
+    "sp": "40w",
+    "ab": "30/11/30/3/11/11",
+    "st": { "STR": 30, "DEX": 11, "CON": 30, "INT": 3, "WIS": 11, "CHA": 11 },
+    "sk": "—",
+    "sn": "blindsight:120,pp:10",
+    "lg": "—",
+    "di": "fire,poison; bludgeoning/piercing/slashing from nonmagical attacks",
+    "dr": "—",
+    "dv": "",
+    "ci": "charmed,frightened,paralyzed,poisoned",
+    "tr": [
+      "legendary_resistance|Résistance légendaire (3/jour)|Réussit un JS à la place d'un échec.",
+      "frightful_presence|Présence terrifiante|CD 17 SAG pour éviter d’être effrayé.",
+      "reflective_carapace|Carapace réfléchissante|Certains sorts à distance/ligne/Projectiles magiques n’ont pas d’effet; sur 6 au d6, ils sont renvoyés (voir SRD).",
+      "siege_monster|Monstre de siège|Double dégâts aux objets et structures."
+    ],
+    "ma": "Multiattack (Bite + 2 Claws + Horns + Tail; peut utiliser Swallow à la place de Bite)",
+    "at": [
+      "Bite|+19|M|10|36 (4d12+10)|piercing|grappled (escape DC 20) si Large ou moins; peut avaler la cible",
+      "Claw|+19|M|10|28 (4d8+10)|slashing",
+      "Horns|+19|M|10|27 (3d10+10)|piercing",
+      "Tail|+19|M|20|24 (4d6+10)|bludgeoning",
+      "Swallow|special|—|—|56 (16d6)|acid|cible avalée (aveugle/retenue, couvert total); dégâts au début de chaque tour"
+    ],
+    "la": [
+      "Attack (griffe/queue)",
+      "Move (jusqu’à la moitié de sa vitesse)",
+      "Chomp (2 actions) : morsure ou Swallow"
+    ],
+    "env": "régions mythiques, dévastations"
+  }
+]
+[
+  {
+    "id": "skeleton",
+    "n": "Squelette",
+    "s": "SRD 5.1",
+    "ty": "undead",
+    "sz": "M",
+    "al": "U",
+    "cr": 0.25,
+    "ac": 13,
+    "hp": "13 (2d8 + 4)",
+    "sp": "30 ft.",
+    "ab": "10/14/12/6/8/5",
+    "st": {
+      "STR": 10,
+      "DEX": 14,
+      "CON": 12,
+      "INT": 6,
+      "WIS": 8,
+      "CHA": 5
+    },
+    "sk": "",
+    "sn": "darkvision:60,pp:10",
+    "lg": "--",
+    "di": "poison",
+    "dr": "",
+    "dv": "bludgeoning/piercing from nonmagical",
+    "ci": "poisoned,exhaustion,blinded,charmed,paralyzed,petrified",
+    "tr": [
+      "undead_nature|Nature d'Anima|Immunités/traits typiques des morts-vivants."
+    ],
+    "ma": "—",
+    "at": [
+      "Shortsword|+4|M|5|1d6+2|piercing",
+      "Shortbow|+4|R|80/320|1d6+2|piercing"
+    ],
+    "env": "champs de bataille, cryptes"
+  },
+  {
+    "id": "zombie",
+    "n": "Zombie",
+    "s": "SRD 5.1",
+    "ty": "undead",
+    "sz": "M",
+    "al": "U",
+    "cr": 0.25,
+    "ac": 8,
+    "hp": "22 (3d8 + 9)",
+    "sp": "20 ft.",
+    "ab": "13/6/16/3/6/5",
+    "st": {
+      "STR": 13,
+      "DEX": 6,
+      "CON": 16,
+      "INT": 3,
+      "WIS": 6,
+      "CHA": 5
+    },
+    "sk": "",
+    "sn": "darkvision:60,pp:8",
+    "lg": "--",
+    "di": "",
+    "dr": "",
+    "dv": "bludgeoning/piercing from nonmagical",
+    "ci": "poisoned,exhaustion,blinded,charmed,paralyzed,petrified",
+    "tr": [
+      "undead_endurance|Endurance des morts|Résistance aux effets qui affectent les vivants."
+    ],
+    "ma": "—",
+    "at": [
+      "Slam|+3|M|5|1d6+1|bludgeoning"
+    ],
+    "env": "villages ravagés, cryptes"
+  },
+  {
+    "id": "ghoul",
+    "n": "Goule",
+    "s": "SRD 5.1",
+    "ty": "undead",
+    "sz": "M",
+    "al": "CE",
+    "cr": 1,
+    "ac": 12,
+    "hp": "22 (5d8)",
+    "sp": "30 ft.",
+    "ab": "16/16/14/6/10/6",
+    "st": {
+      "STR": 16,
+      "DEX": 16,
+      "CON": 14,
+      "INT": 7,
+      "WIS": 10,
+      "CHA": 6
+    },
+    "sk": "Perception:+2",
+    "sn": "darkvision:60,pp:12",
+    "lg": "--",
+    "di": "",
+    "dr": "",
+    "dv": "",
+    "ci": "charmed,exhaustion,paralyzed,petrified,poisoned",
+    "tr": [
+      "ghoul_paralysis|Paralysie|Griffes paralysantes (CON save).",
+      "undead_nature|Nature d'Anima|Immunités typiques."
+    ],
+    "ma": "—",
+    "at": [
+      "Bite|+5|M|5|1d6+3|piercing",
+      "Claws|+5|M|5|2d6+3|slashing|paralysis on hit (DC10 CON)"
+    ],
+    "env": "tombes, cryptes"
+  },
+  {
+    "id": "ghast",
+    "n": "Ghast",
+    "s": "SRD 5.1",
+    "ty": "undead",
+    "sz": "M",
+    "al": "CE",
+    "cr": 2,
+    "ac": 13,
+    "hp": "36 (8d8)",
+    "sp": "30 ft.",
+    "ab": "16/14/14/6/10/8",
+    "st": {
+      "STR": 16,
+      "DEX": 14,
+      "CON": 14,
+      "INT": 7,
+      "WIS": 10,
+      "CHA": 8
+    },
+    "sk": "Perception:+2",
+    "sn": "darkvision:60,pp:11",
+    "lg": "--",
+    "di": "",
+    "dr": "",
+    "dv": "",
+    "ci": "charmed,exhaustion,paralyzed,petrified,poisoned",
+    "tr": [
+      "stinking_cloud|Aura nauséabonde|Impose désavantage/sickened (voir SRD).",
+      "ghast_paralysis|Paralysie des ghasts|Paralysie plus forte."
+    ],
+    "ma": "—",
+    "at": [
+      "Bite|+5|M|5|1d6+3|piercing",
+      "Claws|+5|M|5|2d6+3|slashing|paralysis on hit"
+    ],
+    "env": "cryptes, tombes"
+  },
+  {
+    "id": "wight",
+    "n": "Wight",
+    "s": "SRD 5.1",
+    "ty": "undead",
+    "sz": "M",
+    "al": "NE",
+    "cr": 3,
+    "ac": 14,
+    "hp": "45 (6d8 + 18)",
+    "sp": "30 ft.",
+    "ab": "15/12/16/10/13/11",
+    "st": {
+      "STR": 15,
+      "DEX": 12,
+      "CON": 16,
+      "INT": 10,
+      "WIS": 13,
+      "CHA": 11
+    },
+    "sk": "Perception:+3",
+    "sn": "darkvision:60,pp:12",
+    "lg": "--",
+    "di": "",
+    "dr": "",
+    "dv": "",
+    "ci": "poisoned,exhaustion,blinded,charmed,paralyzed,petrified",
+    "tr": [
+      "life_drain|Drain de vie|Attaques drainantes qui créent des zombies (voir SRD)."
+    ],
+    "ma": "—",
+    "at": [
+      "Longsword|+4|M|5|1d8+2|slashing and life drain on hit"
+    ],
+    "env": "ruines, champs de bataille"
+  },
+  {
+    "id": "wraith",
+    "n": "Wraith",
+    "s": "SRD 5.1",
+    "ty": "undead",
+    "sz": "M",
+    "al": "NE",
+    "cr": 5,
+    "ac": 13,
+    "hp": "67 (9d8 + 27)",
+    "sp": "60 ft.",
+    "ab": "18/14/16/10/12/16",
+    "st": {
+      "STR": 18,
+      "DEX": 14,
+      "CON": 16,
+      "INT": 10,
+      "WIS": 12,
+      "CHA": 16
+    },
+    "sk": "Perception:+4",
+    "sn": "darkvision:60,pp:13",
+    "lg": "--",
+    "di": "",
+    "dr": "",
+    "dv": "",
+    "ci": "charmed,exhaustion,paralyzed,petrified,poisoned",
+    "tr": [
+      "life_drain|Drain de vie|Attaques qui réduisent maximum HP (voir SRD).",
+      "incorporeal_movement|Mouvement incorporel|Peut traverser matériel non magique."
+    ],
+    "ma": "—",
+    "at": [
+      "Life Drain (longsword-like)|+6|M|5|4d8 necrotic and reduce max HP|CON save prevents"
+    ],
+    "env": "haunts, ruines"
+  },
+  {
+    "id": "specter",
+    "n": "Spectre",
+    "s": "SRD 5.1",
+    "ty": "undead",
+    "sz": "M",
+    "al": "NE",
+    "cr": 1,
+    "ac": 12,
+    "hp": "45 (6d8 + 18)",
+    "sp": "0 ft., fly 50 ft.",
+    "ab": "10/18/10/10/12/15",
+    "st": {
+      "STR": 10,
+      "DEX": 18,
+      "CON": 10,
+      "INT": 10,
+      "WIS": 12,
+      "CHA": 15
+    },
+    "sk": "Perception:+3",
+    "sn": "darkvision:60,pp:13",
+    "lg": "--",
+    "di": "",
+    "dr": "",
+    "dv": "",
+    "ci": "charmed,exhaustion,paralyzed,petrified,poisoned",
+    "tr": [
+      "incorporeal|Incorporeal Movement|Peut traverser matériel non magique."
+    ],
+    "ma": "—",
+    "at": [
+      "Life Drain|+4|M|5|4d8 necrotic|reduce max HP on hit"
+    ],
+    "env": "haunts, cryptes"
+  },
+  {
+    "id": "ghost",
+    "n": "Fantôme",
+    "s": "SRD 5.1",
+    "ty": "undead",
+    "sz": "M",
+    "al": "NE",
+    "cr": 4,
+    "ac": 11,
+    "hp": "45 (6d8 + 18)",
+    "sp": "0 ft., fly 40 ft.",
+    "ab": "7/13/10/12/12/17",
+    "st": {
+      "STR": 7,
+      "DEX": 13,
+      "CON": 10,
+      "INT": 12,
+      "WIS": 12,
+      "CHA": 17
+    },
+    "sk": "Perception:+5",
+    "sn": "darkvision:60,pp:14",
+    "lg": "--",
+    "di": "",
+    "dr": "",
+    "dv": "",
+    "ci": "charmed,exhaustion,paralyzed,petrified,poisoned",
+    "tr": [
+      "incorporeal_resistance|Résistance incorporelle|Immunités et résistances (voir SRD).",
+      "haunt|Haunt|Peut hanter mortels; effets variés."
+    ],
+    "ma": "—",
+    "at": [
+      "Possession|special|target must be humanoid; ghost can possess (see SRD)",
+      "Horrifying Visage|special|frighten effect"
+    ],
+    "env": "maisons hantées, cryptes"
+  },
+  {
+    "id": "banshee",
+    "n": "Banshee",
+    "s": "SRD 5.1",
+    "ty": "undead",
+    "sz": "M",
+    "al": "CE",
+    "cr": 4,
+    "ac": 13,
+    "hp": "81 (18d8)",
+    "sp": "0 ft., fly 40 ft.",
+    "ab": "6/17/10/16/16/18",
+    "st": {
+      "STR": 6,
+      "DEX": 17,
+      "CON": 10,
+      "INT": 16,
+      "WIS": 16,
+      "CHA": 18
+    },
+    "sk": "Perception:+6",
+    "sn": "darkvision:60,pp:14",
+    "lg": "--",
+    "di": "",
+    "dr": "",
+    "dv": "",
+    "ci": "charmed,exhaustion,paralyzed,petrified,poisoned",
+    "tr": [
+      "wail|Gémissement|Peut émettre un gémissement (1/jour) infligeant dégâts/effets (voir SRD)."
+    ],
+    "ma": "—",
+    "at": [
+      "Corrupting Touch|+5|M|5|3d6 necrotic|touch"
+    ],
+    "env": "ruines, forêts maudites"
+  },
+  {
+    "id": "vampire",
+    "n": "Vampire",
+    "s": "SRD 5.1",
+    "ty": "undead",
+    "sz": "M",
+    "al": "CE",
+    "cr": 13,
+    "ac": 16,
+    "hp": "144 (17d8 + 68)",
+    "sp": "30 ft., climb 30 ft., fly 30 ft.",
+    "ab": "18/18/18/18/17/18",
+    "st": {
+      "STR": 18,
+      "DEX": 18,
+      "CON": 18,
+      "INT": 17,
+      "WIS": 15,
+      "CHA": 18
+    },
+    "sk": "Perception:+9,Stealth:+9",
+    "sn": "darkvision:120,pp:15",
+    "lg": "Common,Infernal",
+    "di": "necrotic",
+    "dr": "bludgeoning/piercing/slashing from nonmagical",
+    "dv": "radiant; sunlight hypersensitivity",
+    "ci": "charmed,exhaustion,paralyzed,petrified,poisoned",
+    "tr": [
+      "regeneration|Régénération|Récupère 10 PV au début de son tour sauf si exposé au soleil/eau bénite.",
+      "shapechanger|Métaforme|Peut se transformer into bat/wolf/mist."
+    ],
+    "ma": "Multiattack (Bite + 2 Claws)",
+    "at": [
+      "Bite|+9|M|5|1d6+4 piercing + 3d6 necrotic (drains HP)",
+      "Claw|+9|M|5|1d8+4 slashing",
+      "Charm|special|target must fail WIS save or be charmed"
+    ],
+    "la": [
+      "Legendary Actions (see SRD)"
+    ],
+    "env": "châteaux, cryptes"
+  },
+  {
+    "id": "vampire_spawn",
+    "n": "Proie-vampirique (Vampire Spawn)",
+    "s": "SRD 5.1",
+    "ty": "undead",
+    "sz": "M",
+    "al": "CE",
+    "cr": 5,
+    "ac": 15,
+    "hp": "82 (11d8 + 33)",
+    "sp": "30 ft., climb 30 ft.",
+    "ab": "18/16/16/6/10/11",
+    "st": {
+      "STR": 18,
+      "DEX": 16,
+      "CON": 16,
+      "INT": 5,
+      "WIS": 10,
+      "CHA": 11
+    },
+    "sk": "",
+    "sn": "darkvision:120,pp:12",
+    "lg": "--",
+    "di": "necrotic",
+    "dr": "",
+    "dv": "radiant; sunlight vulnerability",
+    "ci": "charmed,exhaustion,paralyzed,petrified,poisoned",
+    "tr": [
+      "regeneration|Régénération limitée|Regagne PV sauf si exposé au soleil/holy water."
+    ],
+    "ma": "—",
+    "at": [
+      "Bite|+6|M|5|1d6+3 piercing + 3d6 necrotic"
+    ],
+    "env": "servants vampiriques, châteaux"
+  },
+  {
+    "id": "lich",
+    "n": "Liche",
+    "s": "SRD 5.1",
+    "ty": "undead",
+    "sz": "M",
+    "al": "LE",
+    "cr": 21,
+    "ac": 17,
+    "hp": "135 (18d8 + 54)",
+    "sp": "30 ft.",
+    "ab": "11/16/16/20/14/16",
+    "st": {
+      "STR": 11,
+      "DEX": 16,
+      "CON": 16,
+      "INT": 20,
+      "WIS": 14,
+      "CHA": 16
+    },
+    "sk": "Arcana:+12,History:+12,Insight:+8",
+    "sn": "truesight:120,pp:18",
+    "lg": "Common,Infernal, telepathy 120 ft.",
+    "di": "",
+    "dr": "",
+    "dv": "radiant",
+    "ci": "charmed,exhaustion,paralyzed,petrified,poisoned",
+    "tr": [
+      "rejuvenation|Rajeunissement|Si le phylactère existe, le lich revient en 1d10 jours après destruction.",
+      "legendary_resistance|Résistance légendaire|3/jour."
+    ],
+    "ma": "—",
+    "at": [
+      "Paralyzing Touch|+9|M|5|3d6+4 necrotic and paralyze on fail"
+    ],
+    "la": [
+      "Legendary Actions (see SRD)",
+      "Lair Actions (see SRD)"
+    ],
+    "env": "tours, cryptes archimagiques"
+  },
+  {
+    "id": "mummy",
+    "n": "Momie",
+    "s": "SRD 5.1",
+    "ty": "undead",
+    "sz": "M",
+    "al": "LE",
+    "cr": 3,
+    "ac": 11,
+    "hp": "97 (13d8 + 39)",
+    "sp": "20 ft.",
+    "ab": "16/10/16/6/12/8",
+    "st": {
+      "STR": 16,
+      "DEX": 10,
+      "CON": 16,
+      "INT": 6,
+      "WIS": 12,
+      "CHA": 8
+    },
+    "sk": "Perception:+3",
+    "sn": "darkvision:60,pp:12",
+    "lg": "--",
+    "di": "",
+    "dr": "",
+    "dv": "bludgeoning/piercing from nonmagical",
+    "ci": "charmed,exhaustion,paralyzed,petrified,poisoned",
+    "tr": [
+      "mummy_aura|Aura de malédiction|Malédiction qui affecte les vivants (voir SRD).",
+      "undead_nature|Nature d'Anima|Traits typiques."
+    ],
+    "ma": "—",
+    "at": [
+      "Rotting Fist|+6|M|5|2d6+3 bludgeoning + mummy rot (see SRD)"
+    ],
+    "env": "tombs, pyramids"
+  },
+  {
+    "id": "shadow",
+    "n": "Ombre",
+    "s": "SRD 5.1",
+    "ty": "undead",
+    "sz": "M",
+    "al": "CE",
+    "cr": 1,
+    "ac": 12,
+    "hp": "16 (3d8 + 3)",
+    "sp": "40 ft.",
+    "ab": "6/16/12/6/10/8",
+    "st": {
+      "STR": 6,
+      "DEX": 16,
+      "CON": 12,
+      "INT": 6,
+      "WIS": 10,
+      "CHA": 8
+    },
+    "sk": "",
+    "sn": "darkvision:60,pp:10",
+    "lg": "--",
+    "di": "",
+    "dr": "",
+    "dv": "",
+    "ci": "charmed,exhaustion,paralyzed,petrified,poisoned",
+    "tr": [
+      "strength_drain|Drain de force|Peut réduire la FOR maximale (see SRD).",
+      "incorporeal|Incorporeal Movement|Passe à travers matériel non magique."
+    ],
+    "ma": "—",
+    "at": [
+      "Life Drain|+4|M|5|1d6+2 necrotic and STR reduction"
+    ],
+    "env": "ruines, catacombes"
+  }
+]
+[
+  {
+    "id": "base_aberration",
+    "n": "Aberration (base)",
+    "s": "FAMILY_BASE",
+    "ty": "aberration",
+    "sz": "M",
+    "al": "N",
+    "cr": 1,
+    "ac": 12,
+    "hp": "2d8+2 (11)",
+    "sp": "30w",
+    "ab": "10/10/10/10/10/10",
+    "env": "souterrains,cavernes,ruines"
+  },
+  {
+    "id": "aberration_minion",
+    "n": "Aberration — Sbire",
+    "s": "Template",
+    "ty": "aberration",
+    "sz": "S",
+    "al": "NM",
+    "cr": "1/4",
+    "ac": 13,
+    "hp": "2d8 (9)",
+    "sp": "30w,20c",
+    "ab": "8/14/10/12/12/8",
+    "tr": [
+      "alien_senses|Sens anormaux|Perçoit les vibrations et pensées superficielles à courte portée (fluff)."
+    ],
+    "at": [
+      "Pique chitineuse|+4|M|5|1d6+2|piercing"
+    ],
+    "env": "souterrains,ruines"
+  },
+  {
+    "id": "aberration_skirmisher",
+    "n": "Aberration — Éclaireur",
+    "s": "Template",
+    "ty": "aberration",
+    "sz": "M",
+    "al": "CN",
+    "cr": 2,
+    "ac": 14,
+    "hp": "6d8+6 (33)",
+    "sp": "35w,20c",
+    "ab": "12/14/12/13/12/9",
+    "sk": "Stealth:+5,Perception:+2",
+    "sn": "darkvision:60,pp:12",
+    "tr": [
+      "twisted_form|Forme distordue|Avantage pour se libérer des entraves et contre les prises."
+    ],
+    "at": [
+      "Tentacule|+5|M|10|1d6+3|bludgeoning",
+      "Dard mental|save|WIS:12|line:30x5|2d8|psychic"
+    ],
+    "env": "cavernes,souterrains"
+  },
+  {
+    "id": "aberration_brute",
+    "n": "Aberration — Brute",
+    "s": "Template",
+    "ty": "aberration",
+    "sz": "L",
+    "al": "CM",
+    "cr": 5,
+    "ac": 15,
+    "hp": "10d10+20 (75)",
+    "sp": "30w",
+    "ab": "18/8/16/8/10/6",
+    "tr": [
+      "bone_plating|Plaques osseuses|CA naturelle supérieure; résistance aux dégâts perforants de projectiles faibles (fluff)."
+    ],
+    "at": [
+      "Écrasement|+7|M|5|2d8+4|bludgeoning",
+      "Projection d'appendice|+6|M|10|2d6+4|slashing"
+    ],
+    "env": "ruines,antres"
+  },
+  {
+    "id": "aberration_mindcaster",
+    "n": "Aberration — Psychomancien",
+    "s": "Template",
+    "ty": "aberration",
+    "sz": "M",
+    "al": "LM",
+    "cr": 7,
+    "ac": 16,
+    "hp": "12d8+24 (78)",
+    "sp": "30w",
+    "ab": "10/12/12/16/14/14",
+    "st": {
+      "INT": 6,
+      "WIS": 5,
+      "CHA": 5
+    },
+    "sk": "Arcane:+6,Perception:+5,Persuasion:+5",
+    "sn": "darkvision:120,pp:17",
+    "lg": "Télépathie 36m",
+    "tr": [
+      "mental_barrier|Barrière mentale|Avantage contre l'état charmé; résistance aux dégâts psychiques (fluff)."
+    ],
+    "at": [
+      "Rayon mental|save|WIS:15|line:60x5|4d8|psychic",
+      "Fouet psionique|+7|M|10|2d6+3|psychic"
+    ],
+    "env": "antres,ruines anciennes"
+  }
+]
+[
+  {
+    "id": "ape",
+    "n": "Singe",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "M",
+    "al": "N",
+    "cr": 0.5,
+    "ac": 12,
+    "hp": "3d8+6 (19)",
+    "sp": "30w,30c",
+    "ab": "16/14/14/6/12/7",
+    "sk": "Athlétisme:+5,Perception:+3",
+    "sn": "pp:13",
+    "lg": "—",
+    "tr": [],
+    "ma": "Multiattaque (2x Poing)",
+    "at": [
+      "Poing|+5|M|5|1d6+3|bludgeoning",
+      "Rocher|+5|R|25/50|1d6+3|bludgeoning"
+    ],
+    "env": "jungle, collines"
+  },
+  {
+    "id": "black_bear",
+    "n": "Ours noir",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "M",
+    "al": "N",
+    "cr": 0.5,
+    "ac": 11,
+    "hp": "3d8+6 (19)",
+    "sp": "40w,30c",
+    "ab": "15/10/14/2/12/7",
+    "sk": "Perception:+3",
+    "sn": "pp:13",
+    "lg": "—",
+    "tr": [
+      "keen_smell|Odorat aiguisé|Avantage aux tests de SAG (Perception) basés sur l’odorat."
+    ],
+    "ma": "Multiattaque (Morsure + Griffes)",
+    "at": [
+      "Morsure|+3|M|5|1d6+2|piercing",
+      "Griffes|+3|M|5|2d4+2|slashing"
+    ],
+    "env": "forêts, collines"
+  },
+  {
+    "id": "boar",
+    "n": "Sanglier",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "M",
+    "al": "N",
+    "cr": 0.25,
+    "ac": 11,
+    "hp": "2d8+2 (11)",
+    "sp": "40w",
+    "ab": "13/11/12/2/9/5",
+    "sk": "",
+    "sn": "pp:9",
+    "lg": "—",
+    "tr": [
+      "charge|Charge|Après 6 m en ligne droite, Défenses : +1d6 dégâts et DD11 FOR sinon à terre.",
+      "relentless|Implacable|1 repos court/long. À 0 PV par ≤7 dégâts : tombe à 1 PV."
+    ],
+    "ma": "—",
+    "at": [
+      "Défenses|+3|M|5|1d6+1|slashing"
+    ],
+    "env": "plaines, forêts"
+  },
+  {
+    "id": "constrictor_snake",
+    "n": "Serpent constricteur",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "L",
+    "al": "N",
+    "cr": 0.25,
+    "ac": 12,
+    "hp": "2d10+2 (13)",
+    "sp": "30w,30s",
+    "ab": "15/14/12/1/10/3",
+    "sk": "",
+    "sn": "blindsight:10,pp:10",
+    "lg": "—",
+    "tr": [],
+    "ma": "—",
+    "at": [
+      "Morsure|+4|M|5|1d6+2|piercing",
+      "Constriction|+4|M|5|1d8+2|bludgeoning|grappled:14 restrained"
+    ],
+    "env": "marais, jungles, rivières"
+  },
+  {
+    "id": "crocodile",
+    "n": "Crocodile",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "L",
+    "al": "N",
+    "cr": 0.5,
+    "ac": 12,
+    "hp": "3d10+3 (19)",
+    "sp": "20w,30s",
+    "ab": "15/10/13/2/10/5",
+    "sk": "Discrétion:+2",
+    "sn": "pp:10",
+    "lg": "—",
+    "tr": [
+      "hold_breath|Apnée|Peut retenir son souffle 15 min."
+    ],
+    "ma": "—",
+    "at": [
+      "Morsure|+4|M|5|1d10+2|piercing|grappled:12 restrained"
+    ],
+    "env": "marais, estuaires"
+  },
+  {
+    "id": "dire_wolf",
+    "n": "Loup géant",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "L",
+    "al": "N",
+    "cr": 1,
+    "ac": 14,
+    "hp": "5d10+10 (37)",
+    "sp": "50w",
+    "ab": "17/15/15/3/12/7",
+    "sk": "Perception:+3,Discrétion:+4",
+    "sn": "pp:13",
+    "lg": "—",
+    "tr": [
+      "keen_hearing_smell|Ouïe/odorat aiguisés|Avantage aux tests de Perception (ouïe/odorat).",
+      "pack_tactics|Tactiques de meute|Avantage aux jets d’attaque si un allié est à 1,5 m de la cible et n’est pas neutralisé."
+    ],
+    "ma": "—",
+    "at": [
+      "Morsure|+5|M|5|2d6+3|piercing|save STR:13 prone"
+    ],
+    "env": "forêts, toundra"
+  },
+  {
+    "id": "giant_constrictor_snake",
+    "n": "Serpent constricteur géant",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "H",
+    "al": "N",
+    "cr": 2,
+    "ac": 12,
+    "hp": "8d12+8 (60)",
+    "sp": "30w,30s",
+    "ab": "19/14/12/1/10/3",
+    "sk": "Perception:+2",
+    "sn": "blindsight:10,pp:12",
+    "lg": "—",
+    "tr": [],
+    "ma": "—",
+    "at": [
+      "Morsure|+6|M|10|2d6+4|piercing",
+      "Constriction|+6|M|5|2d8+4|bludgeoning|grappled:16 restrained"
+    ],
+    "env": "jungles, grottes inondées"
+  },
+  {
+    "id": "giant_crocodile",
+    "n": "Crocodile géant",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "H",
+    "al": "N",
+    "cr": 5,
+    "ac": 14,
+    "hp": "9d12+27 (85)",
+    "sp": "30w,50s",
+    "ab": "21/9/17/2/10/7",
+    "sk": "Discrétion:+5",
+    "sn": "pp:10",
+    "lg": "—",
+    "tr": [
+      "hold_breath|Apnée|Peut retenir son souffle 30 min."
+    ],
+    "ma": "Multiattaque (Morsure + Queue)",
+    "at": [
+      "Morsure|+8|M|5|3d10+5|piercing|grappled:16 restrained",
+      "Queue|+8|M|10|2d8+5|bludgeoning"
+    ],
+    "env": "mangroves, deltas"
+  },
+  {
+    "id": "giant_spider",
+    "n": "Araignée géante",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "L",
+    "al": "N",
+    "cr": 1,
+    "ac": 14,
+    "hp": "4d10+4 (26)",
+    "sp": "30w,30c",
+    "ab": "14/16/12/2/11/4",
+    "sk": "Discrétion:+7",
+    "sn": "blindsight:10,darkvision:60,pp:10",
+    "lg": "—",
+    "tr": [
+      "spider_climb|Escalade d’araignée|Ignore les surfaces difficiles, plafonds compris.",
+      "web_sense|Sens des toiles|Connaît la position des créatures en contact avec la même toile.",
+      "web_walker|Marche-toiles|Ignore les contraintes de déplacement dues aux toiles."
+    ],
+    "ma": "—",
+    "at": [
+      "Morsure|+5|M|5|1d8+3|piercing|save CON:11 poison:2d8 special",
+      "Toile (recharge 5–6)|+5|R|30/60|—|—|restrained DC12 (STR)"
+    ],
+    "env": "souterrain, ruines, forêts"
+  },
+  {
+    "id": "giant_octopus",
+    "n": "Pieuvre géante",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "G",
+    "al": "N",
+    "cr": 1,
+    "ac": 11,
+    "hp": "8d10+8 (52)",
+    "sp": "10w,60s",
+    "ab": "17/13/13/4/10/4",
+    "sk": "Perception:+4,Discrétion:+5",
+    "sn": "darkvision:60,pp:14",
+    "lg": "—",
+    "tr": [
+      "hold_breath|Apnée|Hors de l’eau, peut retenir son souffle 1 h.",
+      "underwater_camouflage|Camouflage aquatique|Avantage aux tests de DEX (Discrétion) sous l’eau.",
+      "water_breathing|Respiration aquatique|Ne peut respirer que sous l’eau."
+    ],
+    "ma": "—",
+    "at": [
+      "Tentacules|+5|M|15|2d6+3|bludgeoning|grappled:16 restrained",
+      "Nuage d’encre (repos court/long)|special|sphere:20|—|—|obscurci"
+    ],
+    "env": "océans, récifs"
+  },
+  {
+    "id": "giant_toad",
+    "n": "Crapaud géant",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "L",
+    "al": "N",
+    "cr": 1,
+    "ac": 11,
+    "hp": "6d10+6 (39)",
+    "sp": "20w,40s",
+    "ab": "15/13/13/2/10/3",
+    "sk": "",
+    "sn": "darkvision:30,pp:10",
+    "lg": "—",
+    "tr": [
+      "amphibious|Amphibie|Peut respirer l’air et l’eau.",
+      "standing_leap|Saut sur place|Long 6 m ; haut 3 m, avec ou sans élan."
+    ],
+    "ma": "—",
+    "at": [
+      "Morsure|+4|M|5|1d10+2|piercing|grappled:13 swallow",
+      "Avaler|special|—|—|—|La cible avalée subit 2d6 acid/round ; total cover ; libérée si le crapaud meurt."
+    ],
+    "env": "marais, rivières"
+  },
+  {
+    "id": "giant_scorpion",
+    "n": "Scorpion géant",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "L",
+    "al": "N",
+    "cr": 3,
+    "ac": 15,
+    "hp": "7d10+14 (52)",
+    "sp": "40w",
+    "ab": "15/13/15/1/9/3",
+    "sk": "",
+    "sn": "blindsight:60,pp:9",
+    "lg": "—",
+    "tr": [],
+    "ma": "Multiattaque (2x Pinces + Dard)",
+    "at": [
+      "Pince|+4|M|5|1d8+2|bludgeoning|grappled:12",
+      "Dard|+4|M|5|1d10+2|piercing|save CON:12 poison:4d10"
+    ],
+    "env": "déserts, cavernes"
+  },
+  {
+    "id": "lion",
+    "n": "Lion",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "L",
+    "al": "N",
+    "cr": 1,
+    "ac": 12,
+    "hp": "4d10+4 (26)",
+    "sp": "50w",
+    "ab": "17/15/13/3/12/8",
+    "sk": "Perception:+3,Discrétion:+6",
+    "sn": "pp:13",
+    "lg": "—",
+    "tr": [
+      "keen_smell|Odorat aiguisé|Avantage en Perception (odorat).",
+      "pack_tactics|Tactiques de meute|Avantage si un allié à 1,5 m de la cible n’est pas neutralisé.",
+      "pounce|Bond|Après 6 m en ligne, Griffes -> DD13 FOR sinon à terre ; si à terre : morsure en action bonus.",
+      "running_leap|Saut en course|Avec 3 m d’élan, saut en longueur jusqu’à 7,5 m."
+    ],
+    "ma": "—",
+    "at": [
+      "Morsure|+5|M|5|1d8+3|piercing",
+      "Griffes|+5|M|5|1d6+3|slashing"
+    ],
+    "env": "savane, prairies"
+  },
+  {
+    "id": "panther",
+    "n": "Panthère",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "M",
+    "al": "N",
+    "cr": 0.25,
+    "ac": 12,
+    "hp": "3d8 (13)",
+    "sp": "50w,40c",
+    "ab": "14/15/10/3/14/7",
+    "sk": "Perception:+4,Discrétion:+6",
+    "sn": "pp:14",
+    "lg": "—",
+    "tr": [
+      "keen_smell|Odorat aiguisé|Avantage en Perception (odorat).",
+      "pounce|Bond|Après 6 m en ligne, Griffes -> DD12 FOR sinon à terre ; si à terre : morsure en action bonus."
+    ],
+    "ma": "—",
+    "at": [
+      "Morsure|+4|M|5|1d6+2|piercing",
+      "Griffes|+4|M|5|1d4+2|slashing"
+    ],
+    "env": "forêts, jungles"
+  },
+  {
+    "id": "riding_horse",
+    "n": "Cheval de selle",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "L",
+    "al": "N",
+    "cr": 0.25,
+    "ac": 10,
+    "hp": "2d10+2 (13)",
+    "sp": "60w",
+    "ab": "16/10/12/2/11/7",
+    "sk": "",
+    "sn": "pp:10",
+    "lg": "—",
+    "tr": [],
+    "ma": "—",
+    "at": [
+      "Sabots|+5|M|5|2d4+3|bludgeoning"
+    ],
+    "env": "plaines, routes"
+  },
+  {
+    "id": "warhorse",
+    "n": "Cheval de guerre",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "L",
+    "al": "N",
+    "cr": 0.5,
+    "ac": 11,
+    "hp": "3d10+3 (19)",
+    "sp": "60w",
+    "ab": "18/12/13/2/12/7",
+    "sk": "",
+    "sn": "pp:11",
+    "lg": "—",
+    "tr": [
+      "trampling_charge|Charge piétinante|Après 6 m en ligne, Sabots -> DD14 FOR sinon à terre ; si à terre : Sabots en action bonus."
+    ],
+    "ma": "—",
+    "at": [
+      "Sabots|+6|M|5|2d6+4|bludgeoning"
+    ],
+    "env": "plaines, champs de bataille"
+  },
+  {
+    "id": "wolf",
+    "n": "Loup",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "M",
+    "al": "N",
+    "cr": 0.25,
+    "ac": 13,
+    "hp": "2d8+2 (11)",
+    "sp": "40w",
+    "ab": "12/15/12/3/12/6",
+    "sk": "Perception:+3,Discrétion:+4",
+    "sn": "pp:13",
+    "lg": "—",
+    "tr": [
+      "keen_hearing_smell|Ouïe/odorat aiguisés|Avantage Perception (ouïe/odorat).",
+      "pack_tactics|Tactiques de meute|Avantage aux attaques si un allié à 1,5 m de la cible n’est pas neutralisé."
+    ],
+    "ma": "—",
+    "at": [
+      "Morsure|+4|M|5|2d4+2|piercing|save STR:11 prone"
+    ],
+    "env": "forêts, collines"
+  },
+  {
+    "id": "eagle",
+    "n": "Aigle",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "S",
+    "al": "N",
+    "cr": 0,
+    "ac": 12,
+    "hp": "1d6 (3)",
+    "sp": "10w,60f",
+    "ab": "6/15/10/2/14/7",
+    "sk": "Perception:+4",
+    "sn": "pp:14",
+    "lg": "—",
+    "tr": [
+      "keen_sight|Vue perçante|Avantage aux tests de Perception (vue)."
+    ],
+    "ma": "—",
+    "at": [
+      "Serres|+4|M|5|1d4+2|slashing"
+    ],
+    "env": "falaises, montagnes"
+  },
+  {
+    "id": "owl",
+    "n": "Chouette",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "T",
+    "al": "N",
+    "cr": 0,
+    "ac": 11,
+    "hp": "1d4-1 (1)",
+    "sp": "5w,60f",
+    "ab": "3/13/8/2/12/7",
+    "sk": "Perception:+3,Discrétion:+3",
+    "sn": "darkvision:120,pp:13",
+    "lg": "—",
+    "tr": [
+      "flyby|Vol en passant|Ne provoque pas d’AdO en quittant la portée d’un ennemi.",
+      "keen_hearing_sight|Ouïe/Vue perçantes|Avantage Perception (ouïe/vue)."
+    ],
+    "ma": "—",
+    "at": [
+      "Serres|+3|M|5|1|slashing"
+    ],
+    "env": "forêts, ruines"
+  },
+  {
+    "id": "giant_eagle",
+    "n": "Aigle géant",
+    "s": "SRD 5.1",
+    "ty": "beast",
+    "sz": "L",
+    "al": "N",
+    "cr": 1,
+    "ac": 13,
+    "hp": "4d10+4 (26)",
+    "sp": "10w,80f",
+    "ab": "16/17/13/8/14/10",
+    "sk": "Perception:+6",
+    "sn": "pp:16",
+    "lg": "—, comprend le commun",
+    "tr": [],
+    "ma": "Multiattaque (Bec + Serres)",
+    "at": [
+      "Bec|+5|M|5|1d6+3|piercing",
+      "Serres|+5|M|5|2d6+3|slashing"
+    ],
+    "env": "montagnes, plateaux"
+  }
+]
+[
+  {
+    "id": "couatl",
+    "n": "Couatl",
+    "s": "SRD 5.1",
+    "ty": "celestial",
+    "sz": "M",
+    "al": "LG",
+    "cr": 4,
+    "ac": "19 (armure naturelle)",
+    "hp": "97 (13d8 + 39)",
+    "sp": "30w,90f",
+    "ab": "16/20/17/18/20/18",
+    "st": {},
+    "sk": "Perception:+5",
+    "sn": "truesight:120,pp:15",
+    "lg": "Toutes, Télépathie 120 ft.",
+    "di": "psychic",
+    "dr": "radiant",
+    "dv": "",
+    "ci": "bludgeoning/piercing/slashing from nonmagical attacks (immune)",
+    "tr": [
+      "innate_spellcasting|Incantations innées|Detect magic, detect thoughts, bless, cure wounds, etc. (voir SRD).",
+      "magic_weapons|Armes magiques|Les attaques infligent des dégâts magiques.",
+      "shielded_mind|Esprit protégé|Immunité au scrutage et aux effets lisant ses pensées."
+    ],
+    "ma": "Bite + Constrict",
+    "at": [
+      "Morsure|+8|M|5|1d6+5|piercing|DC13 CON poison: unconscious 24h",
+      "Constriction|+6|M|10|2d6+3|bludgeoning|grappled:15 restrained"
+    ],
+    "env": "forêts enchantées, temples, montagnes"
+  },
+  {
+    "id": "deva",
+    "n": "Deva",
+    "s": "SRD 5.1",
+    "ty": "celestial",
+    "sz": "M",
+    "al": "LG",
+    "cr": 10,
+    "ac": "17 (armure naturelle)",
+    "hp": "136 (16d8 + 64)",
+    "sp": "30w,90f",
+    "ab": "18/18/18/17/20/20",
+    "st": {},
+    "sk": "Insight:+9,Perception:+9",
+    "sn": "darkvision:120,pp:19",
+    "lg": "Toutes, Télépathie 120 ft.",
+    "di": "",
+    "dr": "radiant; bludgeoning/piercing/slashing from nonmagical attacks",
+    "dv": "",
+    "ci": "charmed, exhaustion, frightened",
+    "tr": [
+      "angelic_weapons|Armes angéliques|Les attaques infligent +4d8 radiant (inclus).",
+      "innate_spellcasting|Sorts innés|Detect evil and good à volonté; commune et raise dead 1/jour.",
+      "magic_resistance|Résistance magique|Avantage aux jets de sauvegarde contre sorts."
+    ],
+    "ma": "Multiattack (2 attaques)",
+    "at": [
+      "Massue|+8|M|5|1d6+4|bludgeoning + 4d8 radiant (inclus)",
+      "Toucher guérisseur|special|Recharge:3/jour|Soigne 4d8+2 (20)"
+    ],
+    "env": "plaines sacrées, temples célestes"
+  },
+  {
+    "id": "pegasus",
+    "n": "Pégase",
+    "s": "SRD 5.1",
+    "ty": "celestial",
+    "sz": "L",
+    "al": "CG",
+    "cr": 2,
+    "ac": 12,
+    "hp": "59 (7d10 + 21)",
+    "sp": "60w,90f",
+    "ab": "18/15/16/10/15/13",
+    "st": {},
+    "sk": "Perception:+6",
+    "sn": "pp:16",
+    "lg": "Comprend Celestial, Common, Elvish, Sylvan (ne parle pas)",
+    "tr": [],
+    "ma": "Hooves",
+    "at": [
+      "Sabots|+6|M|5|2d6+4|bludgeoning"
+    ],
+    "env": "montagnes, falaises, cieux"
+  },
+  {
+    "id": "planetar",
+    "n": "Planétaire",
+    "s": "SRD 5.1",
+    "ty": "celestial",
+    "sz": "L",
+    "al": "LG",
+    "cr": 16,
+    "ac": 20,
+    "hp": "200 (16d10+128)",
+    "sp": "30w,90f",
+    "ab": "22/14/22/18/20/20",
+    "st": {},
+    "sk": "Perception:+11",
+    "sn": "truesight:120,pp:21",
+    "lg": "Toutes, Télépathie 120 ft.",
+    "di": "",
+    "dr": "radiant; bludgeoning/piercing/slashing from nonmagical attacks",
+    "ci": "charmed, exhaustion, frightened",
+    "tr": [
+      "angelic_weapons|Armes angéliques|Attaques magiques +5d8 radiant (inclus).",
+      "divine_awareness|Connaissance divine|Sait si on ment.",
+      "innate_spellcasting|Sorts innés|Detect evil and good (à volonté), invisibility (self only), blade barrier, raise dead, etc."
+    ],
+    "ma": "Multiattack (2 attaques)",
+    "at": [
+      "Épée lourde|+12|M|5|4d6+7|slashing + 5d8 radiant (inclus)",
+      "Toucher guérisseur|special|4/jour|30 HP (6d8+3)"
+    ],
+    "la": [
+      "Legendaries|Actions légendaires disponibles (voir SRD)"
+    ],
+    "env": "plaines célestes, autels divins, monts"
+  },
+  {
+    "id": "solar",
+    "n": "Solaire",
+    "s": "SRD 5.1",
+    "ty": "celestial",
+    "sz": "L",
+    "al": "LG",
+    "cr": 21,
+    "ac": "21 (armure naturelle)",
+    "hp": "243 (18d10 + 144)",
+    "sp": "50w,150f",
+    "ab": "26/22/26/25/25/30",
+    "st": {},
+    "sk": "Perception:+14",
+    "sn": "truesight:120,pp:24",
+    "lg": "Toutes, Télépathie 120 ft.",
+    "di": "necrotic, poison",
+    "dr": "radiant; bludgeoning/piercing/slashing from nonmagical attacks",
+    "ci": "charmed, exhaustion, frightened, poisoned",
+    "tr": [
+      "angelic_weapons|Armes angéliques|Attaques magiques +6d8 radiant (inclus).",
+      "divine_awareness|Connaissance divine|Sait si on ment.",
+      "innate_spellcasting|Sorts innés|Sorts puissants (DC25), voir SRD."
+    ],
+    "ma": "Multiattack (2 greatsword)",
+    "at": [
+      "Greatsword|+15|M|5|4d6+8|slashing + 6d8 radiant (inclus)",
+      "Slaying Longbow|+13|R|150/600|2d8+6|piercing + 6d8 radiant; CON DC15 ou mort si ≤100 HP"
+    ],
+    "la": [
+      "Légendaires|Actions légendaires (voir SRD)"
+    ],
+    "env": "cieux supérieurs, sanctuaires divins"
+  },
+  {
+    "id": "unicorn",
+    "n": "Licorne",
+    "s": "SRD 5.1",
+    "ty": "celestial",
+    "sz": "L",
+    "al": "LG",
+    "cr": 5,
+    "ac": 12,
+    "hp": "67 (9d10 + 18)",
+    "sp": "50w",
+    "ab": "18/14/15/11/17/16",
+    "st": {},
+    "sk": "Perception:+4",
+    "sn": "darkvision:60,pp:13",
+    "lg": "Celestial, Elvish, Sylvan, télépathie 60 ft.",
+    "di": "poison",
+    "dr": "",
+    "ci": "charmed, paralyzed, poisoned",
+    "tr": [
+      "charge|Charge|Si se déplace de 20 ft et touche avec le cor, +2d8 dégâts et DC15 STR ou prone.",
+      "innate_spellcasting|Sorts innés|Detect evil and good, pass without trace, etc.",
+      "magic_resistance|Résistance aux magies|Avantage contre sorts."
+    ],
+    "ma": "Multiattack (Hooves + Horn)",
+    "at": [
+      "Sabots|+7|M|5|2d6+4|bludgeoning",
+      "Corn|+7|M|5|1d8+4|piercing|Charge +2d8; DC15 STR prone"
+    ],
+    "env": "forêts enchantées, clairières"
+  }
+]
