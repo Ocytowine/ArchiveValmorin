@@ -1,0 +1,2704 @@
+{
+  "blade_ward": {
+    "id": "blade_ward",
+    "fr": "Protection de lames",
+    "lvl": 0,
+    "sch": "abjuration",
+    "lst": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "self",
+    "dur": "1r",
+    "arch": "buff_timed",
+    "buff_id": "blade_ward",
+    "grants": {
+      "resistance_vs": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ]
+    },
+    "tags": [
+      "buff-defense"
+    ],
+    "src": "PHB",
+    "short_fr": "Résistance aux dégâts B/P/T jusqu’au début de votre prochain tour."
+  },
+  "fire_bolt": {
+    "id": "fire_bolt",
+    "fr": "Trait de feu",
+    "lvl": 0,
+    "sch": "evocation",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "ft:120",
+    "dur": "inst",
+    "arch": "attack_spell",
+    "atk": "ranged_spell",
+    "dmg": "1d10 fire",
+    "tags": [
+      "damage-single"
+    ],
+    "src": "PHB",
+    "short_fr": "Attaque de sort à distance : 1d10 feu."
+  },
+  "guidance": {
+    "id": "guidance",
+    "fr": "Guidance",
+    "lvl": 0,
+    "sch": "divination",
+    "lst": [
+      "cleric",
+      "druid"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "touch",
+    "dur": "conc:1m(up)",
+    "arch": "buff_concentration",
+    "targets": "n:1 ally",
+    "buff_id": "guidance",
+    "grants": {
+      "add_to_ability_checks": "1d4"
+    },
+    "tags": [
+      "buff-utility",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "+1d4 aux tests de caractéristique (conc. 1 min)."
+  },
+  "light": {
+    "id": "light",
+    "fr": "Lumière",
+    "lvl": 0,
+    "sch": "evocation",
+    "lst": [
+      "bard",
+      "cleric",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,M:luciole ou pierre de phosphore",
+    "rng": "touch",
+    "dur": "1h",
+    "arch": "buff_timed",
+    "targets": "n:1 object",
+    "buff_id": "light",
+    "grants": {
+      "light": {
+        "bright_ft": 20,
+        "dim_ft": 20
+      }
+    },
+    "tags": [
+      "light",
+      "utility"
+    ],
+    "src": "PHB",
+    "short_fr": "Fait briller un objet (20 ft clarté / 20 ft faible) pendant 1 h."
+  },
+  "ray_of_frost": {
+    "id": "ray_of_frost",
+    "fr": "Rayon de givre",
+    "lvl": 0,
+    "sch": "evocation",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "ft:60",
+    "dur": "inst",
+    "arch": "attack_spell",
+    "atk": "ranged_spell",
+    "dmg": "1d8 cold",
+    "tags": [
+      "damage-single"
+    ],
+    "src": "PHB",
+    "short_fr": "Attaque de sort à distance : 1d8 froid."
+  },
+  "resistance": {
+    "id": "resistance",
+    "fr": "Résistance",
+    "lvl": 0,
+    "sch": "abjuration",
+    "lst": [
+      "cleric",
+      "druid"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:cape miniature",
+    "rng": "touch",
+    "dur": "conc:1m(up)",
+    "arch": "buff_concentration",
+    "targets": "n:1 ally",
+    "buff_id": "resistance",
+    "grants": {
+      "add_to_saving_throws": "1d4"
+    },
+    "tags": [
+      "buff-defense",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "+1d4 aux jets de sauvegarde (conc. 1 min)."
+  },
+  "shocking_grasp": {
+    "id": "shocking_grasp",
+    "fr": "Contact électrique",
+    "lvl": 0,
+    "sch": "evocation",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "touch",
+    "dur": "inst",
+    "arch": "attack_spell",
+    "atk": "melee_spell",
+    "dmg": "1d8 lightning",
+    "tags": [
+      "damage-single"
+    ],
+    "src": "PHB",
+    "short_fr": "Attaque de sort de contact : 1d8 foudre."
+  },
+  "true_strike": {
+    "id": "true_strike",
+    "fr": "Visée juste",
+    "lvl": 0,
+    "sch": "divination",
+    "lst": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "S",
+    "rng": "self",
+    "dur": "1r",
+    "arch": "buff_timed",
+    "buff_id": "true_strike",
+    "grants": {
+      "advantage_next_attack": true
+    },
+    "tags": [
+      "buff-attack"
+    ],
+    "src": "PHB",
+    "short_fr": "Avantage sur votre prochain jet d’attaque (jusqu’à votre prochain tour)."
+  },
+  "bane": {
+    "id": "bane",
+    "fr": "Fléau",
+    "lvl": 1,
+    "sch": "enchantment",
+    "lst": [
+      "bard",
+      "cleric"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:goutte de sang",
+    "rng": "ft:30",
+    "dur": "conc:1m(up)",
+    "arch": "buff_concentration",
+    "targets": "n:3 enemy",
+    "buff_id": "bane",
+    "grants": {
+      "subtract_from_attack_rolls": "1d4",
+      "subtract_from_saving_throws": "1d4"
+    },
+    "upcast": "+1 target/slot",
+    "tags": [
+      "debuff-attack",
+      "debuff-defense",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Jusqu’à 3 ennemis : -1d4 attaques et sauvegardes (conc. 1 min)."
+  },
+  "bless": {
+    "id": "bless",
+    "fr": "Bénédiction",
+    "lvl": 1,
+    "sch": "enchantment",
+    "lst": [
+      "cleric",
+      "paladin"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:flasque d’eau bénite",
+    "rng": "ft:30",
+    "dur": "conc:1m(up)",
+    "arch": "buff_concentration",
+    "targets": "n:3 ally",
+    "buff_id": "bless",
+    "grants": {
+      "add_to_attack_rolls": "1d4",
+      "add_to_saving_throws": "1d4"
+    },
+    "upcast": "+1 target/slot",
+    "tags": [
+      "buff-attack",
+      "buff-defense",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Jusqu’à 3 alliés : +1d4 aux attaques et sauvegardes (conc. 1 min)."
+  },
+  "burning_hands": {
+    "id": "burning_hands",
+    "fr": "Mains brûlantes",
+    "lvl": 1,
+    "sch": "evocation",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "self",
+    "area": "cone:15",
+    "dur": "inst",
+    "arch": "save_aoe_damage",
+    "sv": "DEX half",
+    "dmg": "3d6 fire",
+    "upcast": "+1d6/slot",
+    "tags": [
+      "damage-aoe"
+    ],
+    "src": "PHB",
+    "short_fr": "Cône 15 ft : 3d6 feu (DEX moitié)."
+  },
+  "charm_person": {
+    "id": "charm_person",
+    "fr": "Charme-personne",
+    "lvl": 1,
+    "sch": "enchantment",
+    "lst": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "ft:30",
+    "dur": "1h",
+    "arch": "save_single_condition",
+    "sv": "WIS",
+    "targets": "n:1 humanoid",
+    "condition_id": "charmed",
+    "repeat_save": "end_of_turn",
+    "tags": [
+      "soft-cc",
+      "social"
+    ],
+    "src": "PHB",
+    "short_fr": "Humanoïde : charmé (WIS, peut réessayer en fin de tour)."
+  },
+  "detect_magic": {
+    "id": "detect_magic",
+    "fr": "Détection de la magie",
+    "lvl": 1,
+    "sch": "divination",
+    "lst": [
+      "bard",
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "self",
+    "dur": "conc:10m(up)",
+    "ritual": true,
+    "arch": "buff_concentration",
+    "targets": "self",
+    "buff_id": "detect_magic",
+    "grants": {
+      "sense_magic": true
+    },
+    "tags": [
+      "detect",
+      "ritual",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Percevoir la magie dans un rayon (conc. 10 min, rituel)."
+  },
+  "entangle": {
+    "id": "entangle",
+    "fr": "Enchevêtrement",
+    "lvl": 1,
+    "sch": "conjuration",
+    "lst": [
+      "druid"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "ft:90",
+    "area": "cube:20",
+    "dur": "conc:1m(up)",
+    "arch": "save_area_condition",
+    "sv": "STR",
+    "condition": {
+      "id": "restrained",
+      "mods": {
+        "speed_multiplier": 0
+      },
+      "repeat_save": "end_of_turn"
+    },
+    "tags": [
+      "area-control",
+      "hard-cc",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Zone 20 ft : STR save sinon entravé (conc. 1 min)."
+  },
+  "fog_cloud": {
+    "id": "fog_cloud",
+    "fr": "Nuage de brouillard",
+    "lvl": 1,
+    "sch": "conjuration",
+    "lst": [
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "ft:120",
+    "area": "sphere:20",
+    "dur": "conc:1h(up)",
+    "arch": "zone_aoe",
+    "tick": "start",
+    "tick_effect": {
+      "kind": "grant",
+      "grant": {
+        "heavily_obscured": true
+      }
+    },
+    "tags": [
+      "area-control",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Sphère 20 ft de brouillard (lourdement obscurci) (conc. 1 h)."
+  },
+  "hunters_mark": {
+    "id": "hunters_mark",
+    "fr": "Marque du chasseur",
+    "lvl": 1,
+    "sch": "divination",
+    "lst": [
+      "ranger"
+    ],
+    "ct": "B",
+    "cmp": "V",
+    "rng": "ft:90",
+    "dur": "conc:1h(up)",
+    "arch": "buff_concentration",
+    "targets": "n:1 enemy",
+    "buff_id": "hunters_mark",
+    "grants": {
+      "extra_damage_to_caster_attacks": "1d6",
+      "track_marked_target": true
+    },
+    "upcast": "per:duration_8h_24h",
+    "tags": [
+      "buff-attack",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Cible marquée : +1d6 dégâts aux attaques du lanceur; suivi facilité (conc. 1 h)."
+  },
+  "mage_armor": {
+    "id": "mage_armor",
+    "fr": "Armure du mage",
+    "lvl": 1,
+    "sch": "abjuration",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:un morceau de cuir tanné",
+    "rng": "touch",
+    "dur": "8h",
+    "arch": "buff_timed",
+    "targets": "n:1 ally",
+    "buff_id": "mage_armor",
+    "grants": {
+      "unarmored_ac": "13+DEX"
+    },
+    "tags": [
+      "buff-defense"
+    ],
+    "src": "PHB",
+    "short_fr": "CA non blindé = 13 + DEX (8 h)."
+  },
+  "protection_from_evil_and_good": {
+    "id": "protection_from_evil_and_good",
+    "fr": "Protection contre le Bien et le Mal",
+    "lvl": 1,
+    "sch": "abjuration",
+    "lst": [
+      "cleric",
+      "paladin",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:eau bénite ou argent et fer",
+    "rng": "touch",
+    "dur": "conc:10m(up)",
+    "arch": "buff_concentration",
+    "targets": "n:1 ally",
+    "buff_id": "protection_from_evil_and_good",
+    "grants": {
+      "protect_types": [
+        "aberration",
+        "celestial",
+        "elemental",
+        "fey",
+        "fiend",
+        "undead"
+      ],
+      "attacks_disadvantage_from_types": true,
+      "advantage_vs": [
+        "charmed",
+        "frightened",
+        "possessed"
+      ]
+    },
+    "tags": [
+      "buff-defense",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Protège contre créatures listées ; désavantage à leurs attaques, avantages vs charme/peur/possession."
+  },
+  "shield": {
+    "id": "shield",
+    "fr": "Bouclier",
+    "lvl": 1,
+    "sch": "abjuration",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "R",
+    "reaction_trigger": "Quand vous êtes touché par une attaque ou ciblé par Projectile magique",
+    "cmp": "V,S",
+    "rng": "self",
+    "dur": "1r",
+    "arch": "buff_timed",
+    "buff_id": "shield",
+    "grants": {
+      "ac_bonus": 5,
+      "immune_to_magic_missile": true
+    },
+    "tags": [
+      "buff-defense",
+      "reaction-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "+5 CA jusqu’au début de votre prochain tour; annule Projectile magique."
+  },
+  "shield_of_faith": {
+    "id": "shield_of_faith",
+    "fr": "Bouclier de la foi",
+    "lvl": 1,
+    "sch": "abjuration",
+    "lst": [
+      "cleric",
+      "paladin"
+    ],
+    "ct": "B",
+    "cmp": "V,S,M:parchemin ou symbole",
+    "rng": "ft:60",
+    "dur": "conc:10m(up)",
+    "arch": "buff_concentration",
+    "targets": "n:1 ally",
+    "buff_id": "shield_of_faith",
+    "grants": {
+      "ac_bonus": 2
+    },
+    "tags": [
+      "buff-defense",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "+2 CA (conc. 10 min)."
+  },
+  "thunderwave": {
+    "id": "thunderwave",
+    "fr": "Onde de choc",
+    "lvl": 1,
+    "sch": "evocation",
+    "lst": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "self",
+    "area": "cube:15",
+    "dur": "inst",
+    "arch": "save_aoe_damage",
+    "sv": "CON half",
+    "dmg": "2d8 thunder",
+    "upcast": "+1d8/slot",
+    "tags": [
+      "damage-aoe"
+    ],
+    "src": "PHB",
+    "short_fr": "Cube 15 ft : 2d8 tonnerre (CON moitié)."
+  },
+  "aid": {
+    "id": "aid",
+    "fr": "Aide",
+    "lvl": 2,
+    "sch": "abjuration",
+    "lst": [
+      "cleric",
+      "paladin"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:un petit ruban blanc",
+    "rng": "ft:30",
+    "dur": "8h",
+    "arch": "buff_timed",
+    "targets": "n:3 ally",
+    "buff_id": "aid",
+    "grants": {
+      "max_hp_increase": 5,
+      "heal_on_apply": 5
+    },
+    "upcast": "per:aid_hp_scaling",
+    "tags": [
+      "save-ally",
+      "buff-utility"
+    ],
+    "src": "PHB",
+    "short_fr": "3 alliés gagnent +5 PV max et +5 PV (8 h). Upcast: +5 PV par niveau."
+  },
+  "barkskin": {
+    "id": "barkskin",
+    "fr": "Peau d’écorce",
+    "lvl": 2,
+    "sch": "transmutation",
+    "lst": [
+      "druid",
+      "ranger"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:une poignée d’écorce de chêne",
+    "rng": "touch",
+    "dur": "conc:1h(up)",
+    "arch": "buff_concentration",
+    "targets": "n:1 ally",
+    "buff_id": "barkskin",
+    "grants": {
+      "ac_minimum": 16
+    },
+    "tags": [
+      "buff-defense",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "La CA de la cible ne peut pas être inférieure à 16 (conc. 1 h)."
+  },
+  "blur": {
+    "id": "blur",
+    "fr": "Flou",
+    "lvl": 2,
+    "sch": "illusion",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V",
+    "rng": "self",
+    "dur": "conc:1m(up)",
+    "arch": "buff_concentration",
+    "targets": "self",
+    "buff_id": "blur",
+    "grants": {
+      "attacks_against_disadvantage": true
+    },
+    "tags": [
+      "buff-defense",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Les attaques contre vous ont le désavantage (conc. 1 min)."
+  },
+  "darkness": {
+    "id": "darkness",
+    "fr": "Ténèbres",
+    "lvl": 2,
+    "sch": "evocation",
+    "lst": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,M:charbon ou chauve-souris",
+    "rng": "ft:60",
+    "area": "sphere:15",
+    "dur": "conc:10m(up)",
+    "arch": "zone_aoe",
+    "tick": "start",
+    "tick_effect": {
+      "kind": "grant",
+      "grant": {
+        "magical_darkness": true,
+        "heavily_obscured": true
+      }
+    },
+    "tags": [
+      "area-control",
+      "concentration-staple",
+      "stealth"
+    ],
+    "src": "PHB",
+    "short_fr": "Sphère 15 ft de ténèbres magiques (lourdement obscurci) (conc. 10 min)."
+  },
+  "darkvision": {
+    "id": "darkvision",
+    "fr": "Vision dans le noir",
+    "lvl": 2,
+    "sch": "transmutation",
+    "lst": [
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:carotte",
+    "rng": "touch",
+    "dur": "8h",
+    "arch": "buff_timed",
+    "targets": "n:1 ally",
+    "buff_id": "darkvision",
+    "grants": {
+      "darkvision_ft": 60
+    },
+    "tags": [
+      "utility",
+      "exploration"
+    ],
+    "src": "PHB",
+    "short_fr": "La cible obtient vision dans le noir à 60 ft (8 h)."
+  },
+  "detect_thoughts": {
+    "id": "detect_thoughts",
+    "fr": "Détection des pensées",
+    "lvl": 2,
+    "sch": "divination",
+    "lst": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:cuivre",
+    "rng": "self",
+    "dur": "conc:1m(up)",
+    "arch": "buff_concentration",
+    "targets": "self",
+    "buff_id": "detect_thoughts",
+    "grants": {
+      "read_thoughts": true
+    },
+    "tags": [
+      "detect",
+      "social",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Lire les pensées proches, puis approfondir par save (conc. 1 min)."
+  },
+  "hold_person": {
+    "id": "hold_person",
+    "fr": "Immobiliser une personne",
+    "lvl": 2,
+    "sch": "enchantment",
+    "lst": [
+      "bard",
+      "cleric",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:petit morceau de fer rigide",
+    "rng": "ft:60",
+    "dur": "conc:1m(up)",
+    "arch": "save_single_condition",
+    "sv": "WIS",
+    "targets": "n:1 humanoid",
+    "condition_id": "paralyzed",
+    "repeat_save": "end_of_turn",
+    "tags": [
+      "hard-cc",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Humanoïde : paralysé (save WIS en fin de tour). Upcast: +1 cible/slot."
+  },
+  "invisibility": {
+    "id": "invisibility",
+    "fr": "Invisibilité",
+    "lvl": 2,
+    "sch": "illusion",
+    "lst": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:colle de gomme arabique",
+    "rng": "touch",
+    "dur": "conc:1h(up)",
+    "arch": "buff_concentration",
+    "targets": "n:1 ally",
+    "buff_id": "invisibility",
+    "grants": {
+      "invisible": true,
+      "break_on_attack_or_cast": true
+    },
+    "upcast": "+1 target/slot",
+    "tags": [
+      "stealth",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Rend la cible invisible jusqu’à attaque/incantation (conc. 1 h)."
+  },
+  "lesser_restoration": {
+    "id": "lesser_restoration",
+    "fr": "Restauration partielle",
+    "lvl": 2,
+    "sch": "abjuration",
+    "lst": [
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "touch",
+    "dur": "inst",
+    "arch": "cleanse",
+    "targets": "n:1 ally",
+    "remove_one_of": [
+      "blinded",
+      "deafened",
+      "paralyzed",
+      "poisoned",
+      "disease"
+    ],
+    "tags": [
+      "save-ally",
+      "buff-utility"
+    ],
+    "src": "PHB",
+    "short_fr": "Met fin à une maladie ou à une condition : aveuglé, assourdi, paralysé, empoisonné."
+  },
+  "levitate": {
+    "id": "levitate",
+    "fr": "Lévitation",
+    "lvl": 2,
+    "sch": "transmutation",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:petite boucle de cuir",
+    "rng": "ft:60",
+    "dur": "conc:10m(up)",
+    "arch": "save_single_condition",
+    "sv": "CON",
+    "targets": "n:1 creature",
+    "condition_id": "levitating",
+    "repeat_save": "end_of_turn",
+    "tags": [
+      "control",
+      "concentration-staple",
+      "movement-denial"
+    ],
+    "src": "PHB",
+    "short_fr": "Fait léviter une créature (CON save si non consentant) (conc. 10 min)."
+  },
+  "magic_weapon": {
+    "id": "magic_weapon",
+    "fr": "Arme magique",
+    "lvl": 2,
+    "sch": "transmutation",
+    "lst": [
+      "paladin",
+      "wizard",
+      "artificer"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "touch",
+    "dur": "conc:1h(up)",
+    "arch": "buff_concentration",
+    "targets": "n:1 object",
+    "buff_id": "magic_weapon",
+    "grants": {
+      "weapon_attack_bonus": "+1",
+      "weapon_magic": true
+    },
+    "upcast": "per:magic_weapon_scaling",
+    "tags": [
+      "buff-attack",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Une arme devient +1 (magique) (conc. 1 h). Upcast: +2 (niv 4), +3 (niv 6)."
+  },
+  "mirror_image": {
+    "id": "mirror_image",
+    "fr": "Image miroir",
+    "lvl": 2,
+    "sch": "illusion",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "self",
+    "dur": "1m",
+    "mod": "mirror_image_v1",
+    "mod_opts": {
+      "images": 3
+    },
+    "tags": [
+      "buff-defense"
+    ],
+    "src": "PHB",
+    "short_fr": "Crée 3 illusions qui détournent les attaques (sans concentration)."
+  },
+  "moonbeam": {
+    "id": "moonbeam",
+    "fr": "Rayon de lune",
+    "lvl": 2,
+    "sch": "evocation",
+    "lst": [
+      "druid"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:argent et herbe de nuit",
+    "rng": "ft:120",
+    "area": "cyl:5x40",
+    "dur": "conc:1m(up)",
+    "arch": "zone_aoe",
+    "tick": "start",
+    "tick_effect": {
+      "kind": "damage",
+      "save": "CON half",
+      "damage": "2d10 radiant"
+    },
+    "upcast": "+1d10/slot",
+    "tags": [
+      "damage-aoe",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Cylindre lumineux inflige 2d10 radiant (CON moitié) au début du tour (conc. 1 min)."
+  },
+  "pass_without_trace": {
+    "id": "pass_without_trace",
+    "fr": "Passage sans trace",
+    "lvl": 2,
+    "sch": "abjuration",
+    "lst": [
+      "druid",
+      "ranger"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:cendre",
+    "rng": "self",
+    "dur": "conc:1h(up)",
+    "arch": "buff_concentration",
+    "targets": "n:6 ally",
+    "buff_id": "pass_without_trace",
+    "grants": {
+      "stealth_bonus": "+10",
+      "leave_no_tracks": true
+    },
+    "tags": [
+      "stealth",
+      "exploration",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Vous et vos alliés proches obtenez +10 Discrétion; vous ne laissez pas de traces (conc. 1 h)."
+  },
+  "see_invisibility": {
+    "id": "see_invisibility",
+    "fr": "Voir l’invisible",
+    "lvl": 2,
+    "sch": "divination",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:poudre de carotte ou onguent",
+    "rng": "self",
+    "dur": "1h",
+    "arch": "buff_timed",
+    "buff_id": "see_invisibility",
+    "grants": {
+      "see_invisible": true,
+      "see_etheral": true
+    },
+    "tags": [
+      "detect",
+      "utility"
+    ],
+    "src": "PHB",
+    "short_fr": "Permet de voir les créatures invisibles et le plan éthéré (1 h)."
+  },
+  "shatter": {
+    "id": "shatter",
+    "fr": "Fracassement",
+    "lvl": 2,
+    "sch": "evocation",
+    "lst": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:fragment de mica",
+    "rng": "ft:60",
+    "area": "sphere:10",
+    "dur": "inst",
+    "arch": "save_aoe_damage",
+    "sv": "CON half",
+    "dmg": "3d8 thunder",
+    "upcast": "+1d8/slot",
+    "tags": [
+      "damage-aoe"
+    ],
+    "src": "PHB",
+    "short_fr": "Sphère 10 ft : 3d8 tonnerre (CON moitié)."
+  },
+  "silence": {
+    "id": "silence",
+    "fr": "Silence",
+    "lvl": 2,
+    "sch": "illusion",
+    "lst": [
+      "bard",
+      "cleric"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "ft:120",
+    "area": "sphere:20",
+    "dur": "conc:10m(up)",
+    "ritual": true,
+    "arch": "zone_aoe",
+    "tick": "start",
+    "tick_effect": {
+      "kind": "grant",
+      "grant": {
+        "silenced": true,
+        "no_verbal_components": true
+      }
+    },
+    "tags": [
+      "area-control",
+      "ritual",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Sphère 20 ft de silence magique (pas de composantes verbales) (conc. 10 min)."
+  },
+  "spider_climb": {
+    "id": "spider_climb",
+    "fr": "Marche sur les murs",
+    "lvl": 2,
+    "sch": "transmutation",
+    "lst": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:goutte de bitume et araignée",
+    "rng": "touch",
+    "dur": "conc:1h(up)",
+    "arch": "buff_concentration",
+    "targets": "n:1 ally",
+    "buff_id": "spider_climb",
+    "grants": {
+      "climb_speed_equals_walk": true,
+      "walk_on_walls": true
+    },
+    "tags": [
+      "utility",
+      "concentration-staple",
+      "exploration"
+    ],
+    "src": "PHB",
+    "short_fr": "La cible peut grimper sans test et marcher sur les murs/plafonds (conc. 1 h)."
+  },
+  "spiritual_weapon": {
+    "id": "spiritual_weapon",
+    "fr": "Arme spirituelle",
+    "lvl": 2,
+    "sch": "evocation",
+    "lst": [
+      "cleric"
+    ],
+    "ct": "B",
+    "cmp": "V,S",
+    "rng": "ft:60",
+    "dur": "1m",
+    "arch": "spectral_weapon",
+    "base_dice": "1d8",
+    "ability_mod": "WIS",
+    "upcast": "+1 die/2slot",
+    "tags": [
+      "damage-single",
+      "bonus-action-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Invoque une arme spectrale (BA : 1d8+mod, force). Upcast : +1d8/2 niveaux."
+  },
+  "web": {
+    "id": "web",
+    "fr": "Toile d’araignée",
+    "lvl": 2,
+    "sch": "conjuration",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:un peu de toile d’araignée",
+    "rng": "ft:60",
+    "area": "cube:20",
+    "dur": "conc:1h(up)",
+    "arch": "save_area_condition",
+    "sv": "DEX",
+    "condition": {
+      "id": "restrained",
+      "mods": {
+        "speed_multiplier": 0
+      },
+      "repeat_save": "end_of_turn"
+    },
+    "tags": [
+      "area-control",
+      "hard-cc",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Zone 20 ft de toiles; DEX save sinon Entravé (conc. 1 h)."
+  },
+  "counterspell": {
+    "id": "counterspell",
+    "fr": "Contresort",
+    "lvl": 3,
+    "sch": "abjuration",
+    "lst": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "R",
+    "reaction_trigger": "Quand une créature dans 60 ft lance un sort",
+    "cmp": "V,S",
+    "rng": "ft:60",
+    "dur": "inst",
+    "arch": "counterspell",
+    "auto_if_slot_leq": 3,
+    "tags": [
+      "counterspell",
+      "reaction-staple",
+      "debuff-utility"
+    ],
+    "src": "PHB",
+    "short_fr": "Interrompt un sort (auto si ≤3; sinon test contre DD 10+niveau)."
+  },
+  "dispel_magic": {
+    "id": "dispel_magic",
+    "fr": "Dissipation de la magie",
+    "lvl": 3,
+    "sch": "abjuration",
+    "lst": [
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "sorcerer",
+      "warlock",
+      "wizard",
+      "artificer"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "ft:120",
+    "dur": "inst",
+    "arch": "dispel",
+    "auto_if_slot_leq": 3,
+    "tags": [
+      "utility",
+      "dispel"
+    ],
+    "src": "PHB",
+    "short_fr": "Dissipe un effet magique (auto si niveau ≤3, sinon test)."
+  },
+  "fear": {
+    "id": "fear",
+    "fr": "Peur",
+    "lvl": 3,
+    "sch": "illusion",
+    "lst": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:graines blanches d’une plante",
+    "rng": "self",
+    "area": "cone:30",
+    "dur": "conc:1m(up)",
+    "arch": "save_area_condition",
+    "sv": "WIS",
+    "condition": {
+      "id": "frightened",
+      "mods": {
+        "drop_held": true,
+        "forced_dash_away": true
+      },
+      "repeat_save": "end_of_turn"
+    },
+    "tags": [
+      "soft-cc",
+      "area-control",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Cône 30 ft : effroi, lâche ses objets, fuit (conc. 1 min)."
+  },
+  "fireball": {
+    "id": "fireball",
+    "fr": "Boule de feu",
+    "lvl": 3,
+    "sch": "evocation",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:guano et soufre",
+    "rng": "ft:150",
+    "area": "sphere:20",
+    "dur": "inst",
+    "arch": "save_aoe_damage",
+    "sv": "DEX half",
+    "dmg": "8d6 fire",
+    "upcast": "+1d6/slot",
+    "tags": [
+      "damage-aoe",
+      "nova"
+    ],
+    "src": "PHB",
+    "short_fr": "Explosion de feu (20 ft), 8d6 feu (DEX moitié)."
+  },
+  "fly": {
+    "id": "fly",
+    "fr": "Vol",
+    "lvl": 3,
+    "sch": "transmutation",
+    "lst": [
+      "sorcerer",
+      "warlock",
+      "wizard",
+      "artificer"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:plume de grand oiseau",
+    "rng": "touch",
+    "dur": "conc:10m(up)",
+    "arch": "buff_concentration",
+    "targets": "n:1 ally",
+    "buff_id": "fly",
+    "grants": {
+      "fly_speed_equals_walk": true,
+      "fall_safely": true
+    },
+    "upcast": "+1 target/slot",
+    "tags": [
+      "mobility",
+      "concentration-staple",
+      "exploration"
+    ],
+    "src": "PHB",
+    "short_fr": "La cible gagne une vitesse de vol égale à sa vitesse (conc. 10 min)."
+  },
+  "haste": {
+    "id": "haste",
+    "fr": "Hâte",
+    "lvl": 3,
+    "sch": "transmutation",
+    "lst": [
+      "sorcerer",
+      "wizard",
+      "artificer"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:copeau de racine de réglisse",
+    "rng": "ft:30",
+    "dur": "conc:1m(up)",
+    "arch": "buff_concentration",
+    "targets": "n:1 ally",
+    "buff_id": "haste",
+    "grants": {
+      "ac_bonus": 2,
+      "speed_multiplier": 2,
+      "extra_action": "haste",
+      "advantage_vs": [
+        "DEX"
+      ]
+    },
+    "tags": [
+      "buff-attack",
+      "buff-defense",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Vitesse doublée, +2 CA, action supplémentaire (conc. 1 min)."
+  },
+  "hypnotic_pattern": {
+    "id": "hypnotic_pattern",
+    "fr": "Image hypnotique",
+    "lvl": 3,
+    "sch": "illusion",
+    "lst": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "S,M:bâton luisant d’encens",
+    "rng": "ft:120",
+    "area": "cube:30",
+    "dur": "conc:1m(up)",
+    "arch": "save_area_condition",
+    "sv": "WIS",
+    "condition": {
+      "id": "hypnotized",
+      "mods": {
+        "charmed": true,
+        "incapacitated": true,
+        "speed_multiplier": 0,
+        "end_on_damage": true
+      },
+      "repeat_save": "end_of_turn"
+    },
+    "tags": [
+      "hard-cc",
+      "area-control",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Cube 30 ft : charmé + incapac. (s’achève aux dégâts) (conc. 1 min)."
+  },
+  "lightning_bolt": {
+    "id": "lightning_bolt",
+    "fr": "Éclair",
+    "lvl": 3,
+    "sch": "evocation",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:fourrure et bâton d’ambre",
+    "rng": "self",
+    "area": "line:100",
+    "dur": "inst",
+    "arch": "save_aoe_damage",
+    "sv": "DEX half",
+    "dmg": "8d6 lightning",
+    "upcast": "+1d6/slot",
+    "tags": [
+      "damage-aoe",
+      "line"
+    ],
+    "src": "PHB",
+    "short_fr": "Ligne de 100 ft : 8d6 foudre (DEX moitié)."
+  },
+  "slow": {
+    "id": "slow",
+    "fr": "Lenteur",
+    "lvl": 3,
+    "sch": "transmutation",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:mélasse",
+    "rng": "ft:120",
+    "area": "cube:40",
+    "dur": "conc:1m(up)",
+    "arch": "save_area_condition",
+    "sv": "WIS",
+    "targets": "n:6 creature",
+    "condition": {
+      "id": "slowed",
+      "mods": {
+        "speed_multiplier": 0.5,
+        "ac_penalty": 2,
+        "no_reactions": true,
+        "restrict_actions": "limited",
+        "max_attacks": 1
+      },
+      "repeat_save": "end_of_turn"
+    },
+    "tags": [
+      "soft-cc",
+      "debuff-defense",
+      "area-control",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Jusqu’à 6 créatures : ralenties, -2 CA, pas de réactions (conc. 1 min)."
+  },
+  "water_breathing": {
+    "id": "water_breathing",
+    "fr": "Respiration aquatique",
+    "lvl": 3,
+    "sch": "transmutation",
+    "lst": [
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard",
+      "artificer"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:roseau",
+    "rng": "touch",
+    "dur": "24h",
+    "ritual": true,
+    "arch": "buff_timed",
+    "targets": "n:10 ally",
+    "buff_id": "water_breathing",
+    "grants": {
+      "water_breathing": true
+    },
+    "tags": [
+      "utility",
+      "exploration",
+      "ritual"
+    ],
+    "src": "PHB",
+    "short_fr": "Jusqu’à 10 créatures respirent sous l’eau (24 h, rituel)."
+  },
+  "banishment": {
+    "id": "banishment",
+    "fr": "Bannissement",
+    "lvl": 4,
+    "sch": "abjuration",
+    "lst": [
+      "cleric",
+      "paladin",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:objet de la planéité ciblée",
+    "rng": "ft:60",
+    "dur": "conc:1m(up)",
+    "arch": "save_single_condition",
+    "sv": "CHA",
+    "targets": "n:1 creature",
+    "condition_id": "banished",
+    "repeat_save": "end_of_turn",
+    "upcast": "+1 target/slot",
+    "tags": [
+      "hard-cc",
+      "bypass",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Bannit une créature (CHA). +1 cible par slot supérieur (conc. 1 min)."
+  },
+  "confusion": {
+    "id": "confusion",
+    "fr": "Confusion",
+    "lvl": 4,
+    "sch": "enchantment",
+    "lst": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:trois coquilles",
+    "rng": "ft:90",
+    "area": "sphere:10",
+    "dur": "conc:1m(up)",
+    "arch": "save_area_condition",
+    "sv": "WIS",
+    "condition": {
+      "id": "confused",
+      "mods": {
+        "random_behavior": true
+      },
+      "repeat_save": "end_of_turn"
+    },
+    "tags": [
+      "soft-cc",
+      "area-control",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Sphère 10 ft : comportements aléatoires (conc. 1 min)."
+  },
+  "freedom_of_movement": {
+    "id": "freedom_of_movement",
+    "fr": "Liberté de mouvement",
+    "lvl": 4,
+    "sch": "abjuration",
+    "lst": [
+      "bard",
+      "cleric",
+      "druid",
+      "ranger"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:brassard en cuir",
+    "rng": "touch",
+    "dur": "1h",
+    "arch": "buff_timed",
+    "targets": "n:1 ally",
+    "buff_id": "freedom_of_movement",
+    "grants": {
+      "ignore_difficult_terrain": true,
+      "escape_restraints_easy": true,
+      "immune_to_paralyzed_restrained": true,
+      "unimpeded_underwater": true
+    },
+    "tags": [
+      "mobility",
+      "buff-utility"
+    ],
+    "src": "PHB",
+    "short_fr": "Ignore terrain difficile, entraves, etc. (1 h)."
+  },
+  "greater_invisibility": {
+    "id": "greater_invisibility",
+    "fr": "Invisibilité supérieure",
+    "lvl": 4,
+    "sch": "illusion",
+    "lst": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "touch",
+    "dur": "conc:1m(up)",
+    "arch": "buff_concentration",
+    "targets": "n:1 ally",
+    "buff_id": "greater_invisibility",
+    "grants": {
+      "invisible": true,
+      "attacking_doesnt_break": true,
+      "casting_doesnt_break": true
+    },
+    "tags": [
+      "stealth",
+      "offense",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Invisible même en attaquant/incantant (conc. 1 min)."
+  },
+  "ice_storm": {
+    "id": "ice_storm",
+    "fr": "Tempête de grêle",
+    "lvl": 4,
+    "sch": "evocation",
+    "lst": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:poussière de mica",
+    "rng": "ft:300",
+    "area": "cyl:20x40",
+    "dur": "inst",
+    "arch": "save_aoe_damage",
+    "sv": "DEX half",
+    "dmg": "4d6 cold",
+    "tags": [
+      "damage-aoe"
+    ],
+    "src": "PHB",
+    "short_fr": "Cylindre 20 ft/40 ft : 4d6 froid (DEX moitié)."
+  },
+  "locate_creature": {
+    "id": "locate_creature",
+    "fr": "Localiser une créature",
+    "lvl": 4,
+    "sch": "divination",
+    "lst": [
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:fourrure",
+    "rng": "self",
+    "dur": "conc:1h(up)",
+    "arch": "buff_concentration",
+    "targets": "self",
+    "buff_id": "locate_creature",
+    "grants": {
+      "sense_locate_creature": true
+    },
+    "tags": [
+      "detect",
+      "tracking",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Perce l’emplacement d’une créature connue (conc. 1 h)."
+  },
+  "resilient_sphere": {
+    "id": "resilient_sphere",
+    "fr": "Sphère résiliente",
+    "lvl": 4,
+    "sch": "evocation",
+    "lst": [
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:gemme",
+    "rng": "ft:30",
+    "dur": "conc:1m(up)",
+    "arch": "save_single_condition",
+    "sv": "DEX",
+    "targets": "n:1 creature",
+    "condition_id": "encapsulated",
+    "repeat_save": "end_of_turn",
+    "tags": [
+      "control",
+      "bypass",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Enferme une créature dans une sphère impénétrable (conc. 1 min)."
+  },
+  "stoneskin": {
+    "id": "stoneskin",
+    "fr": "Peau de pierre",
+    "lvl": 4,
+    "sch": "abjuration",
+    "lst": [
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard",
+      "artificer"
+    ],
+    "ct": "A",
+    "cmp": "V,S,Mgp:100:diamant en poudre",
+    "rng": "touch",
+    "dur": "conc:1h(up)",
+    "arch": "buff_concentration",
+    "targets": "n:1 ally",
+    "buff_id": "stoneskin",
+    "grants": {
+      "resistance_vs": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ],
+      "nonmagical_only": true
+    },
+    "tags": [
+      "buff-defense",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Résistance B/P/T non magiques (conc. 1 h)."
+  },
+  "wall_of_fire": {
+    "id": "wall_of_fire",
+    "fr": "Mur de feu",
+    "lvl": 4,
+    "sch": "evocation",
+    "lst": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:phosphore ou un peu de soufre",
+    "rng": "ft:120",
+    "area": "line:60",
+    "dur": "conc:1m(up)",
+    "arch": "zone_aoe",
+    "tick": "end",
+    "tick_effect": {
+      "kind": "damage",
+      "save": "DEX half",
+      "damage": "5d8 fire"
+    },
+    "upcast": "+1d8/slot",
+    "tags": [
+      "area-control",
+      "damage-aoe",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Mur brûlant (ligne 60 ft). DEX moitié en fin de tour (conc. 1 min)."
+  },
+  "cone_of_cold": {
+    "id": "cone_of_cold",
+    "fr": "Cône de froid",
+    "lvl": 5,
+    "sch": "evocation",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:cristal blanc",
+    "rng": "self",
+    "area": "cone:60",
+    "dur": "inst",
+    "arch": "save_aoe_damage",
+    "sv": "CON half",
+    "dmg": "8d8 cold",
+    "upcast": "+1d8/slot",
+    "tags": [
+      "damage-aoe"
+    ],
+    "src": "PHB",
+    "short_fr": "Cône 60 ft : 8d8 froid (CON moitié)."
+  },
+  "dominate_person": {
+    "id": "dominate_person",
+    "fr": "Dominer une personne",
+    "lvl": 5,
+    "sch": "enchantment",
+    "lst": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:une goutte de sang",
+    "rng": "ft:60",
+    "dur": "conc:1m(up)",
+    "arch": "save_single_condition",
+    "sv": "WIS",
+    "targets": "n:1 humanoid",
+    "condition_id": "dominated",
+    "repeat_save": "end_of_turn",
+    "tags": [
+      "hard-cc",
+      "social",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Contrôle un humanoïde (save WIS en fin de tour) (conc. 1 min)."
+  },
+  "greater_restoration": {
+    "id": "greater_restoration",
+    "fr": "Restauration supérieure",
+    "lvl": 5,
+    "sch": "abjuration",
+    "lst": [
+      "bard",
+      "cleric",
+      "druid"
+    ],
+    "ct": "A",
+    "cmp": "V,S,Mgp:100:diamant en poudre",
+    "rng": "touch",
+    "dur": "inst",
+    "arch": "cleanse",
+    "targets": "n:1 ally",
+    "remove_one_of": [
+      "exhaustion_one_level",
+      "charmed",
+      "petrified",
+      "cursed",
+      "attunement_curse",
+      "ability_score_reduction_one",
+      "max_hp_reduction"
+    ],
+    "tags": [
+      "save-ally",
+      "healing",
+      "utility"
+    ],
+    "src": "PHB",
+    "short_fr": "Restaure un état sévère (épuisement -1, charmed, pétrifié, malédiction, etc.)."
+  },
+  "hold_monster": {
+    "id": "hold_monster",
+    "fr": "Immobiliser un monstre",
+    "lvl": 5,
+    "sch": "enchantment",
+    "lst": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:petit morceau de fer",
+    "rng": "ft:90",
+    "dur": "conc:1m(up)",
+    "arch": "save_single_condition",
+    "sv": "WIS",
+    "targets": "n:1 creature",
+    "condition_id": "paralyzed",
+    "repeat_save": "end_of_turn",
+    "upcast": "+1 target/slot",
+    "tags": [
+      "hard-cc",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Paralyse une créature (WIS). +1 cible par slot (conc. 1 min)."
+  },
+  "insect_plague": {
+    "id": "insect_plague",
+    "fr": "Nuée d’insectes",
+    "lvl": 5,
+    "sch": "conjuration",
+    "lst": [
+      "cleric",
+      "druid"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:graines et miel",
+    "rng": "ft:300",
+    "area": "sphere:20",
+    "dur": "conc:10m(up)",
+    "arch": "zone_aoe",
+    "tick": "start",
+    "tick_effect": {
+      "kind": "damage",
+      "save": "CON half",
+      "damage": "4d10 piercing"
+    },
+    "tags": [
+      "damage-aoe",
+      "area-control",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Sphère 20 ft de nuées mordantes : 4d10 perforants (conc. 10 min)."
+  },
+  "scrying": {
+    "id": "scrying",
+    "fr": "Scrutation",
+    "lvl": 5,
+    "sch": "divination",
+    "lst": [
+      "bard",
+      "cleric",
+      "druid",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "10m",
+    "cmp": "V,S,M:miroir d’argent",
+    "rng": "self",
+    "dur": "conc:10m(up)",
+    "arch": "buff_concentration",
+    "targets": "self",
+    "buff_id": "scrying",
+    "grants": {
+      "see_remote_target": true,
+      "hear_remote_target": true
+    },
+    "tags": [
+      "divination",
+      "ritual-like",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Observe une cible à distance via un capteur (conc. 10 min)."
+  },
+  "wall_of_stone": {
+    "id": "wall_of_stone",
+    "fr": "Mur de pierre",
+    "lvl": 5,
+    "sch": "evocation",
+    "lst": [
+      "druid",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:grès ou granit",
+    "rng": "ft:120",
+    "area": "line:120",
+    "dur": "conc:10m(up)",
+    "arch": "zone_aoe",
+    "tick": "start",
+    "tick_effect": {
+      "kind": "grant",
+      "grant": {
+        "stone_wall": true,
+        "blocks_movement": true
+      }
+    },
+    "tags": [
+      "area-control",
+      "utility",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Crée un mur de pierre modulable (devient permanent si maintenu 10 min)."
+  },
+  "blade_barrier": {
+    "id": "blade_barrier",
+    "fr": "Barrière de lames",
+    "lvl": 6,
+    "sch": "evocation",
+    "lst": [
+      "cleric"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "ft:90",
+    "area": "line:100",
+    "dur": "conc:10m(up)",
+    "arch": "zone_aoe",
+    "tick": "end",
+    "tick_effect": {
+      "kind": "damage",
+      "save": "DEX half",
+      "damage": "6d10 slashing"
+    },
+    "tags": [
+      "area-control",
+      "damage-aoe",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Mur de lames (ligne 100 ft) : 6d10 tranchants (DEX moitié) (conc. 10 min)."
+  },
+  "chain_lightning": {
+    "id": "chain_lightning",
+    "fr": "Chaîne d’éclairs",
+    "lvl": 6,
+    "sch": "evocation",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:ambre, fourrure et tige de verre",
+    "rng": "ft:150",
+    "dur": "inst",
+    "arch": "save_aoe_damage",
+    "sv": "DEX half",
+    "targets": {
+      "count": 4,
+      "restrictions": [
+        "creature"
+      ]
+    },
+    "dmg": "10d8 lightning",
+    "tags": [
+      "damage-multitarget"
+    ],
+    "src": "PHB",
+    "short_fr": "Jusqu’à 4 cibles : 10d8 foudre (DEX moitié)."
+  },
+  "disintegrate": {
+    "id": "disintegrate",
+    "fr": "Désintégration",
+    "lvl": 6,
+    "sch": "transmutation",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:poussière de jade et saphir",
+    "rng": "ft:60",
+    "dur": "inst",
+    "arch": "save_aoe_damage",
+    "sv": "DEX negate",
+    "targets": "n:1 creature",
+    "dmg": "10d6+40 force",
+    "tags": [
+      "damage-single",
+      "bypass"
+    ],
+    "src": "PHB",
+    "short_fr": "Cible unique : DEX (annule) sinon 10d6+40 force; réduit en poussière si tué."
+  },
+  "flesh_to_stone": {
+    "id": "flesh_to_stone",
+    "fr": "Chair en pierre",
+    "lvl": 6,
+    "sch": "transmutation",
+    "lst": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:poussière de pierre et eau",
+    "rng": "ft:60",
+    "dur": "conc:1m(up)",
+    "arch": "save_single_condition",
+    "sv": "CON",
+    "targets": "n:1 creature",
+    "condition_id": "petrified",
+    "repeat_save": "end_of_turn",
+    "tags": [
+      "hard-cc",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Tend à pétrifier une créature (CON, sauvegardes répétées) (conc. 1 min)."
+  },
+  "globe_of_invulnerability": {
+    "id": "globe_of_invulnerability",
+    "fr": "Globe d’invulnérabilité",
+    "lvl": 6,
+    "sch": "abjuration",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:perle de verre",
+    "rng": "self",
+    "dur": "conc:1m(up)",
+    "arch": "buff_concentration",
+    "targets": "self",
+    "buff_id": "globe_of_invulnerability",
+    "grants": {
+      "block_spells_level_leq": 5,
+      "radius_ft": 10
+    },
+    "tags": [
+      "defense",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Sphère 10 ft qui bloque les sorts ≤ niveau 5 (conc. 1 min)."
+  },
+  "heroes_feast": {
+    "id": "heroes_feast",
+    "fr": "Festin des héros",
+    "lvl": 6,
+    "sch": "conjuration",
+    "lst": [
+      "cleric",
+      "druid"
+    ],
+    "ct": "10m",
+    "cmp": "V,S,Mgp:1000:bol ou coupe gemmé(e)",
+    "rng": "self",
+    "dur": "24h",
+    "arch": "buff_timed",
+    "targets": "n:12 ally",
+    "buff_id": "heroes_feast",
+    "grants": {
+      "immune_to": [
+        "poison",
+        "frightened"
+      ],
+      "advantage_vs": [
+        "WIS"
+      ],
+      "max_hp_increase": "2d10",
+      "cleanse_disease_poison_on_apply": true
+    },
+    "tags": [
+      "party-buff",
+      "exploration"
+    ],
+    "src": "PHB",
+    "short_fr": "Banquet magique (12 alliés) : immunité poison/peur, +2d10 PV max, avantages (24 h)."
+  },
+  "mass_suggestion": {
+    "id": "mass_suggestion",
+    "fr": "Suggestion de masse",
+    "lvl": 6,
+    "sch": "enchantment",
+    "lst": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,M:langue de serpent et miel",
+    "rng": "ft:60",
+    "dur": "24h",
+    "arch": "save_area_condition",
+    "sv": "WIS",
+    "targets": "n:12 creature",
+    "condition": {
+      "id": "suggested",
+      "mods": {
+        "forced_behavior": true
+      },
+      "repeat_save": "none"
+    },
+    "tags": [
+      "social",
+      "area-control"
+    ],
+    "src": "PHB",
+    "short_fr": "Jusqu’à 12 créatures suivent une consigne raisonnable (WIS, 24 h)."
+  },
+  "move_earth": {
+    "id": "move_earth",
+    "fr": "Déplacement de terrain",
+    "lvl": 6,
+    "sch": "transmutation",
+    "lst": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "1m",
+    "cmp": "V,S,M:pelle miniature",
+    "rng": "ft:120",
+    "dur": "conc:2h(up)",
+    "arch": "zone_aoe",
+    "tick": "start",
+    "tick_effect": {
+      "kind": "grant",
+      "grant": {
+        "reshape_terrain": true
+      }
+    },
+    "tags": [
+      "utility",
+      "exploration",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Façonne et déplace la terre/argile/sable dans une large zone (conc. 2 h)."
+  },
+  "true_seeing": {
+    "id": "true_seeing",
+    "fr": "Vision véritable",
+    "lvl": 6,
+    "sch": "divination",
+    "lst": [
+      "bard",
+      "cleric",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:onguent de valeur",
+    "rng": "touch",
+    "dur": "1h",
+    "arch": "buff_timed",
+    "targets": "n:1 ally",
+    "buff_id": "true_seeing",
+    "grants": {
+      "truesight_ft": 120,
+      "see_true_form": true,
+      "see_ethereal": true
+    },
+    "tags": [
+      "detect",
+      "utility"
+    ],
+    "src": "PHB",
+    "short_fr": "Confère vision véritable (truesight 120 ft) pendant 1 h."
+  },
+  "wall_of_thorns": {
+    "id": "wall_of_thorns",
+    "fr": "Mur d’épines",
+    "lvl": 6,
+    "sch": "conjuration",
+    "lst": [
+      "druid"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:épines",
+    "rng": "ft:120",
+    "area": "cyl:10x20",
+    "dur": "conc:10m(up)",
+    "arch": "zone_aoe",
+    "tick": "end",
+    "tick_effect": {
+      "kind": "damage",
+      "save": "DEX half",
+      "damage": "7d8 piercing"
+    },
+    "tags": [
+      "area-control",
+      "difficult-terrain",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Mur d’épines (difficile) : 7d8 perforants (DEX moitié) (conc. 10 min)."
+  },
+  "wind_walk": {
+    "id": "wind_walk",
+    "fr": "Marche-vent",
+    "lvl": 6,
+    "sch": "transmutation",
+    "lst": [
+      "druid"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:plumes et encens",
+    "rng": "ft:30",
+    "dur": "8h",
+    "arch": "buff_timed",
+    "targets": "n:10 ally",
+    "buff_id": "wind_walk",
+    "grants": {
+      "gaseous_form_travel": true,
+      "fly_speed": "300",
+      "restricted_actions": true
+    },
+    "tags": [
+      "travel",
+      "exploration"
+    ],
+    "src": "PHB",
+    "short_fr": "Jusqu’à 10 alliés deviennent brume et se déplacent très vite (8 h)."
+  },
+  "etherealness": {
+    "id": "etherealness",
+    "fr": "Éthérialité",
+    "lvl": 7,
+    "sch": "transmutation",
+    "lst": [
+      "bard",
+      "cleric",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:fil d’argent",
+    "rng": "self",
+    "dur": "8h",
+    "arch": "buff_timed",
+    "targets": "self",
+    "buff_id": "etherealness",
+    "grants": {
+      "ethereal_plane": true
+    },
+    "tags": [
+      "travel",
+      "exploration"
+    ],
+    "src": "PHB",
+    "short_fr": "Vous entrez dans le Plan Éthéré pendant 8 h."
+  },
+  "finger_of_death": {
+    "id": "finger_of_death",
+    "fr": "Doigt de mort",
+    "lvl": 7,
+    "sch": "necromancy",
+    "lst": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "ft:60",
+    "dur": "inst",
+    "arch": "save_aoe_damage",
+    "sv": "CON half",
+    "targets": "n:1 creature",
+    "dmg": "7d8+30 necrotic",
+    "tags": [
+      "damage-single",
+      "necromancy"
+    ],
+    "src": "PHB",
+    "short_fr": "Cible unique : 7d8+30 nécrotique (CON moitié)."
+  },
+  "fire_storm": {
+    "id": "fire_storm",
+    "fr": "Tempête de feu",
+    "lvl": 7,
+    "sch": "evocation",
+    "lst": [
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "ft:150",
+    "dur": "inst",
+    "arch": "save_aoe_damage",
+    "sv": "DEX half",
+    "targets": "all_in_area",
+    "dmg": "7d10 fire",
+    "tags": [
+      "damage-aoe",
+      "wide-area"
+    ],
+    "src": "PHB",
+    "short_fr": "Pluie de feu modulable : 7d10 feu (DEX moitié)."
+  },
+  "plane_shift": {
+    "id": "plane_shift",
+    "fr": "Changement de plan",
+    "lvl": 7,
+    "sch": "conjuration",
+    "lst": [
+      "cleric",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:fourche d’accord plan",
+    "rng": "touch",
+    "dur": "inst",
+    "tags": [
+      "travel",
+      "utility"
+    ],
+    "src": "PHB",
+    "short_fr": "Transporte jusqu’à 8 créatures vers un autre plan."
+  },
+  "reverse_gravity": {
+    "id": "reverse_gravity",
+    "fr": "Gravité inversée",
+    "lvl": 7,
+    "sch": "transmutation",
+    "lst": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:aimant et fer",
+    "rng": "ft:100",
+    "area": "cyl:50x100",
+    "dur": "conc:1m(up)",
+    "arch": "zone_aoe",
+    "tick": "start",
+    "tick_effect": {
+      "kind": "grant",
+      "grant": {
+        "levitating": true,
+        "fall_on_end": true
+      }
+    },
+    "tags": [
+      "area-control",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Colonne où tout chute vers le haut; retombe à la fin (conc. 1 min)."
+  },
+  "teleport": {
+    "id": "teleport",
+    "fr": "Téléportation",
+    "lvl": 7,
+    "sch": "conjuration",
+    "lst": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V",
+    "rng": "self",
+    "dur": "inst",
+    "tags": [
+      "travel",
+      "utility"
+    ],
+    "src": "PHB",
+    "short_fr": "Transporte instantanément vous et des compagnons vers un lieu connu."
+  },
+  "antimagic_field": {
+    "id": "antimagic_field",
+    "fr": "Champ d’antimagie",
+    "lvl": 8,
+    "sch": "abjuration",
+    "lst": [
+      "cleric",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:limaille de fer",
+    "rng": "self",
+    "area": "sphere:10",
+    "dur": "conc:1h(up)",
+    "arch": "zone_aoe",
+    "tick": "start",
+    "tick_effect": {
+      "kind": "grant",
+      "grant": {
+        "antimagic_field": true
+      }
+    },
+    "tags": [
+      "area-control",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Sphère 10 ft où la magie est neutralisée (conc. 1 h)."
+  },
+  "demiplane": {
+    "id": "demiplane",
+    "fr": "Demi-plan",
+    "lvl": 8,
+    "sch": "conjuration",
+    "lst": [
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "S",
+    "rng": "ft:60",
+    "dur": "1h",
+    "tags": [
+      "utility",
+      "storage"
+    ],
+    "src": "PHB",
+    "short_fr": "Crée une porte vers une pièce extradimensionnelle (1 h)."
+  },
+  "earthquake": {
+    "id": "earthquake",
+    "fr": "Tremblement de terre",
+    "lvl": 8,
+    "sch": "evocation",
+    "lst": [
+      "cleric",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:terre broyée",
+    "rng": "ft:500",
+    "area": "cyl:50x500",
+    "dur": "conc:1m(up)",
+    "arch": "zone_aoe",
+    "tick": "start",
+    "tick_effect": {
+      "kind": "grant",
+      "grant": {
+        "knock_prone_on_fail": true,
+        "cracks_and_fissures": true
+      }
+    },
+    "tags": [
+      "area-control",
+      "environment",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Secousse massive : risque de chute, failles, dégâts structurels (conc. 1 min)."
+  },
+  "feeblemind": {
+    "id": "feeblemind",
+    "fr": "Aplatissement de l’esprit",
+    "lvl": 8,
+    "sch": "enchantment",
+    "lst": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:argile et cristal",
+    "rng": "ft:150",
+    "dur": "inst",
+    "arch": "save_single_condition",
+    "sv": "INT",
+    "targets": "n:1 creature",
+    "condition_id": "feebleminded",
+    "repeat_save": "30d",
+    "tags": [
+      "hard-cc"
+    ],
+    "src": "PHB",
+    "short_fr": "INT save : en cas d’échec, INT/CHA chutent, capacité d’incanter perdue (très longue durée)."
+  },
+  "maze": {
+    "id": "maze",
+    "fr": "Labyrinthe",
+    "lvl": 8,
+    "sch": "conjuration",
+    "lst": [
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "ft:60",
+    "dur": "up:10m",
+    "arch": "save_single_condition",
+    "sv": "INT",
+    "targets": "n:1 creature",
+    "condition_id": "maze",
+    "repeat_save": "end_of_turn",
+    "tags": [
+      "banish",
+      "control"
+    ],
+    "src": "PHB",
+    "short_fr": "Bannit dans un dédale ; la cible tente INT chaque tour pour revenir."
+  },
+  "mind_blank": {
+    "id": "mind_blank",
+    "fr": "Esprit impénétrable",
+    "lvl": 8,
+    "sch": "abjuration",
+    "lst": [
+      "bard",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "touch",
+    "dur": "24h",
+    "arch": "buff_timed",
+    "targets": "n:1 ally",
+    "buff_id": "mind_blank",
+    "grants": {
+      "immune_to": [
+        "charmed",
+        "psychic"
+      ],
+      "divination_proof": true
+    },
+    "tags": [
+      "defense",
+      "long-buff"
+    ],
+    "src": "PHB",
+    "short_fr": "Immunité au charme/psychique; protégé des divinations (24 h)."
+  },
+  "sunburst": {
+    "id": "sunburst",
+    "fr": "Rayon de soleil",
+    "lvl": 8,
+    "sch": "evocation",
+    "lst": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:poussière de tournesol",
+    "rng": "ft:150",
+    "area": "sphere:60",
+    "dur": "inst",
+    "arch": "save_aoe_damage",
+    "sv": "CON half",
+    "dmg": "12d6 radiant",
+    "tags": [
+      "damage-aoe"
+    ],
+    "src": "PHB",
+    "short_fr": "Sphère 60 ft : 12d6 radiant (CON moitié)."
+  },
+  "foresight": {
+    "id": "foresight",
+    "fr": "Prescience",
+    "lvl": 9,
+    "sch": "divination",
+    "lst": [
+      "bard",
+      "druid",
+      "warlock",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "touch",
+    "dur": "8h",
+    "arch": "buff_timed",
+    "targets": "n:1 ally",
+    "buff_id": "foresight",
+    "grants": {
+      "attack_advantage": true,
+      "ability_checks_advantage": true,
+      "enemy_attack_disadvantage": true,
+      "cannot_be_surprised": true
+    },
+    "tags": [
+      "offense",
+      "defense",
+      "long-buff"
+    ],
+    "src": "PHB",
+    "short_fr": "Avantages globaux + ennemis en désavantage pour toucher; ne peut pas être surpris (8 h)."
+  },
+  "gate": {
+    "id": "gate",
+    "fr": "Porte",
+    "lvl": 9,
+    "sch": "conjuration",
+    "lst": [
+      "cleric",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S,M:diamant cerclé",
+    "rng": "ft:60",
+    "dur": "conc:1m(up)",
+    "tags": [
+      "conjuration",
+      "planar",
+      "concentration-staple"
+    ],
+    "src": "PHB",
+    "short_fr": "Ouvre un portail vers un autre plan; peut appeler une créature nommée."
+  },
+  "meteor_swarm": {
+    "id": "meteor_swarm",
+    "fr": "Pluie de météores",
+    "lvl": 9,
+    "sch": "evocation",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V,S",
+    "rng": "ft:1,000",
+    "dur": "inst",
+    "arch": "save_aoe_damage",
+    "sv": "DEX half",
+    "targets": "all_in_area",
+    "dmg": "20d6 fire",
+    "extras": [
+      "+20d6 bludgeoning (impact)"
+    ],
+    "tags": [
+      "damage-aoe",
+      "massive"
+    ],
+    "src": "PHB",
+    "short_fr": "Immense déluge : 20d6 feu (DEX moitié) (+20d6 contusion via impact)."
+  },
+  "time_stop": {
+    "id": "time_stop",
+    "fr": "Arrêt du temps",
+    "lvl": 9,
+    "sch": "transmutation",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V",
+    "rng": "self",
+    "dur": "inst",
+    "arch": "buff_timed",
+    "targets": "self",
+    "buff_id": "time_stop",
+    "grants": {
+      "extra_turns": "1d4+1",
+      "no_affect_others_directly": true
+    },
+    "tags": [
+      "tempo",
+      "nova-setup"
+    ],
+    "src": "PHB",
+    "short_fr": "Vous jouez 1d4+1 tours consécutifs (effet cesse si vous affectez autrui)."
+  },
+  "wish": {
+    "id": "wish",
+    "fr": "Souhait",
+    "lvl": 9,
+    "sch": "conjuration",
+    "lst": [
+      "sorcerer",
+      "wizard"
+    ],
+    "ct": "A",
+    "cmp": "V",
+    "rng": "self",
+    "dur": "inst",
+    "tags": [
+      "utility",
+      "universal"
+    ],
+    "src": "PHB",
+    "short_fr": "Altère la réalité dans les limites du sort (usage prudent)."
+  }
+}
