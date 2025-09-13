@@ -1,0 +1,2928 @@
+{
+  "berserker": {
+    "id": "berserker",
+    "fr_name": "Berserker",
+    "class_id": "barbarian",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "frenzy",
+        "name": "Frénésie",
+        "fr_name": "Frénésie",
+        "level": 3,
+        "type": "active",
+        "description": "Quand vous entrez en Rage, vous pouvez frapper en action bonus chaque tour; à la fin de la Rage, subissez un niveau d'épuisement.",
+        "effects": {
+          "on_rage_start": {
+            "grant_bonus_action_option": "Attack"
+          },
+          "on_rage_end": {
+            "apply_condition": {
+              "id": "exhaustion",
+              "stacks": 1
+            }
+          }
+        }
+      },
+      {
+        "id": "mindless_rage",
+        "name": "Rage sans esprit",
+        "fr_name": "Rage sans esprit",
+        "level": 6,
+        "type": "passive",
+        "description": "Immunisé contre charmé et effrayé pendant la Rage; fin de l'effet si existant.",
+        "effects": {
+          "while_raging": {
+            "condition_immunities": [
+              "charmed",
+              "frightened"
+            ],
+            "on_activate_cleanse": [
+              "charmed",
+              "frightened"
+            ]
+          }
+        }
+      },
+      {
+        "id": "intimidating_presence",
+        "name": "Présence intimidante",
+        "fr_name": "Présence intimidante",
+        "level": 10,
+        "type": "action",
+        "description": "Effrayez une créature (sauvegarde WIS) tant que vous la voyez (répétable).",
+        "effects": {
+          "on_use": {
+            "force_save": {
+              "ability": "WIS",
+              "dc_from": "class_dc:barbarian"
+            },
+            "on_fail": {
+              "apply_condition": {
+                "id": "frightened",
+                "duration": {
+                  "type": "rounds",
+                  "value": 1
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "retaliation",
+        "name": "Représailles",
+        "fr_name": "Représailles",
+        "level": 14,
+        "type": "reaction",
+        "description": "Quand une créature vous touche en mêlée, utilisez votre réaction pour l'attaquer.",
+        "effects": {
+          "incoming_melee_hit": {
+            "grant_reaction": {
+              "name": "Représailles",
+              "effect": "make_melee_attack"
+            }
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:23:50.318892Z"
+  },
+  "totem_warrior": {
+    "id": "totem_warrior",
+    "fr_name": "Guerrier totémique",
+    "class_id": "barbarian",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "totem_spirit",
+        "name": "Esprit totémique",
+        "fr_name": "Esprit totémique",
+        "level": 3,
+        "type": "choice",
+        "description": "Choisissez un esprit (ours, aigle, loup...) qui confère un bénéfice pendant la Rage.",
+        "effects": {
+          "choices": {
+            "category": "totem_spirit",
+            "examples": [
+              "bear",
+              "eagle",
+              "wolf"
+            ]
+          },
+          "while_raging": {
+            "bear": {
+              "resist_all_non_psychic": true
+            },
+            "eagle": {
+              "disengage_as_bonus": true,
+              "dash_advantage": true
+            },
+            "wolf": {
+              "allies_advantage_melee_against_your_targets": true
+            }
+          }
+        }
+      },
+      {
+        "id": "aspect_of_the_beast",
+        "name": "Aspect de la bête",
+        "fr_name": "Aspect de la bête",
+        "level": 6,
+        "type": "choice",
+        "description": "Choisissez un nouvel aspect lié à l'esprit choisi (capacités utilitaires).",
+        "effects": {
+          "choices": {
+            "category": "aspect_of_the_beast"
+          }
+        }
+      },
+      {
+        "id": "spirit_walker",
+        "name": "Marcheur des esprits",
+        "fr_name": "Marcheur des esprits",
+        "level": 10,
+        "type": "ritual",
+        "description": "Vous pouvez lancer Parler avec les Animaux en rituel.",
+        "effects": {
+          "ritual_cast": {
+            "spell_id": "speak_with_animals"
+          }
+        }
+      },
+      {
+        "id": "totemic_attunement",
+        "name": "Harmonisation totémique",
+        "fr_name": "Harmonisation totémique",
+        "level": 14,
+        "type": "choice",
+        "description": "Pouvoirs avancés de l'esprit choisi, actifs pendant la Rage.",
+        "effects": {
+          "choices": {
+            "category": "totemic_attunement"
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:23:50.318892Z"
+  },
+  "champion": {
+    "id": "champion",
+    "fr_name": "Champion",
+    "class_id": "fighter",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "improved_critical",
+        "name": "Critique amélioré",
+        "fr_name": "Critique amélioré",
+        "level": 3,
+        "type": "passive",
+        "description": "Vos attaques critiques sur un 19–20.",
+        "effects": {
+          "critical_range_bonus": {
+            "to": 19
+          }
+        }
+      },
+      {
+        "id": "remarkable_athlete",
+        "name": "Athlète remarquable",
+        "fr_name": "Athlète remarquable",
+        "level": 7,
+        "type": "passive",
+        "description": "+1/2 maîtrise aux tests sans maîtrise ; +10 ft aux sauts avec élan.",
+        "effects": {
+          "skill_floor_from_proficiency_half": true,
+          "jump_bonus_ft": 10
+        }
+      },
+      {
+        "id": "additional_fighting_style",
+        "name": "Style de combat supplémentaire",
+        "fr_name": "Style de combat supplémentaire",
+        "level": 10,
+        "type": "choice",
+        "description": "Choisissez un deuxième style de combat.",
+        "effects": {
+          "choices": {
+            "category": "fighting_style",
+            "count": 1
+          }
+        }
+      },
+      {
+        "id": "superior_critical",
+        "name": "Critique supérieur",
+        "fr_name": "Critique supérieur",
+        "level": 15,
+        "type": "passive",
+        "description": "Vos attaques critiques sur un 18–20.",
+        "effects": {
+          "critical_range_bonus": {
+            "to": 18
+          }
+        }
+      },
+      {
+        "id": "survivor",
+        "name": "Survivant",
+        "fr_name": "Survivant",
+        "level": 18,
+        "type": "passive",
+        "description": "Au début de chaque tour, regagnez des PV si < 1/2 PV max.",
+        "effects": {
+          "start_of_turn": {
+            "heal_if_below_fraction": {
+              "fraction": 0.5,
+              "amount_formula": "5 + proficiency_bonus"
+            }
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:23:50.318892Z"
+  },
+  "battle_master": {
+    "id": "battle_master",
+    "fr_name": "Maître de guerre",
+    "class_id": "fighter",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "combat_superiority",
+        "name": "Supériorité au combat",
+        "fr_name": "Supériorité au combat",
+        "level": 3,
+        "type": "resource",
+        "description": "Vous gagnez des dés de supériorité pour exécuter des manœuvres.",
+        "effects": {
+          "resource_pool": {
+            "id": "superiority_dice",
+            "die": "d8",
+            "count_by_level": [
+              {
+                "min_level": 3,
+                "count": 4
+              },
+              {
+                "min_level": 7,
+                "count": 5
+              },
+              {
+                "min_level": 15,
+                "count": 6
+              }
+            ],
+            "refresh": "short_rest"
+          },
+          "choices": {
+            "category": "maneuvers",
+            "known_by_level": [
+              {
+                "min_level": 3,
+                "known": 3
+              },
+              {
+                "min_level": 7,
+                "known": 4
+              },
+              {
+                "min_level": 10,
+                "known": 5
+              },
+              {
+                "min_level": 15,
+                "known": 6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "student_of_war",
+        "name": "Étudiant de la guerre",
+        "fr_name": "Étudiant de la guerre",
+        "level": 3,
+        "type": "passive",
+        "description": "Maîtrise d'un outil d'artisan.",
+        "effects": {
+          "grant_proficiencies": {
+            "tools": "+1"
+          }
+        }
+      },
+      {
+        "id": "know_your_enemy",
+        "name": "Connais ton ennemi",
+        "fr_name": "Connais ton ennemi",
+        "level": 7,
+        "type": "exploration",
+        "description": "Comparez vos valeurs à celles d'une créature après 1 minute d'observation.",
+        "effects": {
+          "out_of_combat_assess": {
+            "time_min": 1
+          }
+        }
+      },
+      {
+        "id": "improved_combat_superiority",
+        "name": "Supériorité améliorée",
+        "fr_name": "Supériorité améliorée",
+        "level": 10,
+        "type": "passive",
+        "description": "Vos dés passent à d10 (puis d12 au niv. 18).",
+        "effects": {
+          "resource_upgrade": {
+            "resource_id": "superiority_dice",
+            "die_by_level": [
+              {
+                "min_level": 10,
+                "die": "d10"
+              },
+              {
+                "min_level": 18,
+                "die": "d12"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "relentless",
+        "name": "Implacable",
+        "fr_name": "Implacable",
+        "level": 15,
+        "type": "passive",
+        "description": "Récupérez 1 dé si vous commencez un combat à 0.",
+        "effects": {
+          "start_of_combat": {
+            "if_resource_empty": {
+              "resource_id": "superiority_dice",
+              "restore": 1
+            }
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:23:50.318892Z"
+  },
+  "eldritch_knight": {
+    "id": "eldritch_knight",
+    "fr_name": "Chevalier occulte",
+    "class_id": "fighter",
+    "activates_at_level": 3,
+    "modules": {
+      "MODULE_MAGIE_ACTIF": true,
+      "caster_type": "third",
+      "spellcasting_ability": "INT"
+    },
+    "features": [
+      {
+        "id": "weapon_bond",
+        "name": "Lien d'arme",
+        "fr_name": "Lien d'arme",
+        "level": 3,
+        "type": "ritual",
+        "description": "Liez jusqu'à deux armes ; rappel en action bonus.",
+        "effects": {
+          "bond_weapons": {
+            "max": 2
+          },
+          "bonus_action": {
+            "recall_bonded_weapon": true
+          }
+        }
+      },
+      {
+        "id": "war_magic",
+        "name": "Magie de guerre",
+        "fr_name": "Magie de guerre",
+        "level": 7,
+        "type": "passive",
+        "description": "Après avoir lancé un tour de magie, attaque d'arme en action bonus.",
+        "effects": {
+          "on_cast_cantrip": {
+            "grant_bonus_action_option": "Attack"
+          }
+        }
+      },
+      {
+        "id": "eldritch_strike",
+        "name": "Frappe occulte",
+        "fr_name": "Frappe occulte",
+        "level": 10,
+        "type": "passive",
+        "description": "La créature touchée a désavantage au prochain jet de sauvegarde contre votre prochain sort.",
+        "effects": {
+          "on_hit": {
+            "mark_target": {
+              "tag": "eldritch_strike",
+              "save_disadvantage_on_next_spell": true
+            }
+          }
+        }
+      },
+      {
+        "id": "arcane_charge",
+        "name": "Charge arcanique",
+        "fr_name": "Charge arcanique",
+        "level": 15,
+        "type": "active",
+        "description": "Quand vous utilisez Poussée d’Action, vous pouvez vous téléporter de 30 ft.",
+        "effects": {
+          "on_action_surge": {
+            "teleport": {
+              "range_ft": 30
+            }
+          }
+        }
+      },
+      {
+        "id": "improved_war_magic",
+        "name": "Magie de guerre améliorée",
+        "fr_name": "Magie de guerre améliorée",
+        "level": 18,
+        "type": "passive",
+        "description": "Après avoir lancé un sort (non cantrip), attaque d'arme en action bonus.",
+        "effects": {
+          "on_cast_spell": {
+            "grant_bonus_action_option": "Attack"
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:23:50.318892Z"
+  },
+  "oath_of_devotion": {
+    "id": "oath_of_devotion",
+    "fr_name": "Serment de Dévotion",
+    "class_id": "paladin",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "channel_sacred_weapon",
+        "name": "Canalisation : Arme sacrée",
+        "fr_name": "Canalisation : Arme sacrée",
+        "level": 3,
+        "type": "action",
+        "description": "+CHA aux jets d’attaque (1 min) ; émet de la lumière.",
+        "effects": {
+          "on_use": {
+            "add_attack_bonus_from": "CHA",
+            "duration": {
+              "type": "minutes",
+              "value": 1
+            },
+            "light": {
+              "bright": 20,
+              "dim": 20
+            }
+          }
+        }
+      },
+      {
+        "id": "channel_turn_the_unholy",
+        "name": "Canalisation : Chasser l’impie",
+        "fr_name": "Canalisation : Chasser l’impie",
+        "level": 3,
+        "type": "action",
+        "description": "Repousser morts-vivants/fiélons (sauvegarde SAG).",
+        "effects": {
+          "on_use": {
+            "area": {
+              "shape": "sphere",
+              "radius_ft": 30,
+              "affects": "enemies",
+              "filter": {
+                "type": [
+                  "undead",
+                  "fiend"
+                ]
+              }
+            },
+            "force_save": {
+              "ability": "WIS",
+              "dc_from": "spell_save_dc:paladin"
+            },
+            "on_fail": {
+              "apply_condition": {
+                "id": "turned",
+                "duration": {
+                  "type": "rounds",
+                  "value": 1
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "aura_of_devotion",
+        "name": "Aura de dévotion",
+        "fr_name": "Aura de dévotion",
+        "level": 7,
+        "type": "passive",
+        "description": "Immunité au charme (alliés 10 ft).",
+        "effects": {
+          "aura": {
+            "radius_ft": 10,
+            "grant_immunity": [
+              "charmed"
+            ]
+          }
+        }
+      },
+      {
+        "id": "purity_of_spirit",
+        "name": "Pureté de l’esprit",
+        "fr_name": "Pureté de l’esprit",
+        "level": 15,
+        "type": "passive",
+        "description": "Protection contre le Mal et le Bien permanente.",
+        "effects": {
+          "permanent_effect": {
+            "spell": "protection_from_evil_and_good"
+          }
+        }
+      },
+      {
+        "id": "holy_nimbus",
+        "name": "Nimbus sacré",
+        "fr_name": "Nimbus sacré",
+        "level": 20,
+        "type": "action",
+        "description": "Aura 30 ft qui blesse les ennemis (radiant).",
+        "effects": {
+          "on_use": {
+            "aura": {
+              "radius_ft": 30,
+              "deal_damage_each_turn": {
+                "dice": "10",
+                "type": "radiant"
+              },
+              "duration": {
+                "type": "minutes",
+                "value": 1
+              }
+            }
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:23:50.318892Z"
+  },
+  "oath_of_ancients": {
+    "id": "oath_of_ancients",
+    "fr_name": "Serment des Anciens",
+    "class_id": "paladin",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "channel_natures_wrath",
+        "name": "Canalisation : Courroux de la nature",
+        "fr_name": "Canalisation : Courroux de la nature",
+        "level": 3,
+        "type": "action",
+        "description": "Entravez un ennemi (save FOR/DEX).",
+        "effects": {
+          "on_use": {
+            "target_one": true,
+            "force_save": {
+              "ability": "STR_or_DEX",
+              "dc_from": "spell_save_dc:paladin"
+            },
+            "on_fail": {
+              "apply_condition": {
+                "id": "restrained",
+                "duration": {
+                  "type": "rounds",
+                  "value": 1
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "channel_turn_the_faithless",
+        "name": "Canalisation : Chasser les infidèles",
+        "fr_name": "Canalisation : Chasser les infidèles",
+        "level": 3,
+        "type": "action",
+        "description": "Repoussez fées et fiélons (save SAG).",
+        "effects": {
+          "on_use": {
+            "area": {
+              "shape": "sphere",
+              "radius_ft": 30,
+              "affects": "enemies",
+              "filter": {
+                "type": [
+                  "fey",
+                  "fiend"
+                ]
+              }
+            },
+            "force_save": {
+              "ability": "WIS",
+              "dc_from": "spell_save_dc:paladin"
+            },
+            "on_fail": {
+              "apply_condition": {
+                "id": "turned",
+                "duration": {
+                  "type": "rounds",
+                  "value": 1
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "aura_of_warding",
+        "name": "Aura de sauvegarde",
+        "fr_name": "Aura de sauvegarde",
+        "level": 7,
+        "type": "passive",
+        "description": "Résistance aux dégâts des sorts (alliés 10 ft).",
+        "effects": {
+          "aura": {
+            "radius_ft": 10,
+            "grant_resistance_vs": [
+              "spell_damage"
+            ]
+          }
+        }
+      },
+      {
+        "id": "undying_sentinel",
+        "name": "Sentinelle éternelle",
+        "fr_name": "Sentinelle éternelle",
+        "level": 15,
+        "type": "passive",
+        "description": "Restez à 1 PV au lieu de 0 (1/LR).",
+        "effects": {
+          "once_per_long_rest": {
+            "prevent_drop_to_zero": true
+          }
+        }
+      },
+      {
+        "id": "elder_champion",
+        "name": "Champion vénérable",
+        "fr_name": "Champion vénérable",
+        "level": 20,
+        "type": "action",
+        "description": "Transformation : régénération + désavantage aux saves contre vos sorts.",
+        "effects": {
+          "on_use": {
+            "transform": {
+              "regen_per_turn": 10,
+              "save_disadvantage_vs_your_spells": true,
+              "duration": {
+                "type": "minutes",
+                "value": 1
+              }
+            }
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:23:50.318892Z"
+  },
+  "oath_of_vengeance": {
+    "id": "oath_of_vengeance",
+    "fr_name": "Serment de Vengeance",
+    "class_id": "paladin",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "channel_abjure_enemy",
+        "name": "Canalisation : Abjurer l’ennemi",
+        "fr_name": "Canalisation : Abjurer l’ennemi",
+        "level": 3,
+        "type": "action",
+        "description": "Effraie un ennemi (sauvegarde SAG), vitesse 0 si fiélon/mort-vivant.",
+        "effects": {
+          "on_use": {
+            "target_one": true,
+            "force_save": {
+              "ability": "WIS",
+              "dc_from": "spell_save_dc:paladin"
+            },
+            "on_fail": {
+              "apply_condition": {
+                "id": "frightened",
+                "duration": {
+                  "type": "rounds",
+                  "value": 1
+                }
+              },
+              "set_speed_to_zero_if_type": [
+                "fiend",
+                "undead"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "channel_vow_of_enmity",
+        "name": "Canalisation : Vœu d’inimitié",
+        "fr_name": "Canalisation : Vœu d’inimitié",
+        "level": 3,
+        "type": "bonus_action",
+        "description": "Avantage contre une cible pendant 1 min.",
+        "effects": {
+          "on_use": {
+            "mark_target": {
+              "id": "vow_of_enmity",
+              "duration": {
+                "type": "minutes",
+                "value": 1
+              }
+            },
+            "grant_advantage_vs_mark": true
+          }
+        }
+      },
+      {
+        "id": "relentless_avenger",
+        "name": "Vengeur inflexible",
+        "fr_name": "Vengeur inflexible",
+        "level": 7,
+        "type": "passive",
+        "description": "Après une OA réussie, déplacez-vous de 10 ft sans provoquer d'OA.",
+        "effects": {
+          "on_opportunity_attack_hit": {
+            "grant_free_movement_ft": 10,
+            "no_oa_trigger": true
+          }
+        }
+      },
+      {
+        "id": "soul_of_vengeance",
+        "name": "Âme de vengeance",
+        "fr_name": "Âme de vengeance",
+        "level": 15,
+        "type": "reaction",
+        "description": "Réaction : attaquez la cible marquée quand elle attaque.",
+        "effects": {
+          "when_marked_target_attacks": {
+            "grant_reaction": "make_melee_attack"
+          }
+        }
+      },
+      {
+        "id": "avenging_angel",
+        "name": "Ange vengeur",
+        "fr_name": "Ange vengeur",
+        "level": 20,
+        "type": "action",
+        "description": "Ailes (vol 60 ft) + aura de peur.",
+        "effects": {
+          "on_use": {
+            "grant_flight_ft": 60,
+            "aura": {
+              "radius_ft": 30,
+              "frighten_enemies": true
+            },
+            "duration": {
+              "type": "minutes",
+              "value": 1
+            }
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:23:50.318892Z"
+  },
+  "thief": {
+    "id": "thief",
+    "fr_name": "Voleur",
+    "class_id": "rogue",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "fast_hands",
+        "name": "Mains leste",
+        "fr_name": "Mains leste",
+        "level": 3,
+        "type": "passive",
+        "description": "Utiliser 'Utiliser un objet' comme action bonus (avec Ruse).",
+        "effects": {
+          "cunning_action_expansion": [
+            "UseObject"
+          ]
+        }
+      },
+      {
+        "id": "second_story_work",
+        "name": "Ouvrage de seconde main",
+        "fr_name": "Ouvrage de seconde main",
+        "level": 3,
+        "type": "passive",
+        "description": "Escalade améliorée ; sauts accrus.",
+        "effects": {
+          "climb_speed_equal_to_walk": true,
+          "jump_bonus_ft": 5
+        }
+      },
+      {
+        "id": "supreme_sneak",
+        "name": "Furtivité suprême",
+        "fr_name": "Furtivité suprême",
+        "level": 9,
+        "type": "passive",
+        "description": "Avantage à Discrétion si vous bougez à la moitié de votre vitesse.",
+        "effects": {
+          "stealth_advantage_if_half_speed": true
+        }
+      },
+      {
+        "id": "use_magic_device",
+        "name": "Utilisation d’objets magiques",
+        "fr_name": "Utilisation d’objets magiques",
+        "level": 13,
+        "type": "passive",
+        "description": "Ignorer les restrictions des objets magiques.",
+        "effects": {
+          "ignore_magic_item_restrictions": true
+        }
+      },
+      {
+        "id": "thieves_reflexes",
+        "name": "Réflexes de voleur",
+        "fr_name": "Réflexes de voleur",
+        "level": 17,
+        "type": "passive",
+        "description": "Deux tours au premier round de chaque combat.",
+        "effects": {
+          "first_round_extra_turn": true
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:23:50.318892Z"
+  },
+  "assassin": {
+    "id": "assassin",
+    "fr_name": "Assassin",
+    "class_id": "rogue",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "bonus_proficiencies_assassin",
+        "name": "Maîtrises supplémentaires",
+        "fr_name": "Maîtrises supplémentaires",
+        "level": 3,
+        "type": "passive",
+        "description": "Kit de déguisement et kit de poison.",
+        "effects": {
+          "grant_proficiencies": {
+            "tools": [
+              "disguise_kit",
+              "poisoner_kit"
+            ]
+          }
+        }
+      },
+      {
+        "id": "assassinate",
+        "name": "Assassinat",
+        "fr_name": "Assassinat",
+        "level": 3,
+        "type": "passive",
+        "description": "Avantage avant que la cible n’agisse ; critiques auto contre cibles surprises.",
+        "effects": {
+          "against_surprised": {
+            "auto_crit": true
+          },
+          "before_target_turn": {
+            "advantage": true
+          }
+        }
+      },
+      {
+        "id": "infiltration_expertise",
+        "name": "Expertise d’infiltration",
+        "fr_name": "Expertise d’infiltration",
+        "level": 9,
+        "type": "downtime",
+        "description": "Créer une identité de couverture crédible.",
+        "effects": {
+          "downtime_project": {
+            "type": "create_cover_identity"
+          }
+        }
+      },
+      {
+        "id": "impostor",
+        "name": "Imposteur",
+        "fr_name": "Imposteur",
+        "level": 13,
+        "type": "exploration",
+        "description": "Imiter la parole/écriture après étude.",
+        "effects": {
+          "mimicry_checks_bonus": true
+        }
+      },
+      {
+        "id": "death_strike",
+        "name": "Coup mortel",
+        "fr_name": "Coup mortel",
+        "level": 17,
+        "type": "passive",
+        "description": "Sur une cible surprise, doublez les dégâts de votre attaque réussie.",
+        "effects": {
+          "against_surprised": {
+            "double_total_damage_on_hit": true
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:23:50.318892Z"
+  },
+  "arcane_trickster": {
+    "id": "arcane_trickster",
+    "fr_name": "Filou arcanique",
+    "class_id": "rogue",
+    "activates_at_level": 3,
+    "modules": {
+      "MODULE_MAGIE_ACTIF": true,
+      "caster_type": "third",
+      "spellcasting_ability": "INT"
+    },
+    "features": [
+      {
+        "id": "mage_hand_legerdemain",
+        "name": "Main du mage prestidigitée",
+        "fr_name": "Main du mage prestidigitée",
+        "level": 3,
+        "type": "passive",
+        "description": "Main du mage ++ (outils de voleur, discrétion).",
+        "effects": {
+          "mage_hand_upgrades": {
+            "thieves_tools": true,
+            "sleight_of_hand_checks_advantage": true
+          }
+        }
+      },
+      {
+        "id": "magical_ambush",
+        "name": "Embuscade magique",
+        "fr_name": "Embuscade magique",
+        "level": 9,
+        "type": "passive",
+        "description": "Quand vous êtes caché, désavantage aux saves contre vos sorts.",
+        "effects": {
+          "while_hidden": {
+            "targets_have_save_disadvantage_vs_your_spells": true
+          }
+        }
+      },
+      {
+        "id": "versatile_trickster",
+        "name": "Filou polyvalent",
+        "fr_name": "Filou polyvalent",
+        "level": 13,
+        "type": "bonus_action",
+        "description": "Main du mage distrait une cible (avantage).",
+        "effects": {
+          "on_use": {
+            "mark_target": {
+              "id": "trickster_distract",
+              "duration": {
+                "type": "rounds",
+                "value": 1
+              }
+            },
+            "grant_advantage_vs_mark": true
+          }
+        }
+      },
+      {
+        "id": "spell_thief",
+        "name": "Voleur de sorts",
+        "fr_name": "Voleur de sorts",
+        "level": 17,
+        "type": "reaction",
+        "description": "Contrez et apprenez temporairement un sort (1/jour).",
+        "effects": {
+          "incoming_spell": {
+            "limit": "once_per_day",
+            "counter_and_learn_temp": {
+              "duration_hours": 8
+            }
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:23:50.318892Z"
+  },
+  "life_domain": {
+    "id": "life_domain",
+    "fr_name": "Domaine de la Vie",
+    "class_id": "cleric",
+    "activates_at_level": 1,
+    "modules": {},
+    "features": [
+      {
+        "id": "bonus_proficiency_heavy",
+        "name": "Maîtrise des armures lourdes",
+        "fr_name": "Maîtrise des armures lourdes",
+        "level": 1,
+        "type": "passive",
+        "description": "Maîtrise des armures lourdes.",
+        "effects": {
+          "grant_proficiencies": {
+            "armor": [
+              "heavy"
+            ]
+          }
+        }
+      },
+      {
+        "id": "disciple_of_life",
+        "name": "Disciple de la Vie",
+        "fr_name": "Disciple de la Vie",
+        "level": 1,
+        "type": "passive",
+        "description": "Vos sorts de soin rendent +2 + niveau du sort PV.",
+        "effects": {
+          "healing_bonuses": {
+            "add_flat": {
+              "formula": "2 + spell_level"
+            }
+          }
+        }
+      },
+      {
+        "id": "channel_preserve_life",
+        "name": "Canalisation : Préservation de la vie",
+        "fr_name": "Canalisation : Préservation de la vie",
+        "level": 2,
+        "type": "resource",
+        "description": "Distribuez des PV jusqu'à 5×niveau de clerc dans une zone.",
+        "effects": {
+          "on_use": {
+            "area": {
+              "shape": "sphere",
+              "radius_ft": 30,
+              "affects": "allies"
+            },
+            "heal_pool": {
+              "formula": "5 * class_level:cleric"
+            },
+            "distribute_heal": {
+              "targets": "area",
+              "pool_field": "heal_pool"
+            },
+            "consume_resource": {
+              "resource_id": "channel_divinity",
+              "amount": 1
+            }
+          }
+        }
+      },
+      {
+        "id": "blessed_healer",
+        "name": "Guérisseur béni",
+        "fr_name": "Guérisseur béni",
+        "level": 6,
+        "type": "passive",
+        "description": "Lorsque vous soignez les autres, vous vous soignez de 2 + niveau du sort.",
+        "effects": {
+          "self_heal_on_cast_heal": {
+            "formula": "2 + spell_level"
+          }
+        }
+      },
+      {
+        "id": "divine_strike_life",
+        "name": "Frappe divine",
+        "fr_name": "Frappe divine",
+        "level": 8,
+        "type": "passive",
+        "description": "Ajoutez 1d8 (puis 2d8 au niv 14) dégâts radiants 1/round à une attaque d'arme.",
+        "effects": {
+          "on_hit": {
+            "once_per_turn": true,
+            "extra_damage_by_level": [
+              {
+                "min_level": 8,
+                "dice": "1d8"
+              },
+              {
+                "min_level": 14,
+                "dice": "2d8"
+              }
+            ],
+            "type": "radiant"
+          }
+        }
+      },
+      {
+        "id": "supreme_healing",
+        "name": "Guérison suprême",
+        "fr_name": "Guérison suprême",
+        "level": 17,
+        "type": "passive",
+        "description": "Considérez tous les dés de soin comme leur maximum.",
+        "effects": {
+          "healing_bonuses": {
+            "dice_maximized": true
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:29:32.025708Z"
+  },
+  "light_domain": {
+    "id": "light_domain",
+    "fr_name": "Domaine de la Lumière",
+    "class_id": "cleric",
+    "activates_at_level": 1,
+    "modules": {},
+    "features": [
+      {
+        "id": "bonus_cantrip",
+        "name": "Tour de magie supplémentaire",
+        "fr_name": "Tour de magie supplémentaire",
+        "level": 1,
+        "type": "passive",
+        "description": "Vous apprenez un tour de magie supplémentaire de clerc.",
+        "effects": {
+          "learn_cantrips": {
+            "count": 1
+          }
+        }
+      },
+      {
+        "id": "warding_flare",
+        "name": "Éclair protecteur",
+        "fr_name": "Éclair protecteur",
+        "level": 1,
+        "type": "reaction",
+        "description": "Impose désavantage à une attaque contre vous (30 ft sur un allié au niv 6).",
+        "effects": {
+          "incoming_attack": {
+            "impose_disadvantage": true,
+            "range_ft": 30,
+            "scales_at_level": 6
+          }
+        }
+      },
+      {
+        "id": "channel_radiance_of_the_dawn",
+        "name": "Canalisation : Radiance de l'aube",
+        "fr_name": "Canalisation : Radiance de l'aube",
+        "level": 2,
+        "type": "action",
+        "description": "Dégâts radiants en zone, dissipe les ténèbres magiques.",
+        "effects": {
+          "on_use": {
+            "area": {
+              "shape": "sphere",
+              "radius_ft": 30,
+              "affects": "enemies"
+            },
+            "damage": {
+              "dice": "2d10 + class_level:cleric",
+              "type": "radiant"
+            },
+            "dispel": {
+              "tag": "magical_darkness",
+              "radius_ft": 30
+            },
+            "consume_resource": {
+              "resource_id": "channel_divinity",
+              "amount": 1
+            }
+          }
+        }
+      },
+      {
+        "id": "potent_spellcasting",
+        "name": "Incantation puissante",
+        "fr_name": "Incantation puissante",
+        "level": 8,
+        "type": "passive",
+        "description": "Ajoutez votre modificateur de SAG aux dégâts de vos tours de magie.",
+        "effects": {
+          "cantrip_damage_bonus_from": "WIS"
+        }
+      },
+      {
+        "id": "corona_of_light",
+        "name": "Couronne de lumière",
+        "fr_name": "Couronne de lumière",
+        "level": 17,
+        "type": "action",
+        "description": "Aura : désavantage aux saves contre vos sorts de feu/lumière.",
+        "effects": {
+          "on_use": {
+            "aura": {
+              "radius_ft": 30,
+              "save_disadvantage_vs_tags": [
+                "fire",
+                "light"
+              ],
+              "duration": {
+                "type": "minutes",
+                "value": 1
+              }
+            }
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:29:32.025708Z"
+  },
+  "war_domain": {
+    "id": "war_domain",
+    "fr_name": "Domaine de la Guerre",
+    "class_id": "cleric",
+    "activates_at_level": 1,
+    "modules": {},
+    "features": [
+      {
+        "id": "bonus_proficiencies_war",
+        "name": "Maîtrises martiales",
+        "fr_name": "Maîtrises martiales",
+        "level": 1,
+        "type": "passive",
+        "description": "Maîtrise des armes martiales et armures lourdes.",
+        "effects": {
+          "grant_proficiencies": {
+            "weapons": [
+              "martial"
+            ],
+            "armor": [
+              "heavy"
+            ]
+          }
+        }
+      },
+      {
+        "id": "war_priest",
+        "name": "Prêtre de guerre",
+        "fr_name": "Prêtre de guerre",
+        "level": 1,
+        "type": "resource",
+        "description": "Un nombre limité de fois, faites une attaque d'arme en action bonus après Attaquer.",
+        "effects": {
+          "on_use": {
+            "grant_bonus_action_option": "Attack",
+            "uses_per_long_rest_from": "WIS"
+          }
+        }
+      },
+      {
+        "id": "channel_guided_strike",
+        "name": "Canalisation : Frappe guidée",
+        "fr_name": "Canalisation : Frappe guidée",
+        "level": 2,
+        "type": "reaction",
+        "description": "Ajoutez +10 à un jet d'attaque (après le jet).",
+        "effects": {
+          "on_attack": {
+            "modify_roll": {
+              "add": 10
+            },
+            "consume_resource": {
+              "resource_id": "channel_divinity",
+              "amount": 1
+            }
+          }
+        }
+      },
+      {
+        "id": "divine_strike_war",
+        "name": "Frappe divine",
+        "fr_name": "Frappe divine",
+        "level": 8,
+        "type": "passive",
+        "description": "Ajoutez 1d8 (2d8 au niv 14) dégâts de force 1/round.",
+        "effects": {
+          "on_hit": {
+            "once_per_turn": true,
+            "extra_damage_by_level": [
+              {
+                "min_level": 8,
+                "dice": "1d8"
+              },
+              {
+                "min_level": 14,
+                "dice": "2d8"
+              }
+            ],
+            "type": "force"
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:29:32.025708Z"
+  },
+  "way_of_the_open_hand": {
+    "id": "way_of_the_open_hand",
+    "fr_name": "Voie de la Main ouverte",
+    "class_id": "monk",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "open_hand_technique",
+        "name": "Technique de la main ouverte",
+        "fr_name": "Technique de la main ouverte",
+        "level": 3,
+        "type": "passive",
+        "description": "Avec Rafale de coups, vous pouvez renverser, repousser (15 ft) ou empêcher les réactions.",
+        "effects": {
+          "on_flurry_hit": {
+            "apply_one_of": [
+              {
+                "knock_prone": true
+              },
+              {
+                "push_ft": 15
+              },
+              {
+                "deny_reactions": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "wholeness_of_body",
+        "name": "Plénitude du corps",
+        "fr_name": "Plénitude du corps",
+        "level": 6,
+        "type": "action",
+        "description": "1/jour : regagnez 3×niveau de moine en PV.",
+        "effects": {
+          "on_use": {
+            "limit": "once_per_day",
+            "apply_heal": {
+              "target": "self",
+              "amount_formula": "3 * class_level:monk"
+            }
+          }
+        }
+      },
+      {
+        "id": "tranquility",
+        "name": "Tranquillité",
+        "fr_name": "Tranquillité",
+        "level": 11,
+        "type": "passive",
+        "description": "Sanctuaire jusqu'à ce que vous attaquiez/lanciez un sort après un LR.",
+        "effects": {
+          "long_rest": {
+            "grant_buff": {
+              "buff_id": "sanctuary_until_broken"
+            }
+          }
+        }
+      },
+      {
+        "id": "quivering_palm",
+        "name": "Paume vibrante",
+        "fr_name": "Paume vibrante",
+        "level": 17,
+        "type": "action",
+        "description": "Implantez une vibration mortelle (3 ki) puis déclenchez-la (CON save).",
+        "effects": {
+          "on_use": {
+            "apply_mark": {
+              "id": "quivering_palm",
+              "duration": {
+                "type": "days",
+                "value": 3
+              }
+            }
+          },
+          "trigger_action": {
+            "consume_resource": {
+              "resource_id": "ki_points",
+              "amount": 3
+            },
+            "force_save": {
+              "ability": "CON",
+              "dc_from": "ki_dc:monk"
+            },
+            "on_fail": {
+              "damage": {
+                "percent_of_hp_max": 100
+              }
+            },
+            "on_success": {
+              "damage": {
+                "dice": "10d10",
+                "type": "necrotic"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:29:32.025708Z"
+  },
+  "way_of_shadow": {
+    "id": "way_of_shadow",
+    "fr_name": "Voie de l’Ombre",
+    "class_id": "monk",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "shadow_arts",
+        "name": "Arts de l’ombre",
+        "fr_name": "Arts de l’ombre",
+        "level": 3,
+        "type": "active",
+        "description": "Dépensez 2 ki : ténèbres, silence, pas brumeux, image mineure.",
+        "effects": {
+          "on_use": {
+            "consume_resource": {
+              "resource_id": "ki_points",
+              "amount": 2
+            },
+            "cast_one_of_spells": [
+              "darkness",
+              "silence",
+              "misty_step",
+              "minor_illusion"
+            ]
+          }
+        }
+      },
+      {
+        "id": "shadow_step",
+        "name": "Pas de l’ombre",
+        "fr_name": "Pas de l’ombre",
+        "level": 6,
+        "type": "bonus_action",
+        "description": "Téléportation 60 ft d'ombre à ombre, avantage au prochain jet d'attaque.",
+        "effects": {
+          "on_use": {
+            "teleport": {
+              "range_ft": 60,
+              "requires_dim_light_or_darkness": true
+            },
+            "grant_advantage_to_next_attack": true
+          }
+        }
+      },
+      {
+        "id": "cloak_of_shadows",
+        "name": "Cape des ombres",
+        "fr_name": "Cape des ombres",
+        "level": 11,
+        "type": "action",
+        "description": "Invisible tant que vous ne bougez pas en faible luminosité/ténèbres.",
+        "effects": {
+          "on_use": {
+            "become_invisible": {
+              "while": [
+                "dim_light",
+                "darkness"
+              ],
+              "break_on_move": true
+            }
+          }
+        }
+      },
+      {
+        "id": "opportunist",
+        "name": "Opportuniste",
+        "fr_name": "Opportuniste",
+        "level": 17,
+        "type": "reaction",
+        "description": "Quand une créature à portée est touchée par un autre, attaquez en réaction.",
+        "effects": {
+          "ally_hits_target_in_melee": {
+            "grant_reaction": "make_melee_attack"
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:29:32.025708Z"
+  },
+  "way_of_the_four_elements": {
+    "id": "way_of_the_four_elements",
+    "fr_name": "Voie des Quatre éléments",
+    "class_id": "monk",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "elemental_disciplines",
+        "name": "Disciplines élémentaires",
+        "fr_name": "Disciplines élémentaires",
+        "level": 3,
+        "type": "choice",
+        "description": "Choisissez des disciplines; dépensez du ki pour des effets élémentaires.",
+        "effects": {
+          "choices": {
+            "category": "elemental_disciplines",
+            "known_by_level": [
+              {
+                "min_level": 3,
+                "known": 2
+              },
+              {
+                "min_level": 6,
+                "known": 3
+              },
+              {
+                "min_level": 11,
+                "known": 4
+              },
+              {
+                "min_level": 17,
+                "known": 5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "elemental_attunement",
+        "name": "Harmonisation élémentaire",
+        "fr_name": "Harmonisation élémentaire",
+        "level": 6,
+        "type": "active",
+        "description": "Petits effets élémentaires utilitaires (contrôle mineur).",
+        "effects": {
+          "on_use": {
+            "utility_effects": [
+              "ignite_snuff",
+              "shape_water",
+              "gust",
+              "shape_stone_small"
+            ]
+          }
+        }
+      },
+      {
+        "id": "elemental_mastery",
+        "name": "Maîtrise élémentaire",
+        "fr_name": "Maîtrise élémentaire",
+        "level": 17,
+        "type": "passive",
+        "description": "Réduction du coût en ki de certaines disciplines.",
+        "effects": {
+          "ki_cost_reduction": {
+            "disciplines_tagged": [
+              "blast",
+              "shape"
+            ],
+            "reduce_by": 1,
+            "min_cost": 1
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:29:32.025708Z"
+  },
+  "hunter": {
+    "id": "hunter",
+    "fr_name": "Chasseur",
+    "class_id": "ranger",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "hunters_prey",
+        "name": "Proie du chasseur",
+        "fr_name": "Proie du chasseur",
+        "level": 3,
+        "type": "choice",
+        "description": "Choisissez Colossus Slayer, Giant Killer ou Horde Breaker.",
+        "effects": {
+          "choices": {
+            "category": "hunters_prey",
+            "options": [
+              "colossus_slayer",
+              "giant_killer",
+              "horde_breaker"
+            ]
+          }
+        }
+      },
+      {
+        "id": "defensive_tactics",
+        "name": "Tactiques défensives",
+        "fr_name": "Tactiques défensives",
+        "level": 7,
+        "type": "choice",
+        "description": "Choisissez Escape the Horde, Multiattack Defense ou Steel Will.",
+        "effects": {
+          "choices": {
+            "category": "defensive_tactics"
+          }
+        }
+      },
+      {
+        "id": "multiattack",
+        "name": "Multiattaque",
+        "fr_name": "Multiattaque",
+        "level": 11,
+        "type": "choice",
+        "description": "Choisissez Volley (distance) ou Whirlwind Attack (mêlée).",
+        "effects": {
+          "choices": {
+            "category": "multiattack",
+            "options": [
+              "volley",
+              "whirlwind"
+            ]
+          }
+        }
+      },
+      {
+        "id": "superior_hunters_defense",
+        "name": "Défense supérieure du chasseur",
+        "fr_name": "Défense supérieure du chasseur",
+        "level": 15,
+        "type": "choice",
+        "description": "Choisissez Evasion, Stand Against the Tide, ou Uncanny Dodge.",
+        "effects": {
+          "choices": {
+            "category": "superior_defense"
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:29:32.025708Z"
+  },
+  "beast_master": {
+    "id": "beast_master",
+    "fr_name": "Maître des bêtes",
+    "class_id": "ranger",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "rangers_companion",
+        "name": "Compagnon du rôdeur",
+        "fr_name": "Compagnon du rôdeur",
+        "level": 3,
+        "type": "companion",
+        "description": "Vous gagnez un compagnon animal lié à vous.",
+        "effects": {
+          "grant_companion": {
+            "type": "beast",
+            "scales_with_level": true,
+            "acts_on_your_turn": true
+          }
+        }
+      },
+      {
+        "id": "exceptional_training",
+        "name": "Entraînement exceptionnel",
+        "fr_name": "Entraînement exceptionnel",
+        "level": 7,
+        "type": "passive",
+        "description": "Le compagnon peut Disengage/Dash en bonus ; ajoute votre maîtrise aux dégâts.",
+        "effects": {
+          "companion_bonus_action": [
+            "Disengage",
+            "Dash"
+          ],
+          "companion_damage_add_proficiency": true
+        }
+      },
+      {
+        "id": "bestial_fury",
+        "name": "Furie bestiale",
+        "fr_name": "Furie bestiale",
+        "level": 11,
+        "type": "passive",
+        "description": "Le compagnon peut faire deux attaques avec l'action Attaquer.",
+        "effects": {
+          "companion_extra_attack": 1
+        }
+      },
+      {
+        "id": "share_spells",
+        "name": "Partage de sorts",
+        "fr_name": "Partage de sorts",
+        "level": 15,
+        "type": "passive",
+        "description": "Les sorts personnels vous affectent, vous et votre compagnon.",
+        "effects": {
+          "companion_share_self_spells": true
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:29:32.025708Z"
+  },
+  "gloom_stalker": {
+    "id": "gloom_stalker",
+    "fr_name": "Traqueur obscur",
+    "class_id": "ranger",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "dread_ambusher",
+        "name": "Ambusheur funeste",
+        "fr_name": "Ambusheur funeste",
+        "level": 3,
+        "type": "passive",
+        "description": "Au 1er tour du combat : +10 ft, +1 attaque, +1d8 dégâts.",
+        "effects": {
+          "start_of_first_turn": {
+            "speed_bonus_ft": 10,
+            "grant_extra_attack": 1,
+            "extra_damage": {
+              "dice": "1d8",
+              "type": "weapon"
+            }
+          }
+        }
+      },
+      {
+        "id": "umbral_sight",
+        "name": "Vision ombrale",
+        "fr_name": "Vision ombrale",
+        "level": 3,
+        "type": "passive",
+        "description": "Améliore votre vision dans le noir; invisible pour les créatures avec darkvision.",
+        "effects": {
+          "darkvision_upgrade": true,
+          "invisible_to_darkvision_creatures": true
+        }
+      },
+      {
+        "id": "iron_mind",
+        "name": "Esprit de fer",
+        "fr_name": "Esprit de fer",
+        "level": 7,
+        "type": "passive",
+        "description": "Maîtrise des jets de sauvegarde de SAG.",
+        "effects": {
+          "grant_saving_throw_proficiency": "WIS"
+        }
+      },
+      {
+        "id": "stalkers_flurry",
+        "name": "Déluge du traqueur",
+        "fr_name": "Déluge du traqueur",
+        "level": 11,
+        "type": "passive",
+        "description": "Quand vous ratez, obtenez une attaque gratuite (1/round).",
+        "effects": {
+          "on_attack_miss": {
+            "grant_free_attack_once_per_round": true
+          }
+        }
+      },
+      {
+        "id": "shadowy_dodge",
+        "name": "Esquive ombrale",
+        "fr_name": "Esquive ombrale",
+        "level": 15,
+        "type": "reaction",
+        "description": "Réaction: désavantage à l'attaque contre vous (dans l’ombre).",
+        "effects": {
+          "incoming_attack": {
+            "requires_dim_light_or_darkness": true,
+            "impose_disadvantage": true
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:29:32.025708Z"
+  },
+  "college_of_lore": {
+    "id": "college_of_lore",
+    "fr_name": "Collège du Savoir",
+    "class_id": "bard",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "bonus_proficiencies",
+        "name": "Compétences supplémentaires",
+        "fr_name": "Compétences supplémentaires",
+        "level": 3,
+        "type": "passive",
+        "description": "Maîtrisez trois compétences supplémentaires.",
+        "effects": {
+          "grant_proficiencies": {
+            "skills": "+3"
+          }
+        }
+      },
+      {
+        "id": "cutting_words",
+        "name": "Mots cinglants",
+        "fr_name": "Mots cinglants",
+        "level": 3,
+        "type": "reaction",
+        "description": "Soustrayez le dé d'Inspiration bardique à un jet ennemi.",
+        "effects": {
+          "incoming_attack_or_check": {
+            "consume_resource": {
+              "resource_id": "bardic_inspiration_pool",
+              "amount": 1
+            },
+            "modify_roll": {
+              "subtract": "inspiration_die_current"
+            }
+          }
+        }
+      },
+      {
+        "id": "additional_magical_secrets",
+        "name": "Secrets magiques supplémentaires",
+        "fr_name": "Secrets magiques supplémentaires",
+        "level": 6,
+        "type": "unlock",
+        "description": "Apprenez deux sorts supplémentaires de n'importe quelle liste.",
+        "effects": {
+          "learn_spells": {
+            "count": 2
+          }
+        }
+      },
+      {
+        "id": "peerless_skill",
+        "name": "Compétence inégalée",
+        "fr_name": "Compétence inégalée",
+        "level": 14,
+        "type": "reaction",
+        "description": "Ajoutez votre dé d'Inspiration bardique à votre propre test.",
+        "effects": {
+          "self_check": {
+            "add_die": "inspiration_die_current"
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:29:32.025708Z"
+  },
+  "college_of_valor": {
+    "id": "college_of_valor",
+    "fr_name": "Collège de la Vaillance",
+    "class_id": "bard",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "bonus_proficiencies_valor",
+        "name": "Maîtrises martiales",
+        "fr_name": "Maîtrises martiales",
+        "level": 3,
+        "type": "passive",
+        "description": "Maîtrise armures intermédiaires, boucliers, armes martiales.",
+        "effects": {
+          "grant_proficiencies": {
+            "armor": [
+              "medium",
+              "shield"
+            ],
+            "weapons": [
+              "martial"
+            ]
+          }
+        }
+      },
+      {
+        "id": "combat_inspiration",
+        "name": "Inspiration de combat",
+        "fr_name": "Inspiration de combat",
+        "level": 3,
+        "type": "reaction",
+        "description": "Alliés: utiliser l’inspiration pour dégâts ou +CA vs une attaque.",
+        "effects": {
+          "ally_spend_inspiration": {
+            "options": [
+              "add_damage",
+              "add_ac_vs_one_attack"
+            ]
+          }
+        }
+      },
+      {
+        "id": "extra_attack_valor",
+        "name": "Attaque supplémentaire",
+        "fr_name": "Attaque supplémentaire",
+        "level": 6,
+        "type": "passive",
+        "description": "Deux attaques lors de l'action Attaquer.",
+        "effects": {
+          "passive_modifiers": [
+            {
+              "apply_to": "action:Attack",
+              "modifier_type": "extra_attacks",
+              "value": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "battle_magic",
+        "name": "Magie de bataille",
+        "fr_name": "Magie de bataille",
+        "level": 14,
+        "type": "passive",
+        "description": "Après lancer un sort de barde, attaque d'arme en bonus.",
+        "effects": {
+          "on_cast_spell": {
+            "grant_bonus_action_option": "Attack"
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:29:32.025708Z"
+  },
+  "draconic_bloodline": {
+    "id": "draconic_bloodline",
+    "fr_name": "Sang draconique",
+    "class_id": "sorcerer",
+    "activates_at_level": 1,
+    "modules": {},
+    "features": [
+      {
+        "id": "draconic_resilience",
+        "name": "Résilience draconique",
+        "fr_name": "Résilience draconique",
+        "level": 1,
+        "type": "passive",
+        "description": "CA de base 13 + DEX sans armure; +1 PV par niveau d’ensorceleur.",
+        "effects": {
+          "unarmored_ac": {
+            "base": 13,
+            "modifiers": [
+              "DEX"
+            ]
+          },
+          "hp_per_level_bonus": 1
+        }
+      },
+      {
+        "id": "elemental_affinity",
+        "name": "Affinité élémentaire",
+        "fr_name": "Affinité élémentaire",
+        "level": 6,
+        "type": "passive",
+        "description": "Ajoutez mod CHA aux dégâts de vos sorts du type choisi; dépensez 1 point pour résistance.",
+        "effects": {
+          "spell_damage_bonus_from": "CHA",
+          "damage_type_choice": [
+            "acid",
+            "cold",
+            "fire",
+            "lightning",
+            "poison"
+          ],
+          "sorcery_point_resistance": true
+        }
+      },
+      {
+        "id": "dragon_wings",
+        "name": "Ailes draconiques",
+        "fr_name": "Ailes draconiques",
+        "level": 14,
+        "type": "passive",
+        "description": "Vous gagnez une vitesse de vol égale à votre vitesse de marche.",
+        "effects": {
+          "grant_flight_equal_walk_speed": true
+        }
+      },
+      {
+        "id": "draconic_presence",
+        "name": "Présence draconique",
+        "fr_name": "Présence draconique",
+        "level": 18,
+        "type": "action",
+        "description": "Imposez charme ou peur dans une grande zone (save SAG).",
+        "effects": {
+          "on_use": {
+            "area": {
+              "shape": "cone",
+              "range_ft": 60
+            },
+            "force_save": {
+              "ability": "WIS",
+              "dc_from": "spell_save_dc:sorcerer"
+            },
+            "on_fail": {
+              "apply_condition_one_of": [
+                "charmed",
+                "frightened"
+              ],
+              "duration": {
+                "type": "minutes",
+                "value": 1
+              }
+            }
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:35:30.206585Z"
+  },
+  "wild_magic": {
+    "id": "wild_magic",
+    "fr_name": "Magie déchaînée",
+    "class_id": "sorcerer",
+    "activates_at_level": 1,
+    "modules": {},
+    "features": [
+      {
+        "id": "wild_magic_surge",
+        "name": "Bouffée de magie sauvage",
+        "fr_name": "Bouffée de magie sauvage",
+        "level": 1,
+        "type": "passive",
+        "description": "Le MJ peut déclencher un jet sur la table de magie sauvage lors d’un sort de niveau 1+.",
+        "effects": {
+          "engine_hooks": {
+            "subscribe_to": [
+              "on_cast_level1_plus"
+            ],
+            "trigger": "wild_magic_table_roll"
+          }
+        }
+      },
+      {
+        "id": "tides_of_chaos",
+        "name": "Marées du chaos",
+        "fr_name": "Marées du chaos",
+        "level": 1,
+        "type": "active",
+        "description": "Gagnez avantage sur un jet; le MJ peut forcer une bouffée pour récupérer l'usage.",
+        "effects": {
+          "on_use": {
+            "grant_advantage_next_roll": true,
+            "recharge_on_wild_magic_surge": true
+          }
+        }
+      },
+      {
+        "id": "bend_luck",
+        "name": "Tordre la chance",
+        "fr_name": "Tordre la chance",
+        "level": 6,
+        "type": "reaction",
+        "description": "Dépensez 2 points pour ±1d4 sur un jet que vous voyez.",
+        "effects": {
+          "on_reaction": {
+            "consume_resource": {
+              "resource_id": "sorcery_points",
+              "amount": 2
+            },
+            "modify_roll": {
+              "add_or_subtract": "1d4"
+            }
+          }
+        }
+      },
+      {
+        "id": "controlled_chaos",
+        "name": "Chaos contrôlé",
+        "fr_name": "Chaos contrôlé",
+        "level": 14,
+        "type": "passive",
+        "description": "Vous pouvez relancer sur la table et choisir entre les deux résultats.",
+        "effects": {
+          "wild_magic_table": {
+            "reroll_and_choose": true
+          }
+        }
+      },
+      {
+        "id": "spell_bombardment",
+        "name": "Bombardement de sorts",
+        "fr_name": "Bombardement de sorts",
+        "level": 18,
+        "type": "passive",
+        "description": "Quand vous lancez des dégâts de sort et que vous maximisez un dé, ajoutez un dé supplémentaire du même type.",
+        "effects": {
+          "spell_damage": {
+            "add_extra_die_on_max_roll": true
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:35:30.206585Z"
+  },
+  "the_fiend": {
+    "id": "the_fiend",
+    "fr_name": "Le Fiélon",
+    "class_id": "warlock",
+    "activates_at_level": 1,
+    "modules": {},
+    "features": [
+      {
+        "id": "dark_ones_blessing",
+        "name": "Bénédiction du Fiélon",
+        "fr_name": "Bénédiction du Fiélon",
+        "level": 1,
+        "type": "passive",
+        "description": "PV temporaires = CHA mod + niveau de warlock quand vous mettez un ennemi à 0 PV.",
+        "effects": {
+          "on_kill": {
+            "gain_temp_hp": {
+              "formula": "ability_mod:CHA + class_level:warlock"
+            }
+          }
+        }
+      },
+      {
+        "id": "dark_ones_own_luck",
+        "name": "La chance du Fiélon",
+        "fr_name": "La chance du Fiélon",
+        "level": 6,
+        "type": "reaction",
+        "description": "Ajoutez 1d10 à un jet que vous effectuez.",
+        "effects": {
+          "on_reaction": {
+            "modify_roll": {
+              "add": "1d10"
+            }
+          }
+        }
+      },
+      {
+        "id": "fiendish_resilience",
+        "name": "Résilience fiélonne",
+        "fr_name": "Résilience fiélonne",
+        "level": 10,
+        "type": "passive",
+        "description": "Résistance à un type de dégâts de votre choix (hors argenté/adamantine...).",
+        "effects": {
+          "resistance_choice": {
+            "types": [
+              "acid",
+              "cold",
+              "fire",
+              "lightning",
+              "thunder",
+              "necrotic",
+              "radiant",
+              "psychic",
+              "force",
+              "poison"
+            ]
+          }
+        }
+      },
+      {
+        "id": "hurl_through_hell",
+        "name": "Projeter en enfer",
+        "fr_name": "Projeter en enfer",
+        "level": 14,
+        "type": "reaction",
+        "description": "Quand vous touchez, bannissez la cible en enfer (énormes dégâts à son retour).",
+        "effects": {
+          "on_hit": {
+            "banish_until_end_of_next_turn": true,
+            "on_return_damage": {
+              "dice": "10d10",
+              "type": "psychic"
+            }
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:35:30.206585Z"
+  },
+  "the_archfey": {
+    "id": "the_archfey",
+    "fr_name": "L’Archifée",
+    "class_id": "warlock",
+    "activates_at_level": 1,
+    "modules": {},
+    "features": [
+      {
+        "id": "fey_presence",
+        "name": "Présence féerique",
+        "fr_name": "Présence féerique",
+        "level": 1,
+        "type": "action",
+        "description": "Effrayez ou charmez les créatures dans un cône (save SAG).",
+        "effects": {
+          "on_use": {
+            "area": {
+              "shape": "cube",
+              "range_ft": 10
+            },
+            "force_save": {
+              "ability": "WIS",
+              "dc_from": "spell_save_dc:warlock"
+            },
+            "on_fail": {
+              "apply_condition_one_of": [
+                "charmed",
+                "frightened"
+              ],
+              "duration": {
+                "type": "rounds",
+                "value": 1
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "misty_escape",
+        "name": "Évasion brumeuse",
+        "fr_name": "Évasion brumeuse",
+        "level": 6,
+        "type": "reaction",
+        "description": "Quand vous subissez des dégâts, devenez invisible et téléportez-vous de 60 ft.",
+        "effects": {
+          "on_damage_taken": {
+            "become_invisible": {
+              "duration": {
+                "type": "rounds",
+                "value": 1
+              }
+            },
+            "teleport": {
+              "range_ft": 60
+            }
+          }
+        }
+      },
+      {
+        "id": "beguiling_defenses",
+        "name": "Défenses enjôleuses",
+        "fr_name": "Défenses enjôleuses",
+        "level": 10,
+        "type": "passive",
+        "description": "Immunisé au charme; renvoie charme à l'initiateur.",
+        "effects": {
+          "immunity": [
+            "charmed"
+          ],
+          "reflect_charm": true
+        }
+      },
+      {
+        "id": "dark_delirium",
+        "name": "Délire obscur",
+        "fr_name": "Délire obscur",
+        "level": 14,
+        "type": "action",
+        "description": "Charmez ou effrayez une créature dans une illusion (save SAG).",
+        "effects": {
+          "on_use": {
+            "target_one": true,
+            "force_save": {
+              "ability": "WIS",
+              "dc_from": "spell_save_dc:warlock"
+            },
+            "on_fail": {
+              "apply_condition_one_of": [
+                "charmed",
+                "frightened"
+              ],
+              "special": "illusory_realm",
+              "duration": {
+                "type": "rounds",
+                "value": 1
+              }
+            }
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:35:30.206585Z"
+  },
+  "the_hexblade": {
+    "id": "the_hexblade",
+    "fr_name": "La Lame maudite",
+    "class_id": "warlock",
+    "activates_at_level": 1,
+    "modules": {},
+    "features": [
+      {
+        "id": "hexblades_curse",
+        "name": "Malédiction de la Lame",
+        "fr_name": "Malédiction de la Lame",
+        "level": 1,
+        "type": "bonus_action",
+        "description": "Maudissez une cible: +dégâts, crit sur 19-20, soignez-vous à la mort de la cible.",
+        "effects": {
+          "on_use": {
+            "mark_target": {
+              "id": "hex_curse",
+              "duration": {
+                "type": "minutes",
+                "value": 1
+              }
+            },
+            "vs_marked": {
+              "damage_bonus": {
+                "formula": "proficiency_bonus"
+              },
+              "critical_range_bonus": {
+                "to": 19
+              }
+            },
+            "on_marked_killed": {
+              "heal_self_from": "CHA"
+            }
+          }
+        }
+      },
+      {
+        "id": "hex_warrior",
+        "name": "Guerrier de la Lame",
+        "fr_name": "Guerrier de la Lame",
+        "level": 1,
+        "type": "passive",
+        "description": "Utilisez CHA pour les jets d'attaque/dégâts avec certaines armes.",
+        "effects": {
+          "attack_ability_override": {
+            "weapons": "pact_or_one_handed",
+            "ability": "CHA"
+          }
+        }
+      },
+      {
+        "id": "accursed_specter",
+        "name": "Spectre maudit",
+        "fr_name": "Spectre maudit",
+        "level": 6,
+        "type": "on_kill",
+        "description": "Quand vous tuez un humanoïde, vous pouvez lier son spectre qui vous obéit (1/jour).",
+        "effects": {
+          "on_humanoid_kill": {
+            "summon": "specter",
+            "limit": "once_per_day"
+          }
+        }
+      },
+      {
+        "id": "armor_of_hexes",
+        "name": "Armure des malédictions",
+        "fr_name": "Armure des malédictions",
+        "level": 10,
+        "type": "reaction",
+        "description": "Quand la cible maudite vous touche, 50% de chance d'annuler l'attaque.",
+        "effects": {
+          "incoming_hit_from_marked": {
+            "percent_chance_to_nullify": 50
+          }
+        }
+      },
+      {
+        "id": "master_of_hexes",
+        "name": "Maître des malédictions",
+        "fr_name": "Maître des malédictions",
+        "level": 14,
+        "type": "passive",
+        "description": "Quand la cible maudite meurt, transférez la malédiction à une nouvelle cible proche.",
+        "effects": {
+          "transfer_mark_on_death": {
+            "range_ft": 30
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:35:30.206585Z"
+  },
+  "evocation": {
+    "id": "evocation",
+    "fr_name": "Évocation",
+    "class_id": "wizard",
+    "activates_at_level": 2,
+    "modules": {},
+    "features": [
+      {
+        "id": "sculpt_spells",
+        "name": "Formes sculptées",
+        "fr_name": "Formes sculptées",
+        "level": 2,
+        "type": "passive",
+        "description": "Vos alliés évitent vos sorts d’aire : auto-save et pas de dégâts.",
+        "effects": {
+          "area_spells_friendly_safe": {
+            "auto_save": true,
+            "no_damage_on_success": true
+          }
+        }
+      },
+      {
+        "id": "potent_cantrip",
+        "name": "Tour puissant",
+        "fr_name": "Tour puissant",
+        "level": 6,
+        "type": "passive",
+        "description": "Vos tours infligent demi-dégâts sur un jet de sauvegarde réussi.",
+        "effects": {
+          "cantrip_half_on_save": true
+        }
+      },
+      {
+        "id": "empowered_evocation",
+        "name": "Évocation renforcée",
+        "fr_name": "Évocation renforcée",
+        "level": 10,
+        "type": "passive",
+        "description": "Ajoutez votre mod de INT aux dégâts de vos sorts d'évocation.",
+        "effects": {
+          "spell_damage_bonus_from": "INT",
+          "school": "evocation"
+        }
+      },
+      {
+        "id": "overchannel",
+        "name": "Surcharge",
+        "fr_name": "Surcharge",
+        "level": 14,
+        "type": "active",
+        "description": "Maximisez les dégâts d’un sort (avec risques si répété).",
+        "effects": {
+          "on_use": {
+            "maximize_next_spell": true,
+            "repeated_use_damage_to_caster": {
+              "dice": "2d12_increasing"
+            }
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:35:30.206585Z"
+  },
+  "abjuration": {
+    "id": "abjuration",
+    "fr_name": "Abjuration",
+    "class_id": "wizard",
+    "activates_at_level": 2,
+    "modules": {},
+    "features": [
+      {
+        "id": "arcane_ward",
+        "name": "Rempart arcanique",
+        "fr_name": "Rempart arcanique",
+        "level": 2,
+        "type": "passive",
+        "description": "Vous gagnez un bouclier de PV qui se recharge avec vos sorts d'abjuration.",
+        "effects": {
+          "arcane_ward": {
+            "hp_formula": "2 * wizard_level + INT",
+            "recharge_on_abjuration": true
+          }
+        }
+      },
+      {
+        "id": "projected_ward",
+        "name": "Rempart projeté",
+        "fr_name": "Rempart projeté",
+        "level": 6,
+        "type": "reaction",
+        "description": "Redirigez votre rempart vers un allié à portée pour absorber des dégâts.",
+        "effects": {
+          "incoming_damage_on_ally": {
+            "redirect_to_arcane_ward": true,
+            "range_ft": 30
+          }
+        }
+      },
+      {
+        "id": "improved_abjuration",
+        "name": "Abjuration améliorée",
+        "fr_name": "Abjuration améliorée",
+        "level": 10,
+        "type": "passive",
+        "description": "+Proficiency aux tests pour dissiper/contrer.",
+        "effects": {
+          "bonus_to_dispel_and_counterspell": {
+            "add": "proficiency_bonus"
+          }
+        }
+      },
+      {
+        "id": "spell_resistance",
+        "name": "Résistance aux sorts",
+        "fr_name": "Résistance aux sorts",
+        "level": 14,
+        "type": "passive",
+        "description": "Avantage aux saves contre les sorts; résistance aux dégâts de sorts.",
+        "effects": {
+          "save_advantage_vs_spells": true,
+          "resistance_vs_spell_damage": true
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:35:30.206585Z"
+  },
+  "divination": {
+    "id": "divination",
+    "fr_name": "Divination",
+    "class_id": "wizard",
+    "activates_at_level": 2,
+    "modules": {},
+    "features": [
+      {
+        "id": "portent",
+        "name": "Présage",
+        "fr_name": "Présage",
+        "level": 2,
+        "type": "special",
+        "description": "Chaque jour, lancez deux d20 et remplacez des jets par ces résultats.",
+        "effects": {
+          "long_rest": {
+            "roll_and_store_d20": [
+              2
+            ]
+          }
+        }
+      },
+      {
+        "id": "expert_divination",
+        "name": "Divination experte",
+        "fr_name": "Divination experte",
+        "level": 6,
+        "type": "passive",
+        "description": "Quand vous lancez des sorts de divination de niveau 2+, récupérez des emplacements bas niveau.",
+        "effects": {
+          "on_cast_divination": {
+            "restore_spell_slots": {
+              "total_levels_max": "spell_level - 1"
+            }
+          }
+        }
+      },
+      {
+        "id": "the_third_eye",
+        "name": "Le Troisième œil",
+        "fr_name": "Le Troisième œil",
+        "level": 10,
+        "type": "choice",
+        "description": "Choisissez un bénéfice (vision noire, vision éthérée…).",
+        "effects": {
+          "choices": {
+            "category": "third_eye_aspect"
+          }
+        }
+      },
+      {
+        "id": "greater_portent",
+        "name": "Grand présage",
+        "fr_name": "Grand présage",
+        "level": 14,
+        "type": "special",
+        "description": "Stockez trois dés au lieu de deux.",
+        "effects": {
+          "long_rest": {
+            "roll_and_store_d20": [
+              3
+            ]
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:35:30.206585Z"
+  },
+  "necromancy": {
+    "id": "necromancy",
+    "fr_name": "Nécromancie",
+    "class_id": "wizard",
+    "activates_at_level": 2,
+    "modules": {},
+    "features": [
+      {
+        "id": "grim_harvest",
+        "name": "Moisson sinistre",
+        "fr_name": "Moisson sinistre",
+        "level": 2,
+        "type": "passive",
+        "description": "Quand vous tuez avec un sort, regagnez des PV (plus si nécromancie).",
+        "effects": {
+          "on_kill_with_spell": {
+            "heal": {
+              "formula": "2 * spell_level (or 3 if necromancy)"
+            }
+          }
+        }
+      },
+      {
+        "id": "undead_thralls",
+        "name": "Serviteurs morts-vivants",
+        "fr_name": "Serviteurs morts-vivants",
+        "level": 6,
+        "type": "passive",
+        "description": "Vos morts-vivants gagnent des PV/bonus; vous animez plus de cibles.",
+        "effects": {
+          "animate_dead_upgrade": {
+            "extra_target": 1,
+            "undead_bonuses": {
+              "hp_bonus_per_hd": 1,
+              "damage_bonus": "+1"
+            }
+          }
+        }
+      },
+      {
+        "id": "inured_to_undeath",
+        "name": "Endurci à la non-vie",
+        "fr_name": "Endurci à la non-vie",
+        "level": 10,
+        "type": "passive",
+        "description": "Résistance à la nécrotique; PV max ne peuvent pas être réduits.",
+        "effects": {
+          "resistances": [
+            "necrotic"
+          ],
+          "immune_hp_max_reduction": true
+        }
+      },
+      {
+        "id": "command_undead",
+        "name": "Commande des morts-vivants",
+        "fr_name": "Commande des morts-vivants",
+        "level": 14,
+        "type": "action",
+        "description": "Tentez de prendre le contrôle d’un mort-vivant intelligent (save CHA).",
+        "effects": {
+          "on_use": {
+            "target": {
+              "type": "undead",
+              "intelligence_min": 4
+            },
+            "force_save": {
+              "ability": "CHA",
+              "dc_from": "spell_save_dc:wizard"
+            },
+            "on_fail": {
+              "charm_and_control": {
+                "duration": {
+                  "type": "hours",
+                  "value": 24
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:35:30.206585Z"
+  },
+  "alchemist": {
+    "id": "alchemist",
+    "fr_name": "Alchimiste",
+    "class_id": "artificer",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "experimental_elixir",
+        "name": "Élixir expérimental",
+        "fr_name": "Élixir expérimental",
+        "level": 3,
+        "type": "special",
+        "description": "Créez 1d6 élixirs au repos long; vous pouvez dépenser des infusions pour en créer d’autres.",
+        "effects": {
+          "long_rest": {
+            "create_random_elixirs": {
+              "count": "1d6"
+            }
+          }
+        }
+      },
+      {
+        "id": "alchemical_savant",
+        "name": "Savant alchimique",
+        "fr_name": "Savant alchimique",
+        "level": 5,
+        "type": "passive",
+        "description": "+INT aux soins/dégâts des sorts via outils d’alchimie.",
+        "effects": {
+          "spell_damage_or_heal_bonus_from": "INT",
+          "requires": "alchemist_tools"
+        }
+      },
+      {
+        "id": "restorative_reagents",
+        "name": "Réactifs réparateurs",
+        "fr_name": "Réactifs réparateurs",
+        "level": 9,
+        "type": "passive",
+        "description": "Réduit conditions et rend PV temporaires aux cibles de vos élixirs.",
+        "effects": {
+          "on_elixir_use": {
+            "grant_temp_hp": {
+              "dice": "2d6 + INT"
+            },
+            "cleanse_conditions": [
+              "poisoned",
+              "diseased"
+            ]
+          }
+        }
+      },
+      {
+        "id": "chemical_mastery",
+        "name": "Maîtrise chimique",
+        "fr_name": "Maîtrise chimique",
+        "level": 15,
+        "type": "passive",
+        "description": "Résist. acide/poison; immunité poison/maladie; lancer certains sorts 1/jour.",
+        "effects": {
+          "resistances": [
+            "acid",
+            "poison"
+          ],
+          "immunities": [
+            "poisoned",
+            "disease"
+          ]
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:35:30.206585Z"
+  },
+  "artillerist": {
+    "id": "artillerist",
+    "fr_name": "Artilleur",
+    "class_id": "artificer",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "eldritch_cannon",
+        "name": "Canon ésotérique",
+        "fr_name": "Canon ésotérique",
+        "level": 3,
+        "type": "action",
+        "description": "Invoquez un canon (flammes, force, défense).",
+        "effects": {
+          "on_use": {
+            "summon_turret": {
+              "types": [
+                "flamethrower",
+                "force_ballista",
+                "protector"
+              ],
+              "duration": {
+                "type": "hours",
+                "value": 1
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "arcane_firearm",
+        "name": "Arme arcanique",
+        "fr_name": "Arme arcanique",
+        "level": 5,
+        "type": "passive",
+        "description": "Canalisez vos sorts à travers une arme pour +1d8 dégâts.",
+        "effects": {
+          "spell_damage": {
+            "add_die": "1d8"
+          }
+        }
+      },
+      {
+        "id": "explosive_cannon",
+        "name": "Canon explosif",
+        "fr_name": "Canon explosif",
+        "level": 9,
+        "type": "active",
+        "description": "Augmente les dégâts du canon; peut le faire exploser (zone).",
+        "effects": {
+          "while_turret_active": {
+            "damage_bonus": "+1d8"
+          },
+          "detonate": {
+            "area": {
+              "shape": "sphere",
+              "radius_ft": 20
+            },
+            "damage": {
+              "dice": "3d8",
+              "type": "force"
+            }
+          }
+        }
+      },
+      {
+        "id": "fortified_position",
+        "name": "Position fortifiée",
+        "fr_name": "Position fortifiée",
+        "level": 15,
+        "type": "passive",
+        "description": "Deux canons à la fois; couvert pour alliés proches.",
+        "effects": {
+          "turret_limit": 2,
+          "grant_half_cover_to_allies_within_ft": 10
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:35:30.206585Z"
+  },
+  "battle_smith": {
+    "id": "battle_smith",
+    "fr_name": "Forgeron de bataille",
+    "class_id": "artificer",
+    "activates_at_level": 3,
+    "modules": {},
+    "features": [
+      {
+        "id": "battle_ready",
+        "name": "Prêt au combat",
+        "fr_name": "Prêt au combat",
+        "level": 3,
+        "type": "passive",
+        "description": "Maîtrise des armes martiales; INT pour jets d’attaque des armes magiques.",
+        "effects": {
+          "grant_proficiencies": {
+            "weapons": [
+              "martial"
+            ]
+          },
+          "attack_ability_override": {
+            "weapons": "magical",
+            "ability": "INT"
+          }
+        }
+      },
+      {
+        "id": "steel_defender",
+        "name": "Défenseur d’acier",
+        "fr_name": "Défenseur d’acier",
+        "level": 3,
+        "type": "companion",
+        "description": "Invoquez un défenseur mécanique qui agit à votre tour.",
+        "effects": {
+          "grant_companion": {
+            "type": "construct",
+            "name": "Steel Defender",
+            "scales_with_level": true
+          }
+        }
+      },
+      {
+        "id": "arcane_jolt",
+        "name": "Secousse arcanique",
+        "fr_name": "Secousse arcanique",
+        "level": 9,
+        "type": "passive",
+        "description": "1/round sur un hit : +2d6 dégâts ou soignez 2d6 (30 ft).",
+        "effects": {
+          "on_hit": {
+            "once_per_turn": true,
+            "choose_one": [
+              {
+                "extra_damage": {
+                  "dice": "2d6",
+                  "type": "force"
+                }
+              },
+              {
+                "heal_ally": {
+                  "range_ft": 30,
+                  "dice": "2d6"
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "improved_defender",
+        "name": "Défenseur amélioré",
+        "fr_name": "Défenseur amélioré",
+        "level": 15,
+        "type": "passive",
+        "description": "AC/attaques/dégâts du défenseur augmentent; aura de protection.",
+        "effects": {
+          "companion_bonus": {
+            "ac": "+2",
+            "damage": "+1d8"
+          },
+          "aura": {
+            "radius_ft": 10,
+            "grant_temp_hp_each_turn": {
+              "dice": "1d4 + INT"
+            }
+          }
+        }
+      }
+    ],
+    "created_at": "2025-09-10T10:35:30.206585Z"
+  }
+}
